@@ -36,6 +36,7 @@ Article fields. `segments` drives the Shorts-style workflow: blind listen, revea
   "segments": [
     {
       "title": "Main headline",
+      "audioUrl": "./audio/YYYY-MM-DD-topic/segment-1.mp3",
       "audioText": "Rescuers are racing to reach seven villagers trapped for a week in a flooded cave.",
       "transcript": "Rescuers are racing to reach seven villagers trapped for a week in a flooded cave.",
       "translationZh": "救援人員正趕住接觸七名被困喺水浸洞穴一星期嘅村民。",
@@ -79,3 +80,4 @@ Article fields. `segments` drives the Shorts-style workflow: blind listen, revea
 ```
 
 The app uses the browser Web Speech API for pronunciation playback, so no backend is required.
+If an article segment includes `audioUrl`, the app plays that file first and only falls back to Web Speech when the file cannot load.

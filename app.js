@@ -131,9 +131,12 @@ const state = {
   activeStep: 0,
   transcriptVisible: false,
   toastTimer: null,
+  currentAudio: null,
+  voices: [],
+  selectedVoiceURI: localStorage.getItem("blackread.voiceURI") || "",
   completed: new Set(),
   savedWords: new Set(JSON.parse(localStorage.getItem("blackread.savedWords") || "[]")),
-  rate: 1
+  rate: Number(localStorage.getItem("blackread.rate") || "0.9") || 0.9
 };
 
 const els = {
@@ -159,6 +162,9 @@ const els = {
   adjustLevelButton: document.querySelector("#adjustLevelButton"),
   nextLevelLabel: document.querySelector("#nextLevelLabel"),
   rateControl: document.querySelector("#rateControl"),
+  voiceControl: document.querySelector("#voiceControl"),
+  voiceTestButton: document.querySelector("#voiceTestButton"),
+  voiceHint: document.querySelector("#voiceHint"),
   playArticleButton: document.querySelector("#playArticleButton"),
   repeatButton: document.querySelector("#repeatButton"),
   shadowButton: document.querySelector("#shadowButton"),
@@ -176,6 +182,7 @@ async function init() {
   restoreProgress();
   render();
   bindControls();
+  initVoices();
 }
 
 async function loadArticle() {
@@ -204,13 +211,88 @@ function applyStoredPreferences() {
   }
 }
 
+function initVoices() {
+  if (!("speechSynthesis" in window)) {
+    els.voiceControl.innerHTML = `<option value="">Browser 不支援</option>`;
+    els.voiceControl.disabled = true;
+    els.voiceTestButton.disabled = true;
+    els.voiceHint.textContent = "呢個 browser 未支援 Web Speech API";
+    return;
+  }
+
+  const loadVoices = () => {
+    state.voices = window.speechSynthesis
+      .getVoices()
+      .filter((voice) => voice.lang.toLowerCase().startsWith("en"))
+      .sort((a, b) => scoreVoice(b) - scoreVoice(a));
+    renderVoiceOptions();
+  };
+
+  loadVoices();
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+  window.setTimeout(loadVoices, 500);
+}
+
+function renderVoiceOptions() {
+  els.voiceControl.innerHTML = "";
+
+  if (!state.voices.length) {
+    els.voiceControl.innerHTML = `<option value="">使用 browser 預設聲線</option>`;
+    els.voiceHint.textContent = "暫時未偵測到英文 voice，會用 browser 預設";
+    return;
+  }
+
+  if (!state.voices.some((voice) => voice.voiceURI === state.selectedVoiceURI)) {
+    state.selectedVoiceURI = state.voices[0].voiceURI;
+  }
+
+  state.voices.forEach((voice) => {
+    const option = document.createElement("option");
+    option.value = voice.voiceURI;
+    option.textContent = `${voice.name} · ${voice.lang}${voice.default ? " · default" : ""}`;
+    els.voiceControl.append(option);
+  });
+
+  els.voiceControl.value = state.selectedVoiceURI;
+  const selected = getSelectedVoice();
+  els.voiceHint.textContent = selected
+    ? `目前使用：${selected.name} (${selected.lang})`
+    : "使用 browser 預設聲線";
+}
+
+function scoreVoice(voice) {
+  const name = voice.name.toLowerCase();
+  let score = 0;
+  if (voice.default) score += 2;
+  if (voice.lang.toLowerCase() === "en-us") score += 7;
+  if (voice.lang.toLowerCase().startsWith("en-")) score += 4;
+  if (name.includes("natural") || name.includes("neural") || name.includes("online")) score += 20;
+  if (name.includes("google")) score += 14;
+  if (name.includes("microsoft")) score += 12;
+  if (name.includes("aria") || name.includes("jenny") || name.includes("ava") || name.includes("emma")) score += 10;
+  if (name.includes("zira") || name.includes("mark")) score += 9;
+  if (name.includes("samantha") || name.includes("daniel") || name.includes("brian")) score += 6;
+  if (name.includes("david")) score -= 6;
+  if (name.includes("compact") || name.includes("legacy")) score -= 8;
+  return score;
+}
+
+function getSelectedVoice() {
+  return state.voices.find((voice) => voice.voiceURI === state.selectedVoiceURI) || state.voices[0] || null;
+}
+
 function render() {
   renderTopMeta();
   renderLevels();
   renderDrill();
   renderArticle();
   renderStudyPanel();
+  renderPlaybackControls();
   updateProgress();
+}
+
+function renderPlaybackControls() {
+  els.rateControl.value = String(state.rate);
 }
 
 function renderTopMeta() {
@@ -257,7 +339,7 @@ function renderArticle() {
     row.addEventListener("click", () => {
       state.activeSentence = index;
       state.transcriptVisible = true;
-      speak(segment.audioText || sentence, () => markCompleted(index));
+      speakSegment(segment, () => markCompleted(index), "播放目前 segment");
       renderDrill();
       renderArticle();
     });
@@ -481,7 +563,7 @@ function bindControls() {
     state.transcriptVisible = false;
     state.activeStep = 0;
     renderDrill();
-    speak(getActiveSegment().audioText || getActiveSegment().transcript, () => markCompleted(state.activeSentence), "盲聽播放中");
+    speakSegment(getActiveSegment(), () => markCompleted(state.activeSentence), "盲聽播放中");
   });
 
   els.revealButton.addEventListener("click", () => {
@@ -493,13 +575,25 @@ function bindControls() {
 
   els.rateControl.addEventListener("change", (event) => {
     state.rate = Number(event.target.value);
+    localStorage.setItem("blackread.rate", String(state.rate));
     showToast(`播放速度已改為 ${state.rate}x。`);
+  });
+
+  els.voiceControl.addEventListener("change", (event) => {
+    state.selectedVoiceURI = event.target.value;
+    localStorage.setItem("blackread.voiceURI", state.selectedVoiceURI);
+    renderVoiceOptions();
+    showToast("聲線已更新。");
+  });
+
+  els.voiceTestButton.addEventListener("click", () => {
+    speak("This is the voice for your English listening practice.", null, "試聲播放中");
   });
 
   els.playArticleButton.addEventListener("click", playAll);
   els.repeatButton.addEventListener("click", () => {
     const segment = getActiveSegment();
-    speak(segment.audioText || segment.transcript, () => markCompleted(state.activeSentence), "重聽目前 segment");
+    speakSegment(segment, () => markCompleted(state.activeSentence), "重聽目前 segment");
   });
 
   els.shadowButton.addEventListener("click", () => {
@@ -543,7 +637,7 @@ function playAll() {
     renderArticle();
     renderDrill();
     const segment = getSegments()[index];
-    speak(segment.audioText || segment.transcript || state.article.sentences[index], () => {
+    speakSegment(segment, () => {
       markCompleted(index);
       index += 1;
       playNext();
@@ -560,15 +654,49 @@ function applyStep(index) {
 
   const segment = getActiveSegment();
   if (index === 0 || index === 3) {
-    speak(segment.audioText || segment.transcript, () => markCompleted(state.activeSentence), index === 0 ? "盲聽播放中" : "重聽播放中");
+    speakSegment(segment, () => markCompleted(state.activeSentence), index === 0 ? "盲聽播放中" : "重聽播放中");
   }
   if (index === 4) {
     state.activePanel = "speaking";
     renderStudyPanel();
-    speak(segment.transcript || segment.audioText, null, "跟讀播放中");
+    speakSegment(segment, null, "跟讀播放中");
   }
   if (index === 1) showToast("已顯示英文稿同中文解釋。");
   if (index === 2) showToast("已顯示 chunk 拆解。");
+}
+
+function speakSegment(segment, onEnd, statusText = "播放中") {
+  if (segment.audioUrl) {
+    playAudio(segment.audioUrl, onEnd, statusText, segment.audioText || segment.transcript || "");
+    return;
+  }
+  speak(segment.audioText || segment.transcript || "", onEnd, statusText);
+}
+
+function playAudio(audioUrl, onEnd, statusText = "播放中", fallbackText = "") {
+  stopCurrentPlayback();
+  const audio = new Audio(audioUrl);
+  state.currentAudio = audio;
+  audio.playbackRate = state.rate;
+  document.body.classList.add("is-playing");
+  showToast(statusText);
+  audio.addEventListener("ended", () => {
+    document.body.classList.remove("is-playing");
+    state.currentAudio = null;
+    onEnd?.();
+  });
+  audio.addEventListener("error", () => {
+    document.body.classList.remove("is-playing");
+    state.currentAudio = null;
+    showToast("Audio file 播唔到，已改用 browser 聲線。");
+    speak(fallbackText, onEnd, statusText);
+  });
+  audio.play().catch(() => {
+    document.body.classList.remove("is-playing");
+    state.currentAudio = null;
+    showToast("Audio file 播唔到，已改用 browser 聲線。");
+    speak(fallbackText, onEnd, statusText);
+  });
 }
 
 function speak(text, onEnd, statusText = "播放中") {
@@ -578,11 +706,16 @@ function speak(text, onEnd, statusText = "播放中") {
     return;
   }
 
-  window.speechSynthesis.cancel();
+  stopCurrentPlayback();
   const utterance = new SpeechSynthesisUtterance(text);
+  const selectedVoice = getSelectedVoice();
+  if (selectedVoice) {
+    utterance.voice = selectedVoice;
+  }
   utterance.lang = "en-US";
   utterance.rate = state.rate;
-  utterance.pitch = 1;
+  utterance.pitch = 0.96;
+  utterance.volume = 1;
   document.body.classList.add("is-playing");
   showToast(statusText);
   utterance.onend = () => {
@@ -594,6 +727,18 @@ function speak(text, onEnd, statusText = "播放中") {
     showToast("播放未能完成，請再按一次。");
   };
   window.speechSynthesis.speak(utterance);
+}
+
+function stopCurrentPlayback() {
+  if ("speechSynthesis" in window) {
+    window.speechSynthesis.cancel();
+  }
+  if (state.currentAudio) {
+    state.currentAudio.pause();
+    state.currentAudio.currentTime = 0;
+    state.currentAudio = null;
+  }
+  document.body.classList.remove("is-playing");
 }
 
 function markCompleted(index) {
