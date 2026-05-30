@@ -1,6 +1,13 @@
 {
-  "current": "./articles/2026-05-29-unanimous-vote.json",
+  "current": "./articles/2026-05-30-optical-illusions.json",
   "articles": [
+    {
+      "path": "./articles/2026-05-30-optical-illusions.json",
+      "id": "2026-05-30-optical-illusions",
+      "date": "2026-05-30",
+      "level": "B1-",
+      "title": "Optical Illusions at a Miami Museum"
+    },
     {
       "path": "./articles/2026-05-29-unanimous-vote.json",
       "id": "2026-05-29-unanimous-vote",
