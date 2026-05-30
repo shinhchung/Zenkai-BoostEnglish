@@ -1,0 +1,268 @@
+{
+  "id": "2026-05-30-optical-illusions",
+  "date": "2026-05-30",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "Optical Illusions at a Miami Museum",
+  "source": {
+    "type": "youtube",
+    "title": "News Words: Illusion",
+    "channel": "VOA Learning English",
+    "url": "https://learningenglish.voanews.com/a/8007357.html"
+  },
+  "tags": [
+    "YouTube 英文新聞",
+    "生活文化",
+    "字幕對齊聽力",
+    "詞數：約63",
+    "練習時間：約7分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "Opening the program",
+      "time": "00:01",
+      "audioText": "Welcome to the Voice of America's Newswords.",
+      "transcript": "Welcome to the Voice of America's Newswords.",
+      "translationZh": "歡迎收聽美國之音嘅《News Words》。",
+      "points": [
+        {
+          "label": "Welcome to",
+          "explanationZh": "新聞或節目開場常用 Welcome to，後面接節目或地方名。"
+        },
+        {
+          "label": "Voice of America's",
+          "explanationZh": "留意 America's 嘅 /z/ 音，後面連住 Newswords 聽。"
+        },
+        {
+          "label": "Newswords",
+          "explanationZh": "節目名可以整組記，意思係新聞入面常見嘅字詞。"
+        }
+      ]
+    },
+    {
+      "title": "Museum topic",
+      "time": "00:05",
+      "audioText": "A museum in Miami, Florida specializes in works of art that stretch the imagination.",
+      "transcript": "A museum in Miami, Florida specializes in works of art that stretch the imagination.",
+      "translationZh": "佛羅里達州邁阿密一間博物館專門展出啟發想像力嘅藝術作品。",
+      "points": [
+        {
+          "label": "A museum in Miami, Florida",
+          "explanationZh": "先聽地點：museum、Miami、Florida，幫你快速知道主題場景。"
+        },
+        {
+          "label": "specializes in",
+          "explanationZh": "specializes in 即係『專門做／專精於』，後面接範圍。"
+        },
+        {
+          "label": "stretch the imagination",
+          "explanationZh": "字面係『拉闊想像』，即係令人覺得新奇、需要想像。"
+        }
+      ]
+    },
+    {
+      "title": "Museum network",
+      "time": "00:12",
+      "audioText": "The Miami Paradox Museum is one of several paradox museums across the world.",
+      "transcript": "The Miami Paradox Museum is one of several paradox museums across the world.",
+      "translationZh": "邁阿密 Paradox Museum 係全球幾間 Paradox Museum 之一。",
+      "points": [
+        {
+          "label": "is one of several",
+          "explanationZh": "one of several 表示『幾個之中其中一個』，聽新聞介紹機構時好常見。"
+        },
+        {
+          "label": "paradox museums",
+          "explanationZh": "paradox 係『矛盾、悖論』；作名稱時可以保留英文讀法。"
+        },
+        {
+          "label": "across the world",
+          "explanationZh": "across the world 即係『世界各地』，比 around the world 稍正式。"
+        }
+      ]
+    },
+    {
+      "title": "Displays and photos",
+      "time": "00:20",
+      "audioText": "More than 70 of its displays produce optical illusions worthy of a photograph.",
+      "transcript": "More than 70 of its displays produce optical illusions worthy of a photograph.",
+      "translationZh": "館內超過七十個展品會製造值得拍照嘅視覺錯覺。",
+      "points": [
+        {
+          "label": "More than 70",
+          "explanationZh": "數字開頭要先抓住；more than 70 即係超過七十。"
+        },
+        {
+          "label": "produce optical illusions",
+          "explanationZh": "produce 呢度係『產生／製造』；optical illusions 係視覺錯覺。"
+        },
+        {
+          "label": "worthy of a photograph",
+          "explanationZh": "worthy of 表示『值得……』，即係值得影相留念。"
+        }
+      ]
+    },
+    {
+      "title": "Meaning of illusion",
+      "time": "00:36",
+      "audioText": "An illusion is anything that is false or not real, but that seems to be true or real.",
+      "transcript": "An illusion is anything that is false or not real, but that seems to be true or real.",
+      "translationZh": "illusion 係指任何假嘅或者唔真實、但似乎係真嘅東西。",
+      "points": [
+        {
+          "label": "An illusion is anything",
+          "explanationZh": "定義句常用 is anything / is something，聽到就準備記意思。"
+        },
+        {
+          "label": "false or not real",
+          "explanationZh": "false 同 not real 互相補充，意思都係『唔真』。"
+        },
+        {
+          "label": "seems to be true or real",
+          "explanationZh": "seems to be 表示『似乎係』，重點係表面同現實有差距。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "Welcome to the Voice of America's Newswords.",
+    "A museum in Miami, Florida specializes in works of art that stretch the imagination.",
+    "The Miami Paradox Museum is one of several paradox museums across the world.",
+    "More than 70 of its displays produce optical illusions worthy of a photograph.",
+    "An illusion is anything that is false or not real, but that seems to be true or real."
+  ],
+  "vocabulary": [
+    {
+      "word": "museum",
+      "ipa": "/mjuːˈziːəm/",
+      "partOfSpeech": "noun",
+      "meaningZh": "博物館",
+      "example": "The museum is popular with visitors.",
+      "translationZh": "呢間博物館好受遊客歡迎。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "specialize",
+      "ipa": "/ˈspeʃəlaɪz/",
+      "partOfSpeech": "verb",
+      "meaningZh": "專門研究；專精於",
+      "example": "The museum specializes in modern art.",
+      "translationZh": "呢間博物館專門展出現代藝術。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "imagination",
+      "ipa": "/ɪˌmædʒɪˈneɪʃən/",
+      "partOfSpeech": "noun",
+      "meaningZh": "想像力",
+      "example": "The artwork stretches the imagination.",
+      "translationZh": "呢件藝術品啟發想像力。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "paradox",
+      "ipa": "/ˈpærədɑːks/",
+      "partOfSpeech": "noun",
+      "meaningZh": "矛盾；悖論",
+      "example": "The museum uses paradoxes in its displays.",
+      "translationZh": "博物館喺展品入面運用矛盾概念。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "display",
+      "ipa": "/dɪˈspleɪ/",
+      "partOfSpeech": "noun",
+      "meaningZh": "展品；展示",
+      "example": "The display is worthy of a photograph.",
+      "translationZh": "呢個展品值得影相。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "optical",
+      "ipa": "/ˈɑːptɪkəl/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "視覺嘅；光學嘅",
+      "example": "Optical illusions can trick your eyes.",
+      "translationZh": "視覺錯覺可以呃到你雙眼。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "illusion",
+      "ipa": "/ɪˈluːʒən/",
+      "partOfSpeech": "noun",
+      "meaningZh": "錯覺；幻象",
+      "example": "An illusion seems real, but it is not.",
+      "translationZh": "illusion 似係真，但其實唔係。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "specializes in",
+      "meaningZh": "專門做；專精於",
+      "example": "A museum in Miami specializes in unusual art."
+    },
+    {
+      "phrase": "stretch the imagination",
+      "meaningZh": "啟發／拓展想像力",
+      "example": "These works of art stretch the imagination."
+    },
+    {
+      "phrase": "one of several",
+      "meaningZh": "幾個之中其中一個",
+      "example": "The Miami museum is one of several across the world."
+    },
+    {
+      "phrase": "worthy of a photograph",
+      "meaningZh": "值得影相嘅",
+      "example": "The display is worthy of a photograph."
+    },
+    {
+      "phrase": "seems to be",
+      "meaningZh": "似乎係；看似係",
+      "example": "An illusion seems to be true or real."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "prompt": "由 00:05 開始跟讀第二句，留意 specializes in 同 works of art 嘅連讀。",
+      "example": "A museum in Miami, Florida specializes in works of art that stretch the imagination."
+    },
+    {
+      "type": "dictation",
+      "prompt": "重播 00:20，先寫低 More than 70、optical illusions、worthy of a photograph 三個重點。",
+      "example": "More than 70 of its displays produce optical illusions worthy of a photograph."
+    },
+    {
+      "type": "substitution",
+      "prompt": "用 specializes in 改句，講一間你熟悉嘅店舖、公司或學校。",
+      "example": "This shop specializes in handmade gifts."
+    },
+    {
+      "type": "retelling",
+      "prompt": "用兩句英文複述：呢間博物館有咩特色？illusion 係咩意思？",
+      "example": "The museum has displays that produce optical illusions. An illusion seems real, but it is not real."
+    }
+  ],
+  "notes": [
+    "先用時間點逐句重播，盲聽一次，再看稿核對 museum、illusion、real 等關鍵字。",
+    "第二句較長，可以拆成地點、動詞 specializes in、內容 works of art 三段嚟聽。",
+    "第四句重點係數字同名詞組：More than 70 / its displays / optical illusions。",
+    "跟讀時留意 seems to be 嘅弱讀，呢個片語可用嚟描述『看似如此』嘅情況。"
+  ]
+}
