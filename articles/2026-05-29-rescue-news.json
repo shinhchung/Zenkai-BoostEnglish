@@ -1,0 +1,142 @@
+{
+  "id": "2026-05-29-rescue-news",
+  "date": "2026-05-29",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "Rescue in a Flooded Cave",
+  "source": {
+    "type": "youtube",
+    "title": "English news listening practice",
+    "channel": "Daily learning sample",
+    "url": "https://www.youtube.com/"
+  },
+  "tags": ["英文新聞", "聽力拆解", "詞數：128", "練習時間：8 分鐘"],
+  "methodSteps": ["盲聽", "看稿", "拆解", "重聽", "跟讀"],
+  "segments": [
+    {
+      "title": "Main headline",
+      "audioText": "Rescuers are racing to reach seven villagers trapped for a week in a flooded cave.",
+      "transcript": "Rescuers are racing to reach seven villagers trapped for a week in a flooded cave.",
+      "translationZh": "救援人員正趕住接觸七名被困喺水浸洞穴一星期嘅村民。",
+      "points": [
+        {
+          "label": "rescuers",
+          "explanationZh": "救援人員；新聞常用嚟講消防、搜救隊、志願救援隊。"
+        },
+        {
+          "label": "are racing to reach",
+          "explanationZh": "唔係真係跑步，意思係『正爭分奪秒趕去接觸/抵達』。"
+        },
+        {
+          "label": "trapped for a week",
+          "explanationZh": "被困咗一星期；for + 一段時間，講持續多久。"
+        }
+      ]
+    },
+    {
+      "title": "Difficult condition",
+      "audioText": "They are cramming through narrow, flooded corridors with very little room to move.",
+      "transcript": "They are cramming through narrow, flooded corridors with very little room to move.",
+      "translationZh": "佢哋要迫入狹窄又水浸嘅通道，幾乎冇乜空間郁動。",
+      "points": [
+        {
+          "label": "cramming through",
+          "explanationZh": "迫住穿過；有『空間好窄，要硬擠入去』嘅感覺。"
+        },
+        {
+          "label": "flooded corridors",
+          "explanationZh": "被水浸嘅通道；corridor 唔只係大廈走廊，洞穴通道都可以用。"
+        },
+        {
+          "label": "very little room",
+          "explanationZh": "room 呢度唔係房間，係『空間』。"
+        }
+      ]
+    },
+    {
+      "title": "Why it matters",
+      "audioText": "Officials say the rescue is dangerous, but every hour is important.",
+      "transcript": "Officials say the rescue is dangerous, but every hour is important.",
+      "translationZh": "官員表示救援行動好危險，但每一個鐘都好重要。",
+      "points": [
+        {
+          "label": "officials say",
+          "explanationZh": "新聞入面常見 opening，用嚟引述官方消息。"
+        },
+        {
+          "label": "the rescue is dangerous",
+          "explanationZh": "rescue 可以係名詞，指成個救援行動。"
+        },
+        {
+          "label": "every hour is important",
+          "explanationZh": "every + 單數名詞；強調每一個都重要。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "Rescuers are racing to reach seven villagers trapped for a week in a flooded cave.",
+    "They are cramming through narrow, flooded corridors with very little room to move.",
+    "Officials say the rescue is dangerous, but every hour is important."
+  ],
+  "vocabulary": [
+    {
+      "word": "rescuer",
+      "ipa": "/ˈres.kjuː.ər/",
+      "partOfSpeech": "n.",
+      "meaningZh": "救援人員",
+      "example": "Rescuers worked through the night.",
+      "translationZh": "救援人員通宵工作。",
+      "mastery": 3,
+      "nextReview": "明天"
+    },
+    {
+      "word": "cram",
+      "ipa": "/kræm/",
+      "partOfSpeech": "v.",
+      "meaningZh": "擠入；塞入",
+      "example": "People crammed into the small room.",
+      "translationZh": "人哋迫入間細房。",
+      "mastery": 2,
+      "nextReview": "2 天後"
+    },
+    {
+      "word": "corridor",
+      "ipa": "/ˈkɒr.ɪ.dɔːr/",
+      "partOfSpeech": "n.",
+      "meaningZh": "走廊；通道",
+      "example": "The corridor was full of water.",
+      "translationZh": "條通道滿晒水。",
+      "mastery": 4,
+      "nextReview": "後天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "race to reach",
+      "meaningZh": "爭分奪秒趕去接觸/抵達",
+      "example": "Teams are racing to reach the trapped workers."
+    },
+    {
+      "phrase": "very little room",
+      "meaningZh": "好少空間；幾乎郁唔到",
+      "example": "There was very little room inside the tunnel."
+    }
+  ],
+  "notes": [
+    "今日重點：新聞英文好多時一開頭就放 who + action + problem。",
+    "跟讀時先練 chunk：rescuers are racing / to reach seven villagers / trapped for a week。"
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "instructionZh": "先聽一次，然後逐 chunk 跟讀。",
+      "text": "Rescuers are racing to reach seven villagers."
+    },
+    {
+      "type": "substitution",
+      "instructionZh": "用同一句型換一個新聞主題講返。",
+      "pattern": "Officials say ___ is dangerous, but ___."
+    }
+  ]
+}
