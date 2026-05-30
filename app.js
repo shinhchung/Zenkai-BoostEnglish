@@ -126,6 +126,9 @@ const levelSteps = [
 
 const state = {
   article: fallbackArticle,
+  articleIndex: null,
+  articles: [],
+  currentArticlePath: "",
   activeSentence: 0,
   activePanel: "words",
   activeStep: 0,
@@ -142,10 +145,13 @@ const state = {
 const els = {
   todayLabel: document.querySelector("#todayLabel"),
   streakCount: document.querySelector("#streakCount"),
+  articleCount: document.querySelector("#articleCount"),
+  articleList: document.querySelector("#articleList"),
   levelTrack: document.querySelector("#levelTrack"),
   articleTitle: document.querySelector("#articleTitle"),
   articleTags: document.querySelector("#articleTags"),
   sourceLine: document.querySelector("#sourceLine"),
+  sourceVideo: document.querySelector("#sourceVideo"),
   sentenceList: document.querySelector("#sentenceList"),
   progressCount: document.querySelector("#progressCount"),
   progressFill: document.querySelector("#progressFill"),
@@ -185,17 +191,67 @@ async function init() {
   initVoices();
 }
 
-async function loadArticle() {
+async function loadArticle(articlePath) {
   try {
-    const indexRes = await fetch(ARTICLE_INDEX, { cache: "no-store" });
-    if (!indexRes.ok) throw new Error("Article index not found");
-    const index = await indexRes.json();
-    const articleRes = await fetch(index.current, { cache: "no-store" });
+    if (!state.articleIndex) {
+      const indexRes = await fetch(ARTICLE_INDEX, { cache: "no-store" });
+      if (!indexRes.ok) throw new Error("Article index not found");
+      state.articleIndex = await indexRes.json();
+      state.articles = normalizeArticleList(state.articleIndex);
+    }
+
+    const targetPath = articlePath || state.articleIndex.current || state.articles[0]?.path;
+    if (!targetPath) throw new Error("No article path found");
+
+    const articleRes = await fetch(targetPath, { cache: "no-store" });
     if (!articleRes.ok) throw new Error("Current article not found");
-    return await articleRes.json();
+    const article = await articleRes.json();
+    state.currentArticlePath = targetPath;
+    mergeArticleMetadata(targetPath, article);
+    return article;
   } catch (error) {
     console.info("Using bundled fallback article:", error.message);
+    state.currentArticlePath = "fallback";
+    state.articles = [{
+      path: "fallback",
+      id: fallbackArticle.id,
+      title: fallbackArticle.title,
+      date: fallbackArticle.date,
+      level: fallbackArticle.level,
+      tags: fallbackArticle.tags
+    }];
     return fallbackArticle;
+  }
+}
+
+function normalizeArticleList(index) {
+  const items = Array.isArray(index.articles) ? index.articles : [];
+  const list = items
+    .map((item) => typeof item === "string" ? { path: item } : { ...item })
+    .filter((item) => item.path);
+
+  if (index.current && !list.some((item) => item.path === index.current)) {
+    list.unshift({ path: index.current });
+  }
+
+  return list;
+}
+
+function mergeArticleMetadata(path, article) {
+  const existing = state.articles.find((item) => item.path === path);
+  const meta = {
+    path,
+    id: article.id,
+    title: article.title,
+    date: article.date,
+    level: article.level,
+    tags: article.tags || []
+  };
+
+  if (existing) {
+    Object.assign(existing, meta);
+  } else {
+    state.articles.unshift(meta);
   }
 }
 
@@ -283,6 +339,7 @@ function getSelectedVoice() {
 
 function render() {
   renderTopMeta();
+  renderArticleLibrary();
   renderLevels();
   renderDrill();
   renderArticle();
@@ -306,6 +363,27 @@ function renderTopMeta() {
   els.streakCount.textContent = String(getStreak());
 }
 
+function renderArticleLibrary() {
+  const total = state.articles.length;
+  els.articleCount.textContent = `${total} 篇英文`;
+  els.articleList.innerHTML = "";
+
+  state.articles.forEach((item, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `article-item${item.path === state.currentArticlePath ? " active" : ""}`;
+    button.innerHTML = `
+      <span class="article-item-title">${escapeHtml(item.title || getFilenameTitle(item.path))}</span>
+      <span class="article-item-meta">
+        <span>${escapeHtml(formatArticleDate(item.date) || `Article ${index + 1}`)}</span>
+        <span>${escapeHtml(item.level || "")}</span>
+      </span>
+    `;
+    button.addEventListener("click", () => switchArticle(item.path));
+    els.articleList.append(button);
+  });
+}
+
 function renderLevels() {
   els.levelTrack.innerHTML = "";
   levelSteps.forEach((step) => {
@@ -321,7 +399,7 @@ function renderArticle() {
   els.nextLevelLabel.textContent = state.article.nextLevel || "B1（中級）";
   renderSource();
   els.articleTags.innerHTML = "";
-  state.article.tags.forEach((tag) => {
+  (state.article.tags || []).forEach((tag) => {
     const el = document.createElement("span");
     el.textContent = tag;
     els.articleTags.append(el);
@@ -336,12 +414,24 @@ function renderArticle() {
     row.classList.toggle("active", index === state.activeSentence);
     row.querySelector(".sentence-number").textContent = `S${index + 1}`;
     row.querySelector(".sentence-text").textContent = sentence;
+    const startTime = getSegmentStartSeconds(segment);
+    if (startTime !== null) {
+      const time = document.createElement("span");
+      time.className = "sentence-time";
+      time.textContent = formatTimecode(startTime);
+      row.append(time);
+    }
     row.addEventListener("click", () => {
       state.activeSentence = index;
       state.transcriptVisible = true;
-      speakSegment(segment, () => markCompleted(index), "播放目前 segment");
       renderDrill();
       renderArticle();
+      if (playSourceVideoFromSegment(segment)) {
+        markCompleted(index);
+        showToast(`YouTube 已跳到 ${formatTimecode(getSegmentStartSeconds(segment))}`);
+      } else {
+        speakSegment(segment, () => markCompleted(index), "播放目前 segment");
+      }
     });
     els.sentenceList.append(row);
   });
@@ -352,13 +442,31 @@ function renderSource() {
   if (!source || !source.url) {
     els.sourceLine.classList.add("hidden");
     els.sourceLine.innerHTML = "";
+    els.sourceVideo.classList.add("hidden");
+    els.sourceVideo.innerHTML = "";
     return;
   }
 
   els.sourceLine.classList.remove("hidden");
-  els.sourceLine.innerHTML = `
-    <span>Source: ${escapeHtml(source.channel || "YouTube")} · ${escapeHtml(source.title || "News clip")}</span>
-    <a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">打開原片</a>
+  els.sourceLine.innerHTML = `<span>Source: ${escapeHtml(source.channel || "YouTube")} · ${escapeHtml(source.title || "News clip")}</span>`;
+
+  const embedUrl = getYouTubeEmbedUrl(source.url, getEmbedTiming(getActiveSegment()));
+  if (!embedUrl) {
+    els.sourceVideo.classList.add("hidden");
+    els.sourceVideo.innerHTML = "";
+    return;
+  }
+
+  els.sourceVideo.classList.remove("hidden");
+  els.sourceVideo.innerHTML = `
+    <iframe
+      src="${escapeHtml(embedUrl)}"
+      title="${escapeHtml(source.title || "YouTube original video")}"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
   `;
 }
 
@@ -401,6 +509,11 @@ function renderStudyPanel() {
     button.classList.toggle("active", button.dataset.panel === state.activePanel);
   });
 
+  if (state.activePanel === "saved") {
+    renderSavedVocabulary();
+    return;
+  }
+
   if (state.activePanel === "phrases") {
     renderPhrases();
     return;
@@ -421,25 +534,66 @@ function renderStudyPanel() {
 
 function renderVocabulary() {
   els.wordList.innerHTML = "";
-  const template = document.querySelector("#wordTemplate");
-  state.article.vocabulary.forEach((item) => {
-    const card = template.content.firstElementChild.cloneNode(true);
-    const saved = state.savedWords.has(item.word);
-    card.querySelector("h2").textContent = item.word;
-    card.querySelector(".ipa").textContent = item.ipa;
-    card.querySelector(".meaning").innerHTML = `${item.partOfSpeech} <strong>${item.meaningZh}</strong>`;
-    card.querySelector(".example").textContent = item.example;
-    card.querySelector(".translation").textContent = item.translationZh;
-    card.querySelector(".mastery").textContent = `熟悉度 ${"★".repeat(item.mastery)}${"☆".repeat(5 - item.mastery)} · 下次復習 ${item.nextReview}`;
+  const vocabulary = getArticleVocabulary();
+  if (!vocabulary.length) {
+    els.wordList.innerHTML = `<p class="notice">今日文章暫時未有生詞。</p>`;
+    els.saveWordsButton.classList.remove("saved");
+    return;
+  }
 
-    card.querySelector(".word-audio").addEventListener("click", () => speak(item.word));
-    const saveButton = card.querySelector(".save-word");
-    saveButton.classList.toggle("saved", saved);
-    saveButton.addEventListener("click", () => toggleSavedWord(item.word));
-    els.wordList.append(card);
+  vocabulary.forEach((item) => {
+    els.wordList.append(createVocabularyCard(item));
   });
 
-  els.saveWordsButton.classList.toggle("saved", state.article.vocabulary.every((item) => state.savedWords.has(item.word)));
+  els.saveWordsButton.classList.toggle("saved", vocabulary.every((item) => state.savedWords.has(item.word)));
+}
+
+function renderSavedVocabulary() {
+  els.wordList.innerHTML = "";
+
+  if (!state.savedWords.size) {
+    els.wordList.innerHTML = `<p class="notice">未有已儲存生詞。先喺文章生詞按書籤，或者用下面「加入生詞本」。</p>`;
+    els.saveWordsButton.classList.remove("saved");
+    return;
+  }
+
+  const summary = document.createElement("div");
+  summary.className = "saved-book-summary";
+  summary.innerHTML = `
+    <strong>${state.savedWords.size} 個已儲存生詞</strong>
+    <span>呢度集中你儲存過嘅字；按書籤可以即時移除。</span>
+  `;
+  els.wordList.append(summary);
+
+  getSavedVocabularyEntries().forEach((item) => {
+    els.wordList.append(createVocabularyCard(item));
+  });
+
+  const vocabulary = getArticleVocabulary();
+  els.saveWordsButton.classList.toggle("saved", vocabulary.length > 0 && vocabulary.every((item) => state.savedWords.has(item.word)));
+}
+
+function createVocabularyCard(item) {
+  const template = document.querySelector("#wordTemplate");
+  const card = template.content.firstElementChild.cloneNode(true);
+  const word = item.word || "";
+  const mastery = clampMastery(item.mastery);
+  const saved = state.savedWords.has(word);
+
+  card.querySelector("h2").textContent = word;
+  card.querySelector(".ipa").textContent = item.ipa || "";
+  card.querySelector(".meaning").innerHTML = `${escapeHtml(item.partOfSpeech || "")} <strong>${escapeHtml(item.meaningZh || "已儲存生詞")}</strong>`;
+  card.querySelector(".example").textContent = item.example || "之後文章再出現呢個字，生詞本會保留記錄。";
+  card.querySelector(".translation").textContent = item.translationZh || "";
+  card.querySelector(".mastery").textContent = `熟悉度 ${"★".repeat(mastery)}${"☆".repeat(5 - mastery)} · 下次復習 ${item.nextReview || "下次復習"}`;
+
+  card.querySelector(".word-audio").addEventListener("click", () => speak(word));
+  const saveButton = card.querySelector(".save-word");
+  saveButton.classList.toggle("saved", saved);
+  saveButton.title = saved ? "移出生詞本" : "加入生詞本";
+  saveButton.setAttribute("aria-label", saved ? `移除 ${word}` : `儲存 ${word}`);
+  saveButton.addEventListener("click", () => toggleSavedWord(word));
+  return card;
 }
 
 function renderPhrases() {
@@ -523,7 +677,7 @@ function bindControls() {
       document.querySelectorAll(".nav-tab").forEach((tab) => tab.classList.remove("active"));
       button.classList.add("active");
       if (button.dataset.view === "vocab") {
-        state.activePanel = "words";
+        state.activePanel = "saved";
         renderStudyPanel();
         document.querySelector(".study-panel").scrollIntoView({ behavior: "smooth", block: "start" });
         showToast("已打開生詞本。");
@@ -563,7 +717,13 @@ function bindControls() {
     state.transcriptVisible = false;
     state.activeStep = 0;
     renderDrill();
-    speakSegment(getActiveSegment(), () => markCompleted(state.activeSentence), "盲聽播放中");
+    const segment = getActiveSegment();
+    if (playSourceVideoFromSegment(segment)) {
+      markCompleted(state.activeSentence);
+      showToast(`盲聽：YouTube 已跳到 ${formatTimecode(getSegmentStartSeconds(segment))}`);
+    } else {
+      speakSegment(segment, () => markCompleted(state.activeSentence), "盲聽播放中");
+    }
   });
 
   els.revealButton.addEventListener("click", () => {
@@ -593,7 +753,12 @@ function bindControls() {
   els.playArticleButton.addEventListener("click", playAll);
   els.repeatButton.addEventListener("click", () => {
     const segment = getActiveSegment();
-    speakSegment(segment, () => markCompleted(state.activeSentence), "重聽目前 segment");
+    if (playSourceVideoFromSegment(segment)) {
+      markCompleted(state.activeSentence);
+      showToast(`重聽：YouTube 已跳到 ${formatTimecode(getSegmentStartSeconds(segment))}`);
+    } else {
+      speakSegment(segment, () => markCompleted(state.activeSentence), "重聽目前 segment");
+    }
   });
 
   els.shadowButton.addEventListener("click", () => {
@@ -607,10 +772,12 @@ function bindControls() {
   });
 
   els.saveWordsButton.addEventListener("click", () => {
-    state.article.vocabulary.forEach((item) => state.savedWords.add(item.word));
+    const vocabulary = getArticleVocabulary();
+    vocabulary.forEach((item) => state.savedWords.add(item.word));
     persistSavedWords();
+    state.activePanel = "saved";
     renderStudyPanel();
-    showToast(`已加入 ${state.article.vocabulary.length} 個生詞。`);
+    showToast(`已加入 ${vocabulary.length} 個生詞。`);
   });
 
   els.exportButton.addEventListener("click", exportArticle);
@@ -619,6 +786,27 @@ function bindControls() {
     localStorage.setItem("blackread.nextLevelRequested", state.article.date);
     showToast("已記低：明日難度加深少少。");
   });
+}
+
+async function switchArticle(path) {
+  if (!path || path === state.currentArticlePath) return;
+
+  try {
+    stopCurrentPlayback();
+    state.article = await loadArticle(path);
+    applyStoredPreferences();
+    state.activeSentence = 0;
+    state.activeStep = 0;
+    state.activePanel = "words";
+    state.transcriptVisible = false;
+    restoreProgress();
+    render();
+    document.querySelector(".reader-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+    showToast(`已載入：${state.article.title}`);
+  } catch (error) {
+    showToast("文章載入失敗，請檢查 articles/index.json。");
+    console.error(error);
+  }
 }
 
 function renderShadowButton() {
@@ -654,7 +842,12 @@ function applyStep(index) {
 
   const segment = getActiveSegment();
   if (index === 0 || index === 3) {
-    speakSegment(segment, () => markCompleted(state.activeSentence), index === 0 ? "盲聽播放中" : "重聽播放中");
+    if (playSourceVideoFromSegment(segment)) {
+      markCompleted(state.activeSentence);
+      showToast(`${index === 0 ? "盲聽" : "重聽"}：YouTube 已跳到 ${formatTimecode(getSegmentStartSeconds(segment))}`);
+    } else {
+      speakSegment(segment, () => markCompleted(state.activeSentence), index === 0 ? "盲聽播放中" : "重聽播放中");
+    }
   }
   if (index === 4) {
     state.activePanel = "speaking";
@@ -773,7 +966,34 @@ function getActiveSegment() {
   return getSegments()[state.activeSentence] || getSegments()[0] || {};
 }
 
+function getArticleVocabulary() {
+  return Array.isArray(state.article.vocabulary) ? state.article.vocabulary : [];
+}
+
+function getSavedVocabularyEntries() {
+  const vocabulary = getArticleVocabulary();
+  return [...state.savedWords]
+    .sort((a, b) => a.localeCompare(b))
+    .map((word) => vocabulary.find((item) => item.word === word) || {
+      word,
+      ipa: "",
+      partOfSpeech: "",
+      meaningZh: "已儲存",
+      example: "之後文章再出現呢個字，生詞本會保留記錄。",
+      translationZh: "",
+      mastery: 1,
+      nextReview: "下次復習"
+    });
+}
+
+function clampMastery(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return 0;
+  return Math.max(0, Math.min(5, Math.round(number)));
+}
+
 function toggleSavedWord(word) {
+  if (!word) return;
   if (state.savedWords.has(word)) {
     state.savedWords.delete(word);
     showToast(`已移除 ${word}。`);
@@ -796,6 +1016,106 @@ function progressKey() {
 function getStreak() {
   const stored = Number(localStorage.getItem("blackread.streak") || "1");
   return Math.max(1, stored);
+}
+
+function formatArticleDate(dateValue) {
+  if (!dateValue) return "";
+  const date = new Date(`${dateValue}T12:00:00`);
+  if (Number.isNaN(date.getTime())) return dateValue;
+  return new Intl.DateTimeFormat("zh-Hant-HK", {
+    month: "short",
+    day: "numeric"
+  }).format(date);
+}
+
+function getFilenameTitle(path) {
+  return String(path)
+    .split("/")
+    .pop()
+    .replace(/\.json$/i, "")
+    .replace(/^\d{4}-\d{2}-\d{2}-/, "")
+    .replace(/-/g, " ");
+}
+
+function playSourceVideoFromSegment(segment) {
+  const source = state.article.source;
+  if (!source?.url || getSegmentStartSeconds(segment) === null) return false;
+  const embedUrl = getYouTubeEmbedUrl(source.url, { ...getEmbedTiming(segment), autoplay: true });
+  if (!embedUrl || els.sourceVideo.classList.contains("hidden")) return false;
+  const iframe = els.sourceVideo.querySelector("iframe");
+  if (!iframe) return false;
+  stopCurrentPlayback();
+  iframe.src = embedUrl;
+  return true;
+}
+
+function getEmbedTiming(segment) {
+  const start = getSegmentStartSeconds(segment);
+  const end = getSegmentEndSeconds(segment);
+  return {
+    start,
+    end: end !== null && start !== null && end > start ? end : null
+  };
+}
+
+function getSegmentStartSeconds(segment) {
+  return parseTimeToSeconds(segment?.startTime ?? segment?.start ?? segment?.time ?? segment?.timestamp ?? segment?.youtubeStart);
+}
+
+function getSegmentEndSeconds(segment) {
+  return parseTimeToSeconds(segment?.endTime ?? segment?.end ?? segment?.youtubeEnd);
+}
+
+function parseTimeToSeconds(value) {
+  if (value === undefined || value === null || value === "") return null;
+  if (typeof value === "number" && Number.isFinite(value)) return Math.max(0, Math.floor(value));
+
+  const raw = String(value).trim();
+  if (/^\d+$/.test(raw)) return Number(raw);
+
+  const parts = raw.split(":").map((part) => Number(part));
+  if (parts.some((part) => !Number.isFinite(part))) return null;
+  if (parts.length === 2) return Math.max(0, Math.floor(parts[0] * 60 + parts[1]));
+  if (parts.length === 3) return Math.max(0, Math.floor(parts[0] * 3600 + parts[1] * 60 + parts[2]));
+  return null;
+}
+
+function formatTimecode(seconds) {
+  if (seconds === null) return "";
+  const h = Math.floor(seconds / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  const s = seconds % 60;
+  if (h) return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+  return `${m}:${String(s).padStart(2, "0")}`;
+}
+
+function getYouTubeEmbedUrl(url, timing = {}) {
+  const videoId = getYouTubeVideoId(url);
+  if (!videoId) return "";
+  const params = new URLSearchParams({
+    rel: "0",
+    modestbranding: "1"
+  });
+  if (timing.start !== null && timing.start !== undefined) params.set("start", String(timing.start));
+  if (timing.end !== null && timing.end !== undefined) params.set("end", String(timing.end));
+  if (timing.autoplay) params.set("autoplay", "1");
+  return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
+}
+
+function getYouTubeVideoId(url) {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.replace(/^www\./, "");
+    if (host === "youtu.be") return parsed.pathname.split("/").filter(Boolean)[0] || "";
+    if (!host.endsWith("youtube.com")) return "";
+    if (parsed.pathname === "/watch") return parsed.searchParams.get("v") || "";
+    const parts = parsed.pathname.split("/").filter(Boolean);
+    if (["shorts", "embed", "live"].includes(parts[0])) return parts[1] || "";
+  } catch (error) {
+    const match = String(url).match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/|live\/))([A-Za-z0-9_-]{6,})/);
+    return match?.[1] || "";
+  }
+  return "";
 }
 
 function exportArticle() {

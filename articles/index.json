@@ -1,3 +1,19 @@
 {
-  "current": "./articles/2026-05-29-rocket-test.json"
+  "current": "./articles/2026-05-29-rocket-test.json",
+  "articles": [
+    {
+      "path": "./articles/2026-05-29-rocket-test.json",
+      "id": "2026-05-29-rocket-test",
+      "date": "2026-05-29",
+      "level": "B1-",
+      "title": "Rocket Test Ends in Explosion"
+    },
+    {
+      "path": "./articles/2026-05-29-rescue-news.json",
+      "id": "2026-05-29-rescue-news",
+      "date": "2026-05-29",
+      "level": "B1-",
+      "title": "Rescue in a Flooded Cave"
+    }
+  ]
 }

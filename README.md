@@ -14,7 +14,25 @@ Daily upload flow:
 
 1. Create a new article JSON under `articles/`.
 2. Update `articles/index.json` so `current` points to the new file.
-3. Keep the same schema as `articles/2026-05-29-small-habits.json`.
+3. Add the new article metadata to `articles/index.json` `articles` so the left menu can show the article count and history.
+4. Keep the same schema as `articles/2026-05-29-rocket-test.json`.
+
+Article index format:
+
+```json
+{
+  "current": "./articles/2026-05-30-topic.json",
+  "articles": [
+    {
+      "path": "./articles/2026-05-30-topic.json",
+      "id": "2026-05-30-topic",
+      "date": "2026-05-30",
+      "level": "B1-",
+      "title": "Article title"
+    }
+  ]
+}
+```
 
 Article fields. `segments` drives the Shorts-style workflow: blind listen, reveal transcript, explain key chunks, replay, then shadow.
 
@@ -36,6 +54,8 @@ Article fields. `segments` drives the Shorts-style workflow: blind listen, revea
   "segments": [
     {
       "title": "Main headline",
+      "startTime": "0:42",
+      "endTime": "0:56",
       "audioUrl": "./audio/YYYY-MM-DD-topic/segment-1.mp3",
       "audioText": "Rescuers are racing to reach seven villagers trapped for a week in a flooded cave.",
       "transcript": "Rescuers are racing to reach seven villagers trapped for a week in a flooded cave.",
@@ -81,3 +101,5 @@ Article fields. `segments` drives the Shorts-style workflow: blind listen, revea
 
 The app uses the browser Web Speech API for pronunciation playback, so no backend is required.
 If an article segment includes `audioUrl`, the app plays that file first and only falls back to Web Speech when the file cannot load.
+If `source.url` is a YouTube URL, the original video is embedded in the main reader area.
+If a segment includes `startTime` and optional `endTime`, clicking that segment starts the embedded YouTube video at that timestamp. Time can be seconds (`83`) or a timecode (`"1:23"` / `"01:23"`).

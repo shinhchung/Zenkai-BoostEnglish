@@ -40,6 +40,16 @@
       </header>
 
       <main class="learning-layout">
+        <aside class="library-panel" aria-label="文章庫">
+          <div class="library-head">
+            <div>
+              <h2>文章庫</h2>
+              <p id="articleCount">0 篇英文</p>
+            </div>
+          </div>
+          <div class="article-list" id="articleList"></div>
+        </aside>
+
         <section class="level-strip" aria-label="難度進程">
           <div class="level-label">難度等級</div>
           <div class="level-track" id="levelTrack"></div>
@@ -58,6 +68,8 @@
               原聲連播
             </button>
           </div>
+
+          <div class="source-video hidden" id="sourceVideo"></div>
 
           <div class="drill-board" id="drillBoard">
             <div class="drill-steps" id="drillSteps" aria-label="聽力練習步驟"></div>
@@ -92,6 +104,7 @@
 
         <aside class="study-panel" aria-label="生字學習">
           <div class="panel-tabs" role="tablist">
+            <button class="panel-tab" type="button" data-panel="saved">已儲存</button>
             <button class="panel-tab active" type="button" data-panel="words">生詞</button>
             <button class="panel-tab" type="button" data-panel="phrases">重點片語</button>
             <button class="panel-tab" type="button" data-panel="speaking">講</button>
