@@ -1,0 +1,237 @@
+{
+  "id": "2026-05-29-rocket-test",
+  "date": "2026-05-29",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "Rocket Test Ends in Explosion",
+  "source": {
+    "type": "youtube",
+    "title": "Breaking News: Blue Origin New Glenn rocket explodes during launch pad test",
+    "channel": "Spaceflight Now",
+    "url": "https://www.youtube.com/watch?v=1O90WZJALYc"
+  },
+  "tags": [
+    "YouTube 英文新聞",
+    "科技新聞",
+    "聽力拆解",
+    "詞數：約122",
+    "練習時間：約8分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "A test goes wrong",
+      "audioText": "A Blue Origin rocket exploded during an engine test at a launch pad in Florida.",
+      "transcript": "A Blue Origin rocket exploded during an engine test at a launch pad in Florida.",
+      "translationZh": "一支 Blue Origin 火箭喺佛羅里達一個發射台做引擎測試期間爆炸。",
+      "points": [
+        {
+          "label": "exploded during",
+          "explanationZh": "聽到 exploded during，意思係『喺某件事期間爆炸』，during 後面通常接活動或時間。"
+        },
+        {
+          "label": "an engine test",
+          "explanationZh": "engine test 係『引擎測試』；新聞會用簡短名詞組交代發生咩事。"
+        },
+        {
+          "label": "at a launch pad",
+          "explanationZh": "at a launch pad 指地點：喺發射台，而唔係已經升空。"
+        }
+      ]
+    },
+    {
+      "title": "People are safe",
+      "audioText": "The company said all workers were safe, and no one was hurt in the blast.",
+      "transcript": "The company said all workers were safe, and no one was hurt in the blast.",
+      "translationZh": "公司表示所有工作人員都安全，爆炸中冇人受傷。",
+      "points": [
+        {
+          "label": "The company said",
+          "explanationZh": "新聞常用 The company said 交代消息來源，聽到 said 就準備接官方說法。"
+        },
+        {
+          "label": "all workers were safe",
+          "explanationZh": "all workers were safe 係重點好消息：所有員工安全。"
+        },
+        {
+          "label": "no one was hurt",
+          "explanationZh": "no one was hurt 係自然新聞句，等於『冇人受傷』。"
+        }
+      ]
+    },
+    {
+      "title": "The planned mission",
+      "audioText": "The rocket was being prepared to carry internet satellites into low Earth orbit next week.",
+      "transcript": "The rocket was being prepared to carry internet satellites into low Earth orbit next week.",
+      "translationZh": "呢支火箭原本正準備下星期運送互聯網衛星去近地軌道。",
+      "points": [
+        {
+          "label": "was being prepared",
+          "explanationZh": "was being prepared 表示『當時正被準備』，比 was prepared 更有進行中嘅感覺。"
+        },
+        {
+          "label": "to carry internet satellites",
+          "explanationZh": "to carry 說明目的：用嚟運送互聯網衛星。"
+        },
+        {
+          "label": "low Earth orbit",
+          "explanationZh": "low Earth orbit 係科技新聞常見詞，指離地球較近嘅軌道。"
+        }
+      ]
+    },
+    {
+      "title": "What happens next",
+      "audioText": "Officials will investigate the cause, so future launches may be delayed for some time.",
+      "transcript": "Officials will investigate the cause, so future launches may be delayed for some time.",
+      "translationZh": "官員會調查原因，所以未來嘅發射可能會延遲一段時間。",
+      "points": [
+        {
+          "label": "investigate the cause",
+          "explanationZh": "investigate the cause 係『調查原因』，cause 呢度係名詞。"
+        },
+        {
+          "label": "so future launches",
+          "explanationZh": "so 連接結果；future launches 指之後嘅火箭發射。"
+        },
+        {
+          "label": "may be delayed",
+          "explanationZh": "may be delayed 表示『可能會延遲』，語氣保留，符合新聞未確認情況。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "A Blue Origin rocket exploded during an engine test at a launch pad in Florida.",
+    "The company said all workers were safe, and no one was hurt in the blast.",
+    "The rocket was being prepared to carry internet satellites into low Earth orbit next week.",
+    "Officials will investigate the cause, so future launches may be delayed for some time."
+  ],
+  "vocabulary": [
+    {
+      "word": "rocket",
+      "ipa": "/ˈrɑːkɪt/",
+      "partOfSpeech": "noun",
+      "meaningZh": "火箭",
+      "example": "The rocket stayed on the ground during the test.",
+      "translationZh": "火箭喺測試期間留喺地面。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "explode",
+      "ipa": "/ɪkˈsploʊd/",
+      "partOfSpeech": "verb",
+      "meaningZh": "爆炸",
+      "example": "The engine problem caused part of the rocket to explode.",
+      "translationZh": "引擎問題令火箭一部分爆炸。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "engine",
+      "ipa": "/ˈendʒɪn/",
+      "partOfSpeech": "noun",
+      "meaningZh": "引擎；發動機",
+      "example": "Engine tests help teams check a rocket before launch.",
+      "translationZh": "引擎測試幫團隊喺發射前檢查火箭。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "launch",
+      "ipa": "/lɔːntʃ/",
+      "partOfSpeech": "noun / verb",
+      "meaningZh": "發射；推出",
+      "example": "The launch may be delayed after the accident.",
+      "translationZh": "事故之後，發射可能會延遲。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "satellite",
+      "ipa": "/ˈsætəlaɪt/",
+      "partOfSpeech": "noun",
+      "meaningZh": "衛星",
+      "example": "The mission was planned to carry internet satellites.",
+      "translationZh": "任務原定運送互聯網衛星。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "investigate",
+      "ipa": "/ɪnˈvestɪɡeɪt/",
+      "partOfSpeech": "verb",
+      "meaningZh": "調查",
+      "example": "Officials will investigate what caused the blast.",
+      "translationZh": "官員會調查爆炸原因。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "delay",
+      "ipa": "/dɪˈleɪ/",
+      "partOfSpeech": "verb / noun",
+      "meaningZh": "延遲；延誤",
+      "example": "A safety review can delay the next flight.",
+      "translationZh": "安全審查可能會延遲下一次飛行。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "during an engine test",
+      "meaningZh": "喺引擎測試期間",
+      "example": "The problem happened during an engine test."
+    },
+    {
+      "phrase": "no one was hurt",
+      "meaningZh": "冇人受傷",
+      "example": "The blast looked serious, but no one was hurt."
+    },
+    {
+      "phrase": "was being prepared to",
+      "meaningZh": "當時正被準備去做某事",
+      "example": "The rocket was being prepared to carry satellites."
+    },
+    {
+      "phrase": "may be delayed",
+      "meaningZh": "可能會延遲",
+      "example": "The next launch may be delayed."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "prompt": "跟讀第一句，特別留意 exploded during an engine test 嘅節奏。",
+      "example": "A Blue Origin rocket exploded during an engine test at a launch pad in Florida."
+    },
+    {
+      "type": "substitution",
+      "prompt": "用 no one was hurt 改句，換入唔同事件。",
+      "example": "The fire was big, but no one was hurt."
+    },
+    {
+      "type": "retelling",
+      "prompt": "用兩句英文講返新聞重點：發生咩事？有冇人受傷？",
+      "example": "A rocket exploded during a test. The company said all workers were safe."
+    },
+    {
+      "type": "personal-response",
+      "prompt": "用一句英文講你覺得點解測試前安全檢查重要。",
+      "example": "Safety tests are important because rockets are powerful machines."
+    }
+  ],
+  "notes": [
+    "聽科技新聞時，先抓住事件動詞：exploded, said, prepared, investigate。",
+    "遇到長名詞組，例如 internet satellites into low Earth orbit，可以分成 internet satellites / into low Earth orbit 兩段聽。",
+    "may be delayed 係新聞常用保留語氣，表示可能發生，但未百分百確定。",
+    "跟讀時唔需要逐字用力，先模仿句子重音：rocket, exploded, engine test, no one, delayed。"
+  ]
+}
