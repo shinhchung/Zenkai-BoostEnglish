@@ -1,6 +1,13 @@
 {
-  "current": "./articles/2026-05-30-optical-illusions.json",
+  "current": "./articles/2026-05-31-rustic-island.json",
   "articles": [
+    {
+      "path": "./articles/2026-05-31-rustic-island.json",
+      "id": "2026-05-31-rustic-island",
+      "date": "2026-05-31",
+      "level": "B1-",
+      "title": "Rustic Life on Pulau Ubin"
+    },
     {
       "path": "./articles/2026-05-30-optical-illusions.json",
       "id": "2026-05-30-optical-illusions",
