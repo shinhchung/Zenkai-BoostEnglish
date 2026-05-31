@@ -1,0 +1,264 @@
+{
+  "id": "2026-05-31-rustic-island",
+  "date": "2026-05-31",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "Rustic Life on Pulau Ubin",
+  "source": {
+    "type": "youtube",
+    "title": "News Words: Rustic",
+    "channel": "VOA Learning English",
+    "url": "https://www.youtube.com/watch?v=P1pEUQr_mZM"
+  },
+  "tags": [
+    "YouTube 英文新聞",
+    "生活文化",
+    "字幕對齊聽力",
+    "詞數：約75",
+    "練習時間：約7分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "Island near Singapore",
+      "time": "00:04",
+      "audioText": "A tiny island of Singapore sits just 17 kilometers away from the highly developed city-state.",
+      "transcript": "A tiny island of Singapore sits just 17 kilometers away from the highly developed city-state.",
+      "translationZh": "新加坡一個細小島嶼，就喺呢個高度發展嘅城市國家 17 公里之外。",
+      "points": [
+        {
+          "label": "A tiny island of Singapore",
+          "explanationZh": "先聽主角：tiny island，即係一個細小島嶼。"
+        },
+        {
+          "label": "sits just 17 kilometers away",
+          "explanationZh": "sits 呢度係『位於』；just 強調距離好近。"
+        },
+        {
+          "label": "highly developed city-state",
+          "explanationZh": "highly developed 係『高度發展』；city-state 指城市國家。"
+        }
+      ]
+    },
+    {
+      "title": "Small population",
+      "time": "00:13",
+      "audioText": "The island of Pulau Ubin has a small population.",
+      "transcript": "The island of Pulau Ubin has a small population.",
+      "translationZh": "Pulau Ubin 呢個島人口好少。",
+      "points": [
+        {
+          "label": "The island of Pulau Ubin",
+          "explanationZh": "of 後面係島名，聽到 Pulau Ubin 就知道地點。"
+        },
+        {
+          "label": "has a small population",
+          "explanationZh": "population 係人口；small population 即係人口少。"
+        }
+      ]
+    },
+    {
+      "title": "Fewer residents now",
+      "time": "00:18",
+      "audioText": "Chu Yok Choon is one of 30 people living there, down from almost 4,000 60 years ago.",
+      "transcript": "Chu Yok Choon is one of 30 people living there, down from almost 4,000 60 years ago.",
+      "translationZh": "Chu Yok Choon 係而家住喺嗰度嘅 30 人之一，而 60 年前曾經接近 4,000 人。",
+      "points": [
+        {
+          "label": "one of 30 people",
+          "explanationZh": "one of 30 表示三十人之中其中一個，數字要聽清楚。"
+        },
+        {
+          "label": "living there",
+          "explanationZh": "living there 補充講『住喺嗰度嘅人』。"
+        },
+        {
+          "label": "down from almost 4,000",
+          "explanationZh": "down from 用嚟講數字由以前較高水平下降。"
+        }
+      ]
+    },
+    {
+      "title": "Life and future",
+      "time": "00:29",
+      "audioText": "Chu said he enjoys life on the rustic island but does not see much of a future for its community.",
+      "transcript": "Chu said he enjoys life on the rustic island but does not see much of a future for its community.",
+      "translationZh": "Chu 話佢享受呢個樸實島嶼嘅生活，但唔太睇到社區有好多未來發展。",
+      "points": [
+        {
+          "label": "enjoys life on the rustic island",
+          "explanationZh": "enjoys life on... 係『享受喺某地生活』，rustic 帶出樸實、鄉郊感。"
+        },
+        {
+          "label": "does not see much of a future",
+          "explanationZh": "does not see much of a future 表示唔覺得有太多前景。"
+        },
+        {
+          "label": "for its community",
+          "explanationZh": "community 指當地居民群體，唔只係地方本身。"
+        }
+      ]
+    },
+    {
+      "title": "Meaning of rustic",
+      "time": "00:43",
+      "audioText": "Rustic describes things that are simple and usually have a rough wood-like appearance.",
+      "transcript": "Rustic describes things that are simple and usually have a rough wood-like appearance.",
+      "translationZh": "Rustic 用嚟形容簡單，而且通常有粗糙木質外觀嘅事物。",
+      "points": [
+        {
+          "label": "Rustic describes things",
+          "explanationZh": "定義句常用 describes things，表示呢個字用嚟形容某類事物。"
+        },
+        {
+          "label": "simple",
+          "explanationZh": "simple 呢度唔係負面，係簡樸、唔複雜。"
+        },
+        {
+          "label": "rough wood-like appearance",
+          "explanationZh": "rough 係粗糙；wood-like appearance 即係似木材嘅外觀。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "A tiny island of Singapore sits just 17 kilometers away from the highly developed city-state.",
+    "The island of Pulau Ubin has a small population.",
+    "Chu Yok Choon is one of 30 people living there, down from almost 4,000 60 years ago.",
+    "Chu said he enjoys life on the rustic island but does not see much of a future for its community.",
+    "Rustic describes things that are simple and usually have a rough wood-like appearance."
+  ],
+  "vocabulary": [
+    {
+      "word": "tiny",
+      "ipa": "/ˈtaɪni/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "細小嘅；微小嘅",
+      "example": "A tiny island sits near the city.",
+      "translationZh": "一個細小島嶼位於城市附近。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "developed",
+      "ipa": "/dɪˈveləpt/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "已發展嘅；成熟嘅",
+      "example": "Singapore is a highly developed city-state.",
+      "translationZh": "新加坡係一個高度發展嘅城市國家。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "population",
+      "ipa": "/ˌpɑːpjuˈleɪʃən/",
+      "partOfSpeech": "noun",
+      "meaningZh": "人口",
+      "example": "The island has a small population.",
+      "translationZh": "呢個島人口好少。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "rustic",
+      "ipa": "/ˈrʌstɪk/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "鄉郊風格嘅；樸實嘅",
+      "example": "He enjoys life on the rustic island.",
+      "translationZh": "佢享受喺呢個樸實島嶼上生活。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "community",
+      "ipa": "/kəˈmjuːnəti/",
+      "partOfSpeech": "noun",
+      "meaningZh": "社區；群體",
+      "example": "The community has fewer people now.",
+      "translationZh": "呢個社區而家人少咗。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "rough",
+      "ipa": "/rʌf/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "粗糙嘅；唔平滑嘅",
+      "example": "The table has a rough wood-like appearance.",
+      "translationZh": "呢張枱有粗糙、似木材嘅外觀。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "appearance",
+      "ipa": "/əˈpɪrəns/",
+      "partOfSpeech": "noun",
+      "meaningZh": "外觀；樣貌",
+      "example": "Rustic things often have a wood-like appearance.",
+      "translationZh": "rustic 嘅事物通常有似木材嘅外觀。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "sits just 17 kilometers away",
+      "meaningZh": "就位於 17 公里之外",
+      "example": "The island sits just 17 kilometers away from the city."
+    },
+    {
+      "phrase": "has a small population",
+      "meaningZh": "人口少",
+      "example": "Pulau Ubin has a small population."
+    },
+    {
+      "phrase": "down from almost 4,000",
+      "meaningZh": "由接近 4,000 下降",
+      "example": "The number is down from almost 4,000."
+    },
+    {
+      "phrase": "does not see much of a future",
+      "meaningZh": "唔太睇到有好多未來前景",
+      "example": "He does not see much of a future for its community."
+    },
+    {
+      "phrase": "wood-like appearance",
+      "meaningZh": "似木材嘅外觀",
+      "example": "Rustic things may have a rough wood-like appearance."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "prompt": "由 00:04 開始跟讀第一句，留意 17 kilometers away 同 highly developed 嘅重音。",
+      "example": "A tiny island of Singapore sits just 17 kilometers away from the highly developed city-state."
+    },
+    {
+      "type": "dictation",
+      "prompt": "重播 00:18，先寫低 one of 30、down from almost 4,000、60 years ago 三個數字重點。",
+      "example": "Chu Yok Choon is one of 30 people living there, down from almost 4,000 60 years ago."
+    },
+    {
+      "type": "substitution",
+      "prompt": "用 has a small population 改句，講一個你知道嘅小鎮、島嶼或社區。",
+      "example": "This village has a small population."
+    },
+    {
+      "type": "retelling",
+      "prompt": "用兩句英文複述：Pulau Ubin 喺邊？而家人口有咩變化？",
+      "example": "Pulau Ubin is a tiny island near Singapore. Its population is much smaller than 60 years ago."
+    }
+  ],
+  "notes": [
+    "先用每個時間點重播一句，盲聽時特別抓數字：17、30、4,000、60。",
+    "第三句資訊較密，可以拆成 one of 30 people / living there / down from almost 4,000。",
+    "跟讀 rustic island 時留意 rustic 嘅 /ʌ/ 音，唔好讀成 /uː/。",
+    "最後一句係定義句，適合看稿後再遮住文字，用自己聲音跟住節奏講一次。"
+  ]
+}
