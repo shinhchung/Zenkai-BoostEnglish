@@ -1,6 +1,13 @@
 {
-  "current": "./articles/2026-05-31-peptide-claims.json",
+  "current": "./articles/2026-06-01-ozempic-after-stopping.json",
   "articles": [
+    {
+      "path": "./articles/2026-06-01-ozempic-after-stopping.json",
+      "id": "2026-06-01-ozempic-after-stopping",
+      "date": "2026-06-01",
+      "level": "B1-",
+      "title": "What Happens After Stopping Ozempic"
+    },
     {
       "path": "./articles/2026-05-31-peptide-claims.json",
       "id": "2026-05-31-peptide-claims",
