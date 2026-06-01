@@ -1,0 +1,269 @@
+{
+  "id": "2026-05-31-peptide-claims",
+  "date": "2026-05-31",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "Viral Peptide Health Claims",
+  "source": {
+    "type": "youtube",
+    "title": "Doctor explains the science behind the peptide craze",
+    "channel": "CBS Mornings",
+    "url": "https://www.youtube.com/watch?v=uhXdGwBxoVU"
+  },
+  "tags": [
+    "YouTube 英文新聞",
+    "健康科技",
+    "CBS Mornings",
+    "字幕對齊聽力",
+    "詞數：約54",
+    "練習時間：約7分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "What peptides are",
+      "time": "00:20",
+      "audioText": "Peptides are short strings of amino acids, linked by chemical bonds.",
+      "transcript": "Peptides are short strings of amino acids, linked by chemical bonds.",
+      "translationZh": "肽係由氨基酸組成嘅短鏈，靠化學鍵連埋一齊。",
+      "points": [
+        {
+          "label": "Peptides are short strings",
+          "explanationZh": "先聽定義：are short strings，即係『係短鏈』。"
+        },
+        {
+          "label": "of amino acids",
+          "explanationZh": "of 後面講材料：amino acids，即係氨基酸。"
+        },
+        {
+          "label": "linked by chemical bonds",
+          "explanationZh": "linked by 表示『由……連接』；chemical bonds 係化學鍵。"
+        }
+      ]
+    },
+    {
+      "title": "Building blocks",
+      "time": "00:31",
+      "audioText": "Amino acids are the building blocks of proteins.",
+      "transcript": "Amino acids are the building blocks of proteins.",
+      "translationZh": "氨基酸係蛋白質嘅基本組成部分。",
+      "points": [
+        {
+          "label": "Amino acids are",
+          "explanationZh": "開頭直接聽主詞同 be 動詞，知道句子係下定義。"
+        },
+        {
+          "label": "the building blocks",
+          "explanationZh": "building blocks 係常見比喻，意思係基本組成部分。"
+        },
+        {
+          "label": "of proteins",
+          "explanationZh": "of proteins 補充係邊樣嘢嘅組成部分：蛋白質。"
+        }
+      ]
+    },
+    {
+      "title": "Natural peptides",
+      "time": "00:45",
+      "audioText": "The human body naturally produces some peptides.",
+      "transcript": "The human body naturally produces some peptides.",
+      "translationZh": "人體本身會自然產生一啲肽。",
+      "points": [
+        {
+          "label": "The human body",
+          "explanationZh": "留意 the human body 係整個身體，唔係某一個器官。"
+        },
+        {
+          "label": "naturally produces",
+          "explanationZh": "naturally 夾喺動詞前，表示『自然地、本身會』。"
+        },
+        {
+          "label": "some peptides",
+          "explanationZh": "some 表示『一啲』，唔係全部 peptide 都係外來產品。"
+        }
+      ]
+    },
+    {
+      "title": "Not FDA-approved",
+      "time": "01:28",
+      "audioText": "In many cases, these products or supplements haven't been FDA-approved.",
+      "transcript": "In many cases, these products or supplements haven't been FDA-approved.",
+      "translationZh": "好多情況下，呢啲產品或者補充品都未獲 FDA 批准。",
+      "points": [
+        {
+          "label": "In many cases",
+          "explanationZh": "句首先限範圍：好多情況下，唔係話每一個情況都一樣。"
+        },
+        {
+          "label": "products or supplements",
+          "explanationZh": "or 連住兩類嘢：產品或者補充品。"
+        },
+        {
+          "label": "haven't been FDA-approved",
+          "explanationZh": "haven't been approved 係現在完成式被動語態，意思係『到而家都未被批准』。"
+        }
+      ]
+    },
+    {
+      "title": "Gray market warning",
+      "time": "02:20",
+      "audioText": "There's a gray market out there and it is like the wild, wild West.",
+      "transcript": "There's a gray market out there and it is like the wild, wild West.",
+      "translationZh": "外面有一個灰色市場，情況就好似無規管嘅西部荒野。",
+      "points": [
+        {
+          "label": "There's a gray market",
+          "explanationZh": "gray market 指灰色市場，唔一定完全非法，但規管同保障較模糊。"
+        },
+        {
+          "label": "out there",
+          "explanationZh": "out there 口語上指『市面上、外面』。"
+        },
+        {
+          "label": "like the wild, wild West",
+          "explanationZh": "呢個比喻表示缺乏規則、好混亂；聽到重複 wild, wild 係強調語氣。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "Peptides are short strings of amino acids, linked by chemical bonds.",
+    "Amino acids are the building blocks of proteins.",
+    "The human body naturally produces some peptides.",
+    "In many cases, these products or supplements haven't been FDA-approved.",
+    "There's a gray market out there and it is like the wild, wild West."
+  ],
+  "vocabulary": [
+    {
+      "word": "peptide",
+      "ipa": "/ˈpep.taɪd/",
+      "partOfSpeech": "noun",
+      "meaningZh": "肽；胜肽",
+      "example": "A peptide is a short string of amino acids.",
+      "translationZh": "肽係由氨基酸組成嘅短鏈。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "amino acid",
+      "ipa": "/əˌmiː.noʊ ˈæs.ɪd/",
+      "partOfSpeech": "noun",
+      "meaningZh": "氨基酸",
+      "example": "Amino acids are the building blocks of proteins.",
+      "translationZh": "氨基酸係蛋白質嘅基本組成部分。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "protein",
+      "ipa": "/ˈproʊ.tiːn/",
+      "partOfSpeech": "noun",
+      "meaningZh": "蛋白質",
+      "example": "Proteins are important for the body.",
+      "translationZh": "蛋白質對身體好重要。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "naturally",
+      "ipa": "/ˈnætʃ.ər.əl.i/",
+      "partOfSpeech": "adverb",
+      "meaningZh": "自然地；本身就會",
+      "example": "The human body naturally produces some peptides.",
+      "translationZh": "人體本身會自然產生一啲肽。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "supplement",
+      "ipa": "/ˈsʌp.lə.mənt/",
+      "partOfSpeech": "noun",
+      "meaningZh": "補充品",
+      "example": "Some supplements have not been FDA-approved.",
+      "translationZh": "有啲補充品未獲 FDA 批准。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "approved",
+      "ipa": "/əˈpruːvd/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "獲批准嘅",
+      "example": "The product has not been approved yet.",
+      "translationZh": "呢個產品仲未獲批准。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "market",
+      "ipa": "/ˈmɑːr.kɪt/",
+      "partOfSpeech": "noun",
+      "meaningZh": "市場",
+      "example": "There is a gray market for some products.",
+      "translationZh": "有啲產品存在灰色市場。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "short strings of amino acids",
+      "meaningZh": "由氨基酸組成嘅短鏈",
+      "example": "Peptides are short strings of amino acids."
+    },
+    {
+      "phrase": "the building blocks of proteins",
+      "meaningZh": "蛋白質嘅基本組成部分",
+      "example": "Amino acids are the building blocks of proteins."
+    },
+    {
+      "phrase": "haven't been FDA-approved",
+      "meaningZh": "未獲 FDA 批准",
+      "example": "These supplements haven't been FDA-approved."
+    },
+    {
+      "phrase": "a gray market out there",
+      "meaningZh": "外面有灰色市場",
+      "example": "There's a gray market out there."
+    },
+    {
+      "phrase": "like the wild, wild West",
+      "meaningZh": "好似缺乏規管、混亂嘅地方",
+      "example": "It is like the wild, wild West."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "prompt": "由 00:20 開始跟讀第一句，留意 peptides、amino acids、chemical bonds 三個重音。",
+      "example": "Peptides are short strings of amino acids, linked by chemical bonds."
+    },
+    {
+      "type": "dictation",
+      "prompt": "重播 01:28，先寫低 In many cases，再聽 haven't been FDA-approved。",
+      "example": "In many cases, these products or supplements haven't been FDA-approved."
+    },
+    {
+      "type": "substitution",
+      "prompt": "用 haven't been approved 改句，講一個未批准嘅產品或計劃。",
+      "example": "The new plan hasn't been approved."
+    },
+    {
+      "type": "retelling",
+      "prompt": "用兩句英文複述：peptides 係咩？點解新聞提醒大家要小心？",
+      "example": "Peptides are short strings of amino acids. Some products have not been FDA-approved, so people should be careful."
+    }
+  ],
+  "notes": [
+    "先用時間點逐句重播，第一輪只聽關鍵名詞：peptides、amino acids、proteins。",
+    "第四句有被動語態 haven't been FDA-approved，可以拆成 haven't been / FDA-approved 兩段練。",
+    "第五句係口語比喻，聽到 wild, wild West 時先理解大意：缺乏規管、比較混亂。",
+    "看稿後再遮住 transcript，跟住原片節奏讀一次，唔需要加快。"
+  ]
+}
