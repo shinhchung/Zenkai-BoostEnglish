@@ -1,6 +1,13 @@
 {
-  "current": "./articles/2026-05-31-rustic-island.json",
+  "current": "./articles/2026-05-31-peptide-claims.json",
   "articles": [
+    {
+      "path": "./articles/2026-05-31-peptide-claims.json",
+      "id": "2026-05-31-peptide-claims",
+      "date": "2026-05-31",
+      "level": "B1-",
+      "title": "Viral Peptide Health Claims"
+    },
     {
       "path": "./articles/2026-05-31-rustic-island.json",
       "id": "2026-05-31-rustic-island",
