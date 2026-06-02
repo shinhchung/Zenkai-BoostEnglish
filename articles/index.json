@@ -1,6 +1,13 @@
 {
-  "current": "./articles/2026-06-01-ozempic-after-stopping.json",
+  "current": "./articles/2026-06-02-bull-passenger.json",
   "articles": [
+    {
+      "path": "./articles/2026-06-02-bull-passenger.json",
+      "id": "2026-06-02-bull-passenger",
+      "date": "2026-06-02",
+      "level": "B1-",
+      "title": "A Bull in the Passenger Seat"
+    },
     {
       "path": "./articles/2026-06-01-ozempic-after-stopping.json",
       "id": "2026-06-01-ozempic-after-stopping",
