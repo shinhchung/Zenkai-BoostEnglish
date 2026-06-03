@@ -105,6 +105,7 @@ The app uses the browser Web Speech API for pronunciation playback, so no backen
 If an article segment includes `audioUrl`, the app plays that file first and only falls back to Web Speech when the file cannot load.
 If `source.url` is a YouTube URL, the original video is embedded in the main reader area.
 If a segment includes `startTime` and optional `endTime`, clicking that segment starts the embedded YouTube video at that timestamp. Time can be seconds (`83`) or a timecode (`"1:23"` / `"01:23"`).
+PBS clips are also supported when `source.type` is `"pbs"` and `source.embedUrl` points to a `https://player.pbs.org/viralplayer/<id>/` URL. PBS does not expose the same YouTube seek API, so segment clicks show the embedded player and the timestamp cue.
 
 Update behavior:
 

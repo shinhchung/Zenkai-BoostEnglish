@@ -5,10 +5,11 @@
   "nextLevel": "B1（中級）",
   "title": "Salary Cap Proposal and Market Records",
   "source": {
-    "type": "video",
+    "type": "pbs",
     "title": "News Wrap: Treasury pushes for $250 bill featuring Trump",
     "channel": "PBS NewsHour",
-    "url": "https://www.pbs.org/video/news-wrap-1779998732/"
+    "url": "https://www.pbs.org/video/news-wrap-1779998732/",
+    "embedUrl": "https://player.pbs.org/viralplayer/3111132712/"
   },
   "tags": [
     "英文新聞聽力",

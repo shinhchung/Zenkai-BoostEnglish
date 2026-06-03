@@ -438,9 +438,10 @@ function renderArticle() {
       state.transcriptVisible = true;
       renderDrill();
       renderArticle();
-      if (playSourceVideoFromSegment(segment)) {
+      const playback = playSourceVideoFromSegment(segment);
+      if (playback) {
         markCompleted(index);
-        showToast(`YouTube 已跳到 ${formatTimecode(getSegmentStartSeconds(segment))}`);
+        showSourcePlaybackToast(playback);
       } else {
         speakSegment(segment, () => markCompleted(index), "播放目前 segment");
       }
@@ -460,11 +461,14 @@ function renderSource() {
   }
 
   els.sourceLine.classList.remove("hidden");
-  els.sourceLine.innerHTML = `<span>Source: ${escapeHtml(source.channel || "YouTube")} · ${escapeHtml(source.title || "News clip")}</span>`;
+  const sourceProvider = getSourceProviderLabel(source);
+  els.sourceLine.innerHTML = `
+    <span>Source: ${escapeHtml(source.channel || sourceProvider)} · ${escapeHtml(source.title || "News clip")}</span>
+    <a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">Open ${escapeHtml(sourceProvider)}</a>
+  `;
 
-  const embedUrl = getYouTubeEmbedUrl(source.url, getEmbedTiming(getActiveSegment()));
-  const videoId = getYouTubeVideoId(source.url);
-  if (!embedUrl) {
+  const embed = getSourceEmbed(source, getEmbedTiming(getActiveSegment()));
+  if (!embed?.url) {
     els.sourceVideo.classList.add("hidden");
     els.sourceVideo.innerHTML = "";
     return;
@@ -472,15 +476,16 @@ function renderSource() {
 
   els.sourceVideo.classList.remove("hidden");
   const currentIframe = els.sourceVideo.querySelector("iframe");
-  if (currentIframe?.dataset.videoId === videoId) return;
+  if (currentIframe?.dataset.provider === embed.provider && currentIframe?.dataset.mediaId === embed.mediaId) return;
 
   els.sourceVideo.innerHTML = `
     <iframe
-      src="${escapeHtml(embedUrl)}"
-      data-video-id="${escapeHtml(videoId)}"
-      title="${escapeHtml(source.title || "YouTube original video")}"
+      src="${escapeHtml(embed.url)}"
+      data-provider="${escapeHtml(embed.provider)}"
+      data-media-id="${escapeHtml(embed.mediaId)}"
+      title="${escapeHtml(source.title || `${sourceProvider} video`)}"
       loading="lazy"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allow="${escapeHtml(embed.allow)}"
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen>
     </iframe>
@@ -757,9 +762,10 @@ function bindControls() {
     state.activeStep = 0;
     renderDrill();
     const segment = getActiveSegment();
-    if (playSourceVideoFromSegment(segment)) {
+    const playback = playSourceVideoFromSegment(segment);
+    if (playback) {
       markCompleted(state.activeSentence);
-      showToast(`盲聽：YouTube 已跳到 ${formatTimecode(getSegmentStartSeconds(segment))}`);
+      showSourcePlaybackToast(playback, "盲聽");
     } else {
       speakSegment(segment, () => markCompleted(state.activeSentence), "盲聽播放中");
     }
@@ -792,9 +798,10 @@ function bindControls() {
   els.playArticleButton.addEventListener("click", playAll);
   els.repeatButton.addEventListener("click", () => {
     const segment = getActiveSegment();
-    if (playSourceVideoFromSegment(segment)) {
+    const playback = playSourceVideoFromSegment(segment);
+    if (playback) {
       markCompleted(state.activeSentence);
-      showToast(`重聽：YouTube 已跳到 ${formatTimecode(getSegmentStartSeconds(segment))}`);
+      showSourcePlaybackToast(playback, "重聽");
     } else {
       speakSegment(segment, () => markCompleted(state.activeSentence), "重聽目前 segment");
     }
@@ -910,9 +917,10 @@ function playActiveSegment(statusText = "重聽目前 segment") {
   state.activeStep = Math.max(state.activeStep, 3);
   renderArticle();
   renderDrill();
-  if (playSourceVideoFromSegment(segment)) {
+  const playback = playSourceVideoFromSegment(segment);
+  if (playback) {
     markCompleted(state.activeSentence);
-    showToast(`YouTube 已跳到 ${formatTimecode(getSegmentStartSeconds(segment))}`);
+    showSourcePlaybackToast(playback);
     return;
   }
   speakSegment(segment, () => markCompleted(state.activeSentence), statusText);
@@ -956,9 +964,10 @@ function playAll() {
     renderArticle();
     renderDrill();
     const segment = getSegments()[index];
-    if (playSourceVideoFromSegment(segment)) {
+    const playback = playSourceVideoFromSegment(segment);
+    if (playback) {
       markCompleted(index);
-      showToast(`原片已由 ${formatTimecode(getSegmentStartSeconds(segment))} 開始播放。`);
+      showSourcePlaybackToast(playback, "原片");
       return;
     }
     speakSegment(segment, () => {
@@ -978,9 +987,10 @@ function applyStep(index) {
 
   const segment = getActiveSegment();
   if (index === 0 || index === 3) {
-    if (playSourceVideoFromSegment(segment)) {
+    const playback = playSourceVideoFromSegment(segment);
+    if (playback) {
       markCompleted(state.activeSentence);
-      showToast(`${index === 0 ? "盲聽" : "重聽"}：YouTube 已跳到 ${formatTimecode(getSegmentStartSeconds(segment))}`);
+      showSourcePlaybackToast(playback, index === 0 ? "盲聽" : "重聽");
     } else {
       speakSegment(segment, () => markCompleted(state.activeSentence), index === 0 ? "盲聽播放中" : "重聽播放中");
     }
@@ -1217,24 +1227,33 @@ function playSourceVideoFromSegment(segment) {
   const timing = getEmbedTiming(segment);
   const start = timing.start;
   if (!source?.url || start === null) return false;
-  const videoId = getYouTubeVideoId(source.url);
-  if (!videoId) return false;
-  const embedUrl = getYouTubeEmbedUrl(source.url, timing);
-  if (!embedUrl || els.sourceVideo.classList.contains("hidden")) return false;
+  const embed = getSourceEmbed(source, timing);
+  if (!embed?.url || els.sourceVideo.classList.contains("hidden")) return false;
 
   let iframe = els.sourceVideo.querySelector("iframe");
   if (!iframe) return false;
   stopCurrentPlayback();
 
-  if (iframe.dataset.videoId !== videoId) {
-    iframe.src = embedUrl;
-    iframe.dataset.videoId = videoId;
+  if (iframe.dataset.provider !== embed.provider || iframe.dataset.mediaId !== embed.mediaId) {
+    iframe.src = embed.url;
+    iframe.dataset.provider = embed.provider;
+    iframe.dataset.mediaId = embed.mediaId;
   }
 
   iframe.dataset.lastStart = String(start);
   iframe.dataset.lastEnd = timing.end === null ? "" : String(timing.end);
-  playYouTubeIframe(iframe, start);
-  return true;
+  if (embed.provider === "youtube") {
+    playYouTubeIframe(iframe, start);
+    return { provider: embed.provider, start, message: `YouTube 已跳到 ${formatTimecode(start)}` };
+  }
+
+  iframe.scrollIntoView({ behavior: "smooth", block: "center" });
+  return { provider: embed.provider, start, message: `${embed.label} clip 已顯示，請用播放器跳到 ${formatTimecode(start)}` };
+}
+
+function showSourcePlaybackToast(playback, prefix = "") {
+  if (!playback?.message) return;
+  showToast(prefix ? `${prefix}：${playback.message}` : playback.message);
 }
 
 function playYouTubeIframe(iframe, start) {
@@ -1296,6 +1315,81 @@ function formatTimecode(seconds) {
   const s = seconds % 60;
   if (h) return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
   return `${m}:${String(s).padStart(2, "0")}`;
+}
+
+function getSourceEmbed(source, timing = {}) {
+  if (!source?.url) return null;
+
+  const youtubeId = getYouTubeVideoId(source.url);
+  if (youtubeId) {
+    return {
+      provider: "youtube",
+      label: "YouTube",
+      mediaId: youtubeId,
+      url: getYouTubeEmbedUrl(source.url, timing),
+      allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    };
+  }
+
+  const pbsEmbedUrl = getPBSEmbedUrl(source);
+  if (pbsEmbedUrl) {
+    return {
+      provider: "pbs",
+      label: "PBS",
+      mediaId: getPBSPlayerId(pbsEmbedUrl) || pbsEmbedUrl,
+      url: pbsEmbedUrl,
+      allow: "encrypted-media; picture-in-picture; web-share"
+    };
+  }
+
+  return null;
+}
+
+function getSourceProviderLabel(source) {
+  if (!source?.url) return "Source";
+  if (getYouTubeVideoId(source.url)) return "YouTube";
+  if (getPBSEmbedUrl(source) || isPBSUrl(source.url)) return "PBS";
+  return source.type ? String(source.type).toUpperCase() : "Source";
+}
+
+function getPBSEmbedUrl(source) {
+  const explicitUrl = normalizePBSPlayerUrl(source.embedUrl || source.playerUrl || source.pbsEmbedUrl);
+  if (explicitUrl) return explicitUrl;
+
+  const mediaId = source.pbsMediaId || source.videoTPMediaId || source.tpMediaId;
+  if (mediaId && /^\d+$/.test(String(mediaId))) return `https://player.pbs.org/viralplayer/${mediaId}/`;
+
+  return normalizePBSPlayerUrl(source.url);
+}
+
+function normalizePBSPlayerUrl(url) {
+  if (!url) return "";
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.replace(/^www\./, "");
+    if (host !== "player.pbs.org") return "";
+    const playerId = getPBSPlayerId(parsed.href);
+    if (!playerId) return "";
+    return `https://player.pbs.org/viralplayer/${playerId}/`;
+  } catch (error) {
+    const playerId = getPBSPlayerId(url);
+    return playerId ? `https://player.pbs.org/viralplayer/${playerId}/` : "";
+  }
+}
+
+function getPBSPlayerId(url) {
+  const match = String(url || "").match(/player\.pbs\.org\/viralplayer\/(\d+)/i);
+  return match?.[1] || "";
+}
+
+function isPBSUrl(url) {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.replace(/^www\./, "");
+    return host === "pbs.org" || host.endsWith(".pbs.org");
+  } catch (error) {
+    return /(^|\/\/)(?:www\.)?pbs\.org\//i.test(String(url || ""));
+  }
 }
 
 function getYouTubeEmbedUrl(url, timing = {}) {
