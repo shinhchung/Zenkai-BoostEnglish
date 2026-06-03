@@ -16,6 +16,8 @@ Daily upload flow:
 2. Update `articles/index.json` so `current` points to the new file.
 3. Add the new article metadata to `articles/index.json` `articles` so the left menu can show the article count and history.
 4. Keep the same schema as `articles/2026-05-29-rocket-test.json`.
+5. Do not edit `version.json` for GitHub Pages. The deploy workflow rewrites it with the latest commit SHA.
+6. Use `daily-agent-prompt.md` for the morning agent prompt. It generates the news lesson plus `dailyLifePractice` for the UI's 美式 tab.
 
 Article index format:
 
@@ -103,3 +105,9 @@ The app uses the browser Web Speech API for pronunciation playback, so no backen
 If an article segment includes `audioUrl`, the app plays that file first and only falls back to Web Speech when the file cannot load.
 If `source.url` is a YouTube URL, the original video is embedded in the main reader area.
 If a segment includes `startTime` and optional `endTime`, clicking that segment starts the embedded YouTube video at that timestamp. Time can be seconds (`83`) or a timecode (`"1:23"` / `"01:23"`).
+
+Update behavior:
+
+- `index.html` fetches `version.json` with `cache: "no-store"` before loading `styles.css` and `app.js`.
+- CSS and JavaScript are loaded with a `?v=` version query, so a new deploy does not keep using stale cached assets.
+- `app.js` checks `version.json` while the page is open and reloads automatically when the deployed version changes.

@@ -3,9 +3,61 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>黑讀 English</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link id="appStylesheet" rel="stylesheet" href="./styles.css?v=2026-05-30-learning-cockpit-2" />
+    <script>
+      window.__BOOST_ENGLISH_BOOT_VERSION__ = "2026-05-30-learning-cockpit-2";
+
+      (() => {
+        const DEFAULT_VERSION = window.__BOOST_ENGLISH_BOOT_VERSION__;
+        const VERSION_URL = "./version.json";
+        let didBoot = false;
+
+        const withVersion = (path, version) => {
+          const separator = path.includes("?") ? "&" : "?";
+          return `${path}${separator}v=${encodeURIComponent(version)}`;
+        };
+
+        const readVersion = (data) => String(data?.version || data?.sha || DEFAULT_VERSION).trim() || DEFAULT_VERSION;
+
+        const loadApp = (version) => {
+          const script = document.createElement("script");
+          script.src = withVersion("./app.js", version);
+          script.defer = true;
+          document.body.append(script);
+        };
+
+        const boot = (version) => {
+          if (didBoot) return;
+          didBoot = true;
+          window.__BOOST_ENGLISH_VERSION__ = version;
+          const stylesheet = document.querySelector("#appStylesheet");
+          if (stylesheet) stylesheet.href = withVersion("./styles.css", version);
+
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", () => loadApp(version), { once: true });
+          } else {
+            loadApp(version);
+          }
+        };
+
+        const fallbackTimer = window.setTimeout(() => boot(DEFAULT_VERSION), 2500);
+        fetch(`${VERSION_URL}?t=${Date.now()}`, { cache: "no-store" })
+          .then((response) => response.ok ? response.json() : null)
+          .then((data) => {
+            window.clearTimeout(fallbackTimer);
+            boot(readVersion(data));
+          })
+          .catch(() => {
+            window.clearTimeout(fallbackTimer);
+            boot(DEFAULT_VERSION);
+          });
+      })();
+    </script>
   </head>
   <body>
     <div class="app-shell">
@@ -17,6 +69,10 @@
           </svg>
           <span>黑讀 English</span>
         </a>
+
+        <button class="library-toggle" id="libraryToggle" type="button" aria-controls="articleLibrary" aria-expanded="false">
+          文章
+        </button>
 
         <nav class="nav-tabs" aria-label="主要學習區">
           <button class="nav-tab active" type="button" data-view="daily">
@@ -39,13 +95,26 @@
         </div>
       </header>
 
+      <section class="mobile-session-bar" aria-label="目前學習控制">
+        <button class="compact-control" id="prevSegmentButton" type="button" aria-label="上一句">‹</button>
+        <div class="mobile-session-copy">
+          <span id="mobileSegmentLabel">Segment 1</span>
+          <strong id="mobileSegmentTitle">Loading...</strong>
+        </div>
+        <button class="compact-control play" id="mobilePlayButton" type="button" aria-label="播放目前句子">
+          <span class="play-shape" aria-hidden="true"></span>
+        </button>
+        <button class="compact-control" id="nextSegmentButton" type="button" aria-label="下一句">›</button>
+      </section>
+
       <main class="learning-layout">
-        <aside class="library-panel" aria-label="文章庫">
+        <aside class="library-panel" id="articleLibrary" aria-label="文章庫">
           <div class="library-head">
             <div>
               <h2>文章庫</h2>
               <p id="articleCount">0 篇英文</p>
             </div>
+            <button class="drawer-close" id="libraryClose" type="button" aria-label="關閉文章列表">×</button>
           </div>
           <div class="article-list" id="articleList"></div>
         </aside>
@@ -108,6 +177,7 @@
             <button class="panel-tab active" type="button" data-panel="words">生詞</button>
             <button class="panel-tab" type="button" data-panel="phrases">重點片語</button>
             <button class="panel-tab" type="button" data-panel="speaking">講</button>
+            <button class="panel-tab" type="button" data-panel="dailyLife">美式</button>
             <button class="panel-tab" type="button" data-panel="notes">筆記</button>
           </div>
           <div id="wordList" class="word-list"></div>
@@ -167,6 +237,7 @@
           </div>
         </section>
       </main>
+      <div class="drawer-scrim hidden" id="drawerScrim" aria-hidden="true"></div>
       <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
     </div>
 
@@ -200,7 +271,8 @@
         </div>
       </article>
     </template>
-
-    <script src="./app.js" defer></script>
+    <noscript>
+      <link rel="stylesheet" href="./styles.css" />
+    </noscript>
   </body>
 </html>

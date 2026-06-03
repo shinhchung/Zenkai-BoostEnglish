@@ -236,6 +236,88 @@
       "example": "Safety tests are important because rockets are powerful machines."
     }
   ],
+  "dailyLifePractice": [
+    {
+      "title": "Quick coffee order",
+      "contextZh": "場景：你喺美國咖啡店落單，想自然咁改少少要求。",
+      "audioText": "Hi, can I get a medium iced latte with oat milk? Actually, could you make that less sweet? That's all, thanks.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Hi, can I get a medium iced latte with oat milk?",
+          "zh": "你好，我想要一杯 medium iced latte，轉 oat milk。"
+        },
+        {
+          "speaker": "Barista",
+          "en": "Sure. Anything else?",
+          "zh": "可以，仲要其他嘢嗎？"
+        },
+        {
+          "speaker": "You",
+          "en": "Actually, could you make that less sweet?",
+          "zh": "其實可唔可以整少甜？"
+        },
+        {
+          "speaker": "You",
+          "en": "That's all, thanks.",
+          "zh": "就咁多，唔該。"
+        }
+      ],
+      "nativeNoteZh": "Can I get... 比 I want... 自然同禮貌。Actually, could you... 係即場改口時好常用。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 drink、size、milk 換成你真係會買嘅版本。",
+          "example": "Can I get a small cold brew with no sugar?"
+        },
+        {
+          "label": "Role-play",
+          "prompt": "你做 customer 講一次，再做 barista 回一句 Anything else?",
+          "example": "Sure. Anything else?"
+        }
+      ]
+    },
+    {
+      "title": "Small talk after a delay",
+      "contextZh": "場景：你遲咗少少到，同 coworker 簡短交代原因。",
+      "audioText": "Sorry I'm a few minutes late. Traffic was worse than usual. Thanks for waiting.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Sorry I'm a few minutes late.",
+          "zh": "唔好意思，我遲咗幾分鐘。"
+        },
+        {
+          "speaker": "Coworker",
+          "en": "No worries. We just got started.",
+          "zh": "冇問題，我哋都係啱啱開始。"
+        },
+        {
+          "speaker": "You",
+          "en": "Traffic was worse than usual.",
+          "zh": "今日塞車比平時嚴重。"
+        },
+        {
+          "speaker": "You",
+          "en": "Thanks for waiting.",
+          "zh": "多謝你等我。"
+        }
+      ],
+      "nativeNoteZh": "a few minutes late 聽落比 very late 輕。No worries 係美國日常常見回應，語氣自然。",
+      "drills": [
+        {
+          "label": "Swap reason",
+          "prompt": "將 Traffic was worse than usual 換成另一個真實原因。",
+          "example": "My previous call ran over."
+        },
+        {
+          "label": "Polite close",
+          "prompt": "用 Thanks for waiting 或 Thanks for being flexible 收尾。",
+          "example": "Thanks for being flexible."
+        }
+      ]
+    }
+  ],
   "notes": [
     "聽科技新聞時，先抓住事件動詞：exploded, said, prepared, investigate。",
     "遇到長名詞組，例如 internet satellites into low Earth orbit，可以分成 internet satellites / into low Earth orbit 兩段聽。",

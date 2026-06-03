@@ -1,4 +1,7 @@
 const ARTICLE_INDEX = "./articles/index.json";
+const VERSION_URL = "./version.json";
+const APP_VERSION = normalizeVersionValue(window.__BOOST_ENGLISH_VERSION__ || window.__BOOST_ENGLISH_BOOT_VERSION__ || "local-dev");
+const UPDATE_CHECK_INTERVAL_MS = 60 * 1000;
 const fallbackArticle = {
   id: "2026-05-29-rescue-news",
   date: "2026-05-29",
@@ -147,6 +150,9 @@ const els = {
   streakCount: document.querySelector("#streakCount"),
   articleCount: document.querySelector("#articleCount"),
   articleList: document.querySelector("#articleList"),
+  libraryToggle: document.querySelector("#libraryToggle"),
+  libraryClose: document.querySelector("#libraryClose"),
+  drawerScrim: document.querySelector("#drawerScrim"),
   levelTrack: document.querySelector("#levelTrack"),
   articleTitle: document.querySelector("#articleTitle"),
   articleTags: document.querySelector("#articleTags"),
@@ -172,6 +178,11 @@ const els = {
   voiceTestButton: document.querySelector("#voiceTestButton"),
   voiceHint: document.querySelector("#voiceHint"),
   playArticleButton: document.querySelector("#playArticleButton"),
+  mobileSegmentLabel: document.querySelector("#mobileSegmentLabel"),
+  mobileSegmentTitle: document.querySelector("#mobileSegmentTitle"),
+  mobilePlayButton: document.querySelector("#mobilePlayButton"),
+  prevSegmentButton: document.querySelector("#prevSegmentButton"),
+  nextSegmentButton: document.querySelector("#nextSegmentButton"),
   repeatButton: document.querySelector("#repeatButton"),
   shadowButton: document.querySelector("#shadowButton"),
   saveWordsButton: document.querySelector("#saveWordsButton"),
@@ -189,6 +200,7 @@ async function init() {
   render();
   bindControls();
   initVoices();
+  startUpdateWatcher();
 }
 
 async function loadArticle(articlePath) {
@@ -451,6 +463,7 @@ function renderSource() {
   els.sourceLine.innerHTML = `<span>Source: ${escapeHtml(source.channel || "YouTube")} · ${escapeHtml(source.title || "News clip")}</span>`;
 
   const embedUrl = getYouTubeEmbedUrl(source.url, getEmbedTiming(getActiveSegment()));
+  const videoId = getYouTubeVideoId(source.url);
   if (!embedUrl) {
     els.sourceVideo.classList.add("hidden");
     els.sourceVideo.innerHTML = "";
@@ -458,9 +471,13 @@ function renderSource() {
   }
 
   els.sourceVideo.classList.remove("hidden");
+  const currentIframe = els.sourceVideo.querySelector("iframe");
+  if (currentIframe?.dataset.videoId === videoId) return;
+
   els.sourceVideo.innerHTML = `
     <iframe
       src="${escapeHtml(embedUrl)}"
+      data-video-id="${escapeHtml(videoId)}"
       title="${escapeHtml(source.title || "YouTube original video")}"
       loading="lazy"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -486,6 +503,12 @@ function renderDrill() {
 
   els.segmentLabel.textContent = `Segment ${state.activeSentence + 1} / ${getSegments().length}`;
   els.segmentTitle.textContent = segment.title || "Listening segment";
+  if (els.mobileSegmentLabel) {
+    els.mobileSegmentLabel.textContent = `S${state.activeSentence + 1} / ${getSegments().length}`;
+  }
+  if (els.mobileSegmentTitle) {
+    els.mobileSegmentTitle.textContent = segment.title || segment.transcript || "Listening segment";
+  }
   els.segmentTranscript.textContent = segment.transcript || segment.audioText || "";
   els.segmentTranslation.textContent = segment.translationZh || "";
   els.segmentTranscript.classList.toggle("hidden", !state.transcriptVisible);
@@ -526,6 +549,11 @@ function renderStudyPanel() {
 
   if (state.activePanel === "speaking") {
     renderSpeaking();
+    return;
+  }
+
+  if (state.activePanel === "dailyLife") {
+    renderDailyLifePractice();
     return;
   }
 
@@ -672,6 +700,17 @@ function renderSpeaking() {
 }
 
 function bindControls() {
+  els.libraryToggle?.addEventListener("click", openArticleDrawer);
+  els.libraryClose?.addEventListener("click", closeArticleDrawer);
+  els.drawerScrim?.addEventListener("click", closeArticleDrawer);
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeArticleDrawer();
+  });
+
+  els.mobilePlayButton?.addEventListener("click", () => playActiveSegment("播放目前 segment"));
+  els.prevSegmentButton?.addEventListener("click", () => moveSegment(-1));
+  els.nextSegmentButton?.addEventListener("click", () => moveSegment(1));
+
   document.querySelectorAll(".nav-tab").forEach((button) => {
     button.addEventListener("click", () => {
       document.querySelectorAll(".nav-tab").forEach((tab) => tab.classList.remove("active"));
@@ -788,10 +827,102 @@ function bindControls() {
   });
 }
 
+function renderDailyLifePractice() {
+  els.wordList.innerHTML = "";
+  const practices = getDailyLifePractice();
+
+  if (!practices.length) {
+    els.wordList.innerHTML = `<p class="notice">今日未有美國道地練習。請用 daily-agent-prompt.md 生成 article JSON。</p>`;
+    return;
+  }
+
+  practices.forEach((item, index) => {
+    const card = document.createElement("article");
+    card.className = "word-card daily-life-card";
+    const lines = Array.isArray(item.lines) ? item.lines : [];
+    const drills = Array.isArray(item.drills) ? item.drills : [];
+    const audioText = item.audioText || lines.map((line) => line.en).filter(Boolean).join(" ");
+
+    card.innerHTML = `
+      <div class="word-main">
+        <button class="word-audio" type="button" aria-label="播放美式練習">
+          <span class="speaker-icon" aria-hidden="true"></span>
+        </button>
+        <div>
+          <h2>${index + 1}. ${escapeHtml(item.title || "American everyday English")}</h2>
+          <p class="translation">${escapeHtml(item.contextZh || "")}</p>
+        </div>
+      </div>
+      <div class="dialogue-lines">
+        ${lines.map((line) => `
+          <div class="dialogue-line">
+            <strong>${escapeHtml(line.speaker || "")}</strong>
+            <span>${escapeHtml(line.en || "")}</span>
+            <small>${escapeHtml(line.zh || "")}</small>
+          </div>
+        `).join("")}
+      </div>
+      ${item.nativeNoteZh ? `<p class="native-note">${escapeHtml(item.nativeNoteZh)}</p>` : ""}
+      <div class="mini-drills">
+        ${drills.map((drill) => `
+          <div class="mini-drill">
+            <strong>${escapeHtml(drill.label || "Drill")}</strong>
+            <span>${escapeHtml(drill.prompt || "")}</span>
+            ${drill.example ? `<small>${escapeHtml(drill.example)}</small>` : ""}
+          </div>
+        `).join("")}
+      </div>
+      <button class="tool-button practice-action" type="button">開始場景練習</button>
+    `;
+
+    card.querySelector(".word-audio").addEventListener("click", () => speak(audioText, null, "播放美式場景"));
+    card.querySelector(".practice-action").addEventListener("click", () => {
+      speak(audioText, null, "聽完即刻照場景答一次");
+      showToast("美式場景練習已開始。");
+    });
+    els.wordList.append(card);
+  });
+}
+
+function openArticleDrawer() {
+  document.body.classList.add("drawer-open");
+  els.drawerScrim?.classList.remove("hidden");
+  els.libraryToggle?.setAttribute("aria-expanded", "true");
+}
+
+function closeArticleDrawer() {
+  document.body.classList.remove("drawer-open");
+  els.drawerScrim?.classList.add("hidden");
+  els.libraryToggle?.setAttribute("aria-expanded", "false");
+}
+
+function moveSegment(direction) {
+  const segments = getSegments();
+  if (!segments.length) return;
+  state.activeSentence = Math.min(Math.max(state.activeSentence + direction, 0), segments.length - 1);
+  renderArticle();
+  renderDrill();
+  document.querySelector(".reader-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function playActiveSegment(statusText = "重聽目前 segment") {
+  const segment = getActiveSegment();
+  state.activeStep = Math.max(state.activeStep, 3);
+  renderArticle();
+  renderDrill();
+  if (playSourceVideoFromSegment(segment)) {
+    markCompleted(state.activeSentence);
+    showToast(`YouTube 已跳到 ${formatTimecode(getSegmentStartSeconds(segment))}`);
+    return;
+  }
+  speakSegment(segment, () => markCompleted(state.activeSentence), statusText);
+}
+
 async function switchArticle(path) {
   if (!path || path === state.currentArticlePath) return;
 
   try {
+    closeArticleDrawer();
     stopCurrentPlayback();
     state.article = await loadArticle(path);
     applyStoredPreferences();
@@ -825,6 +956,11 @@ function playAll() {
     renderArticle();
     renderDrill();
     const segment = getSegments()[index];
+    if (playSourceVideoFromSegment(segment)) {
+      markCompleted(index);
+      showToast(`原片已由 ${formatTimecode(getSegmentStartSeconds(segment))} 開始播放。`);
+      return;
+    }
     speakSegment(segment, () => {
       markCompleted(index);
       index += 1;
@@ -966,6 +1102,45 @@ function getActiveSegment() {
   return getSegments()[state.activeSentence] || getSegments()[0] || {};
 }
 
+function startUpdateWatcher() {
+  if (window.location.protocol === "file:" || APP_VERSION === "local-dev") return;
+
+  let isChecking = false;
+  const check = async () => {
+    if (isChecking) return;
+    isChecking = true;
+
+    try {
+      const latestVersion = await fetchLatestVersion();
+      if (latestVersion && latestVersion !== APP_VERSION) {
+        showToast("網站有新版本，正在更新。");
+        window.setTimeout(() => window.location.reload(), 900);
+      }
+    } catch (error) {
+      console.info("Version check skipped:", error.message);
+    } finally {
+      isChecking = false;
+    }
+  };
+
+  window.setInterval(check, UPDATE_CHECK_INTERVAL_MS);
+  window.addEventListener("focus", check);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) check();
+  });
+}
+
+async function fetchLatestVersion() {
+  const response = await fetch(`${VERSION_URL}?t=${Date.now()}`, { cache: "no-store" });
+  if (!response.ok) return "";
+  const data = await response.json();
+  return normalizeVersionValue(data.version || data.sha);
+}
+
+function normalizeVersionValue(value) {
+  return String(value || "").trim();
+}
+
 function getArticleVocabulary() {
   return Array.isArray(state.article.vocabulary) ? state.article.vocabulary : [];
 }
@@ -1039,13 +1214,47 @@ function getFilenameTitle(path) {
 
 function playSourceVideoFromSegment(segment) {
   const source = state.article.source;
-  if (!source?.url || getSegmentStartSeconds(segment) === null) return false;
-  const embedUrl = getYouTubeEmbedUrl(source.url, { ...getEmbedTiming(segment), autoplay: true });
+  const timing = getEmbedTiming(segment);
+  const start = timing.start;
+  if (!source?.url || start === null) return false;
+  const videoId = getYouTubeVideoId(source.url);
+  if (!videoId) return false;
+  const embedUrl = getYouTubeEmbedUrl(source.url, timing);
   if (!embedUrl || els.sourceVideo.classList.contains("hidden")) return false;
-  const iframe = els.sourceVideo.querySelector("iframe");
+
+  let iframe = els.sourceVideo.querySelector("iframe");
   if (!iframe) return false;
   stopCurrentPlayback();
-  iframe.src = embedUrl;
+
+  if (iframe.dataset.videoId !== videoId) {
+    iframe.src = embedUrl;
+    iframe.dataset.videoId = videoId;
+  }
+
+  iframe.dataset.lastStart = String(start);
+  iframe.dataset.lastEnd = timing.end === null ? "" : String(timing.end);
+  playYouTubeIframe(iframe, start);
+  return true;
+}
+
+function playYouTubeIframe(iframe, start) {
+  const sendCommands = () => {
+    postYouTubeCommand(iframe, "seekTo", [start, true]);
+    postYouTubeCommand(iframe, "playVideo");
+  };
+
+  sendCommands();
+  window.setTimeout(sendCommands, 160);
+  window.setTimeout(sendCommands, 520);
+}
+
+function postYouTubeCommand(iframe, func, args = []) {
+  if (!iframe?.contentWindow) return false;
+  iframe.contentWindow.postMessage(JSON.stringify({
+    event: "command",
+    func,
+    args
+  }), "https://www.youtube.com");
   return true;
 }
 
@@ -1093,9 +1302,12 @@ function getYouTubeEmbedUrl(url, timing = {}) {
   const videoId = getYouTubeVideoId(url);
   if (!videoId) return "";
   const params = new URLSearchParams({
+    enablejsapi: "1",
+    playsinline: "1",
     rel: "0",
     modestbranding: "1"
   });
+  if (window.location.origin && window.location.origin !== "null") params.set("origin", window.location.origin);
   if (timing.start !== null && timing.start !== undefined) params.set("start", String(timing.start));
   if (timing.end !== null && timing.end !== undefined) params.set("end", String(timing.end));
   if (timing.autoplay) params.set("autoplay", "1");
@@ -1147,6 +1359,10 @@ function getSpeakingPractice() {
       text: "The main point is that..."
     }
   ];
+}
+
+function getDailyLifePractice() {
+  return Array.isArray(state.article.dailyLifePractice) ? state.article.dailyLifePractice : [];
 }
 
 function getPracticeTypeLabel(type) {
