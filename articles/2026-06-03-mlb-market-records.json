@@ -1,0 +1,406 @@
+{
+  "id": "2026-06-03-mlb-market-records",
+  "date": "2026-06-03",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "Salary Cap Proposal and Market Records",
+  "source": {
+    "type": "video",
+    "title": "News Wrap: Treasury pushes for $250 bill featuring Trump",
+    "channel": "PBS NewsHour",
+    "url": "https://www.pbs.org/video/news-wrap-1779998732/"
+  },
+  "tags": [
+    "英文新聞聽力",
+    "PBS NewsHour",
+    "商業同體育新聞",
+    "字幕對齊聽力",
+    "日常美式口語",
+    "詞數：約72",
+    "練習時間：約8分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "A Salary Cap Proposal",
+      "time": "03:10",
+      "audioText": "Major League Baseball owners proposed a salary cap for the first time in decades today, something the players union has vowed to never accept.",
+      "transcript": "Major League Baseball owners proposed a salary cap for the first time in decades today, something the players union has vowed to never accept.",
+      "translationZh": "美國職棒大聯盟班主今日幾十年來首次提出薪酬上限方案，而球員工會已經誓言絕不接受。",
+      "points": [
+        {
+          "label": "Major League Baseball owners",
+          "explanationZh": "呢度指 MLB 球隊班主；owners 係新聞入面常聽到嘅『擁有人、老闆』。"
+        },
+        {
+          "label": "proposed a salary cap",
+          "explanationZh": "proposed 係『提出』；salary cap 即薪酬上限，cap 聽落短而清楚。"
+        },
+        {
+          "label": "for the first time in decades",
+          "explanationZh": "意思係『幾十年來第一次』；in decades 係常見新聞時間講法。"
+        },
+        {
+          "label": "has vowed to never accept",
+          "explanationZh": "vowed 係『誓言』，語氣比 promised 強；to never accept 即絕不接受。"
+        }
+      ]
+    },
+    {
+      "title": "The Payroll Range",
+      "time": "03:28",
+      "audioText": "Under the proposal, teams would need to maintain a payroll of at least $171.2 million and couldn't exceed $245.3 million.",
+      "transcript": "Under the proposal, teams would need to maintain a payroll of at least $171.2 million and couldn't exceed $245.3 million.",
+      "translationZh": "根據呢個方案，球隊需要維持至少一億七千一百二十萬美元嘅薪酬開支，而且唔可以超過二億四千五百三十萬美元。",
+      "points": [
+        {
+          "label": "Under the proposal",
+          "explanationZh": "新聞常用開頭，意思係『根據呢個方案』，幫你知道之後係講規則。"
+        },
+        {
+          "label": "would need to maintain",
+          "explanationZh": "would need to 表示如果方案通過就需要；maintain 係維持。"
+        },
+        {
+          "label": "a payroll of at least",
+          "explanationZh": "payroll 指薪酬總額；at least 係至少，後面通常跟數字。"
+        },
+        {
+          "label": "couldn't exceed",
+          "explanationZh": "exceed 係超過；couldn't exceed 即唔可以超過某個上限。"
+        }
+      ]
+    },
+    {
+      "title": "Possible Lockout",
+      "time": "03:49",
+      "audioText": "If the two sides can't reach a deal before the current contract expires in December, owners could lock out the players.",
+      "transcript": "If the two sides can't reach a deal before the current contract expires in December, owners could lock out the players.",
+      "translationZh": "如果雙方喺現有合約十二月到期前未能達成協議，班主可能會禁止球員開工。",
+      "points": [
+        {
+          "label": "If the two sides can't reach a deal",
+          "explanationZh": "two sides 指談判雙方；reach a deal 係達成協議。"
+        },
+        {
+          "label": "before the current contract expires",
+          "explanationZh": "current contract 係現有合約；expires 指到期。"
+        },
+        {
+          "label": "owners could lock out the players",
+          "explanationZh": "lock out 係勞資談判入面嘅『資方停工』；聽到 could 表示可能性。"
+        }
+      ]
+    },
+    {
+      "title": "Stocks Climb",
+      "time": "04:14",
+      "audioText": "On Wall Street today, stocks climbed to new records after the latest round of strong corporate earnings.",
+      "transcript": "On Wall Street today, stocks climbed to new records after the latest round of strong corporate earnings.",
+      "translationZh": "今日華爾街股市喺最新一輪強勁企業盈利之後升到新高。",
+      "points": [
+        {
+          "label": "On Wall Street today",
+          "explanationZh": "新聞轉去金融市場時常用；Wall Street 代表美國股市。"
+        },
+        {
+          "label": "stocks climbed to new records",
+          "explanationZh": "climbed 係升；new records 即新高位。"
+        },
+        {
+          "label": "strong corporate earnings",
+          "explanationZh": "corporate earnings 指公司盈利；strong 係表現好、數字強。"
+        }
+      ]
+    },
+    {
+      "title": "Nasdaq Jumped",
+      "time": "04:25",
+      "audioText": "The Nasdaq jumped nearly 250 points, or almost 1 percent.",
+      "transcript": "The Nasdaq jumped nearly 250 points, or almost 1 percent.",
+      "translationZh": "納斯達克指數升咗接近二百五十點，即差唔多百分之一。",
+      "points": [
+        {
+          "label": "The Nasdaq",
+          "explanationZh": "Nasdaq 係美國主要股票指數之一，科技股比較多。"
+        },
+        {
+          "label": "jumped nearly 250 points",
+          "explanationZh": "jumped 喺財經新聞入面即大幅上升；nearly 係接近。"
+        },
+        {
+          "label": "or almost 1 percent",
+          "explanationZh": "or 喺呢度係補充另一種講法；almost 1 percent 即差唔多百分之一。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "Major League Baseball owners proposed a salary cap for the first time in decades today, something the players union has vowed to never accept.",
+    "Under the proposal, teams would need to maintain a payroll of at least $171.2 million and couldn't exceed $245.3 million.",
+    "If the two sides can't reach a deal before the current contract expires in December, owners could lock out the players.",
+    "On Wall Street today, stocks climbed to new records after the latest round of strong corporate earnings.",
+    "The Nasdaq jumped nearly 250 points, or almost 1 percent."
+  ],
+  "vocabulary": [
+    {
+      "word": "proposed",
+      "ipa": "/prəˈpoʊzd/",
+      "partOfSpeech": "verb",
+      "meaningZh": "提出；建議",
+      "example": "Owners proposed a salary cap.",
+      "translationZh": "班主提出咗薪酬上限。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "salary",
+      "ipa": "/ˈsæl.ɚ.i/",
+      "partOfSpeech": "noun",
+      "meaningZh": "薪金；人工",
+      "example": "A salary cap limits how much teams can spend.",
+      "translationZh": "薪酬上限會限制球隊可以用幾多錢。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "union",
+      "ipa": "/ˈjuː.njən/",
+      "partOfSpeech": "noun",
+      "meaningZh": "工會；聯盟",
+      "example": "The players union has vowed to never accept it.",
+      "translationZh": "球員工會誓言絕不接受。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "payroll",
+      "ipa": "/ˈpeɪ.roʊl/",
+      "partOfSpeech": "noun",
+      "meaningZh": "薪酬總額；工資名單",
+      "example": "Teams would need to maintain a payroll of at least $171.2 million.",
+      "translationZh": "球隊需要維持至少一億七千一百二十萬美元嘅薪酬總額。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "exceed",
+      "ipa": "/ɪkˈsiːd/",
+      "partOfSpeech": "verb",
+      "meaningZh": "超過",
+      "example": "Teams couldn't exceed $245.3 million.",
+      "translationZh": "球隊唔可以超過二億四千五百三十萬美元。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "expires",
+      "ipa": "/ɪkˈspaɪrz/",
+      "partOfSpeech": "verb",
+      "meaningZh": "到期；失效",
+      "example": "The current contract expires in December.",
+      "translationZh": "現有合約十二月到期。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "earnings",
+      "ipa": "/ˈɝː.nɪŋz/",
+      "partOfSpeech": "noun",
+      "meaningZh": "盈利；收益",
+      "example": "Stocks climbed after strong corporate earnings.",
+      "translationZh": "股市喺強勁企業盈利後上升。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "Nasdaq",
+      "ipa": "/ˈnæz.dæk/",
+      "partOfSpeech": "noun",
+      "meaningZh": "納斯達克指數／市場",
+      "example": "The Nasdaq jumped nearly 250 points.",
+      "translationZh": "納斯達克升咗接近二百五十點。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "for the first time in decades",
+      "meaningZh": "幾十年來第一次",
+      "example": "Owners proposed a salary cap for the first time in decades."
+    },
+    {
+      "phrase": "under the proposal",
+      "meaningZh": "根據呢個方案",
+      "example": "Under the proposal, teams would need to maintain a payroll."
+    },
+    {
+      "phrase": "reach a deal",
+      "meaningZh": "達成協議",
+      "example": "The two sides need to reach a deal before December."
+    },
+    {
+      "phrase": "lock out the players",
+      "meaningZh": "資方禁止球員開工；封鎖球員",
+      "example": "Owners could lock out the players."
+    },
+    {
+      "phrase": "climbed to new records",
+      "meaningZh": "升到新高",
+      "example": "Stocks climbed to new records."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "instructionZh": "由 03:10 開始跟讀第一句，留意 proposed a salary cap / for the first time in decades 兩個節奏位。"
+    },
+    {
+      "type": "dictation",
+      "instructionZh": "重播 03:28，先聽數字前後嘅字：at least 同 couldn't exceed，再補返金額。"
+    },
+    {
+      "type": "imitation",
+      "instructionZh": "模仿 04:14 嘅財經新聞句式：On Wall Street today, stocks climbed to new records..."
+    },
+    {
+      "type": "retelling",
+      "instructionZh": "用兩句英文複述：MLB owners proposed a salary cap. Stocks also climbed after strong earnings."
+    }
+  ],
+  "notes": [
+    "今日嘅聽力重點係商業同體育新聞常見句式：proposed, under the proposal, reach a deal, climbed to new records。",
+    "數字句唔使一次聽晒；先抓 at least、couldn't exceed、nearly 呢啲提示字，再重聽數字。",
+    "用時間碼由 03:10 開始逐句重播，先盲聽，再對照 PBS 頁面嘅 closed captions/transcript。",
+    "今次選用片段入面較中性、生活化嘅商業同體育部分，避免把練習變成政治討論。"
+  ],
+  "dailyLifePractice": [
+    {
+      "title": "Quick Work Update",
+      "contextZh": "場景：你喺公司用簡短英文交代一件事嘅進度，同新聞入面 reach a deal / proposal 呢類講法呼應。",
+      "audioText": "Quick update: we sent the proposal this morning. We're still waiting on their feedback. If they approve it today, we can move forward tomorrow.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Quick update: we sent the proposal this morning.",
+          "zh": "簡短更新：我哋今朝已經 send 咗個 proposal。"
+        },
+        {
+          "speaker": "Coworker",
+          "en": "Nice. Have they replied yet?",
+          "zh": "好喎。佢哋覆咗未？"
+        },
+        {
+          "speaker": "You",
+          "en": "Not yet. We're still waiting on their feedback.",
+          "zh": "未呀。我哋仲等緊佢哋嘅 feedback。"
+        },
+        {
+          "speaker": "You",
+          "en": "If they approve it today, we can move forward tomorrow.",
+          "zh": "如果佢哋今日 approve，聽日就可以繼續下一步。"
+        }
+      ],
+      "nativeNoteZh": "Quick update 係美國職場好自然嘅開場。waiting on their feedback 比 waiting for their feedback 更口語，但兩個都啱。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 proposal 換成 report、schedule 或 quote，再講一次。",
+          "example": "Quick update: we sent the report this morning."
+        },
+        {
+          "label": "Say-it-your-way",
+          "prompt": "用 If they approve it today 開頭，講一個你工作上會用嘅下一步。",
+          "example": "If they approve it today, I can book the room tomorrow."
+        }
+      ]
+    },
+    {
+      "title": "Explaining a Delay",
+      "contextZh": "場景：你因為等對方回覆而延遲，想講得自然又唔怪責人。",
+      "audioText": "Sorry, this is taking a little longer than expected. We're waiting on one more confirmation. I'll send you an update as soon as I have it.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Sorry, this is taking a little longer than expected.",
+          "zh": "唔好意思，呢件事比預期耐少少。"
+        },
+        {
+          "speaker": "Client",
+          "en": "Is everything okay?",
+          "zh": "一切 okay 嗎？"
+        },
+        {
+          "speaker": "You",
+          "en": "Yes, we're just waiting on one more confirmation.",
+          "zh": "係，冇問題，只係仲等緊最後一個 confirmation。"
+        },
+        {
+          "speaker": "You",
+          "en": "I'll send you an update as soon as I have it.",
+          "zh": "我一有就會即刻 send update 畀你。"
+        }
+      ],
+      "nativeNoteZh": "taking a little longer than expected 聽落比 it's delayed 柔和。as soon as I have it 係好常用嘅承諾式收尾。",
+      "drills": [
+        {
+          "label": "Polite rephrase",
+          "prompt": "將 It's late 改成較自然禮貌嘅講法。",
+          "example": "It's taking a little longer than expected."
+        },
+        {
+          "label": "Quick repeat",
+          "prompt": "連續跟讀 I'll send you an update as soon as I have it 三次。",
+          "example": "I'll send you an update as soon as I have it."
+        }
+      ]
+    },
+    {
+      "title": "Price Check in a Store",
+      "contextZh": "場景：你買嘢時想確認價錢或折扣，配合今日新聞入面聽數字嘅練習。",
+      "audioText": "Hi, could you check the price on this for me? The shelf tag says it's on sale. I just want to make sure before I check out.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Hi, could you check the price on this for me?",
+          "zh": "你好，可唔可以幫我 check 下呢件嘢幾錢？"
+        },
+        {
+          "speaker": "Staff",
+          "en": "Sure, let me scan it.",
+          "zh": "可以，我 scan 一下。"
+        },
+        {
+          "speaker": "You",
+          "en": "The shelf tag says it's on sale.",
+          "zh": "貨架牌寫住做緊特價。"
+        },
+        {
+          "speaker": "You",
+          "en": "I just want to make sure before I check out.",
+          "zh": "我只係想付款前確認一下。"
+        }
+      ],
+      "nativeNoteZh": "could you check... for me? 好自然又有禮貌。check out 喺美國店舖通常解付款／結帳。",
+      "drills": [
+        {
+          "label": "Role-play",
+          "prompt": "你做 customer 講第一句，再做 staff 回 Sure, let me scan it。",
+          "example": "Sure, let me scan it."
+        },
+        {
+          "label": "Substitution",
+          "prompt": "將 price 換成 size、color、discount，練三次。",
+          "example": "Could you check the discount on this for me?"
+        }
+      ]
+    }
+  ]
+}
