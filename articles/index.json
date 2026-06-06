@@ -1,1 +1,82 @@
-{"current":"./articles/2026-06-05-graduation-advice.json","articles":[{"path":"./articles/2026-06-05-graduation-advice.json","id":"2026-06-05-graduation-advice","date":"2026-06-05","level":"B1-","title":"Graduation Advice for a Changing Job Market"},{"path":"./articles/2026-06-03-mlb-market-records.json","id":"2026-06-03-mlb-market-records","date":"2026-06-03","level":"B1-","title":"Salary Cap Proposal and Market Records"},{"path":"./articles/2026-06-02-bull-passenger.json","id":"2026-06-02-bull-passenger","date":"2026-06-02","level":"B1-","title":"A Bull in the Passenger Seat"},{"path":"./articles/2026-06-01-ozempic-after-stopping.json","id":"2026-06-01-ozempic-after-stopping","date":"2026-06-01","level":"B1-","title":"What Happens After Stopping Ozempic"},{"path":"./articles/2026-05-31-peptide-claims.json","id":"2026-05-31-peptide-claims","date":"2026-05-31","level":"B1-","title":"Viral Peptide Health Claims"},{"path":"./articles/2026-05-31-rustic-island.json","id":"2026-05-31-rustic-island","date":"2026-05-31","level":"B1-","title":"Rustic Life on Pulau Ubin"},{"path":"./articles/2026-05-30-optical-illusions.json","id":"2026-05-30-optical-illusions","date":"2026-05-30","level":"B1-","title":"Optical Illusions at a Miami Museum"},{"path":"./articles/2026-05-29-unanimous-vote.json","id":"2026-05-29-unanimous-vote","date":"2026-05-29","level":"B1-","title":"Unanimous Vote for Secretary of State"},{"path":"./articles/2026-05-29-rocket-test.json","id":"2026-05-29-rocket-test","date":"2026-05-29","level":"B1-","title":"Rocket Test Ends in Explosion"},{"path":"./articles/2026-05-29-rescue-news.json","id":"2026-05-29-rescue-news","date":"2026-05-29","level":"B1-","title":"Rescue in a Flooded Cave"}]}
+{
+  "current": "./articles/2026-06-06-anti-weaponization-fund.json",
+  "articles": [
+    {
+      "path": "./articles/2026-06-06-anti-weaponization-fund.json",
+      "id": "2026-06-06-anti-weaponization-fund",
+      "date": "2026-06-06",
+      "level": "B1-",
+      "title": "Justice Department Drops Proposed Fund"
+    },
+    {
+      "path": "./articles/2026-06-05-graduation-advice.json",
+      "id": "2026-06-05-graduation-advice",
+      "date": "2026-06-05",
+      "level": "B1-",
+      "title": "Graduation Advice for a Changing Job Market"
+    },
+    {
+      "path": "./articles/2026-06-03-mlb-market-records.json",
+      "id": "2026-06-03-mlb-market-records",
+      "date": "2026-06-03",
+      "level": "B1-",
+      "title": "Salary Cap Proposal and Market Records"
+    },
+    {
+      "path": "./articles/2026-06-02-bull-passenger.json",
+      "id": "2026-06-02-bull-passenger",
+      "date": "2026-06-02",
+      "level": "B1-",
+      "title": "A Bull in the Passenger Seat"
+    },
+    {
+      "path": "./articles/2026-06-01-ozempic-after-stopping.json",
+      "id": "2026-06-01-ozempic-after-stopping",
+      "date": "2026-06-01",
+      "level": "B1-",
+      "title": "What Happens After Stopping Ozempic"
+    },
+    {
+      "path": "./articles/2026-05-31-peptide-claims.json",
+      "id": "2026-05-31-peptide-claims",
+      "date": "2026-05-31",
+      "level": "B1-",
+      "title": "Viral Peptide Health Claims"
+    },
+    {
+      "path": "./articles/2026-05-31-rustic-island.json",
+      "id": "2026-05-31-rustic-island",
+      "date": "2026-05-31",
+      "level": "B1-",
+      "title": "Rustic Life on Pulau Ubin"
+    },
+    {
+      "path": "./articles/2026-05-30-optical-illusions.json",
+      "id": "2026-05-30-optical-illusions",
+      "date": "2026-05-30",
+      "level": "B1-",
+      "title": "Optical Illusions at a Miami Museum"
+    },
+    {
+      "path": "./articles/2026-05-29-unanimous-vote.json",
+      "id": "2026-05-29-unanimous-vote",
+      "date": "2026-05-29",
+      "level": "B1-",
+      "title": "Unanimous Vote for Secretary of State"
+    },
+    {
+      "path": "./articles/2026-05-29-rocket-test.json",
+      "id": "2026-05-29-rocket-test",
+      "date": "2026-05-29",
+      "level": "B1-",
+      "title": "Rocket Test Ends in Explosion"
+    },
+    {
+      "path": "./articles/2026-05-29-rescue-news.json",
+      "id": "2026-05-29-rescue-news",
+      "date": "2026-05-29",
+      "level": "B1-",
+      "title": "Rescue in a Flooded Cave"
+    }
+  ]
+}
