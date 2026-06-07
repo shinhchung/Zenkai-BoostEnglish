@@ -1,0 +1,383 @@
+{
+  "id": "2026-06-07-electric-plane-flight",
+  "date": "2026-06-07",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "A Flight Aboard an Electric Plane",
+  "source": {
+    "type": "youtube-news",
+    "title": "Inside flight aboard electric plane",
+    "channel": "ABC News / Good Morning America",
+    "url": "https://abcnews.com/video/133645999/"
+  },
+  "tags": [
+    "YouTube 英文新聞聽力",
+    "ABC News",
+    "科技同交通",
+    "字幕對齊聽力",
+    "日常美式口語",
+    "詞數：約74",
+    "練習時間：約8分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "A New Kind of Flight",
+      "time": "00:00",
+      "audioText": "A new all-electric plane taking to the skies could change how people and packages fly across the country.",
+      "transcript": "A new all-electric plane taking to the skies could change how people and packages fly across the country.",
+      "translationZh": "一架新嘅全電動飛機升空，可能會改變人同包裹喺全國各地飛行同運送嘅方式。",
+      "points": [
+        {
+          "label": "all-electric plane",
+          "explanationZh": "all-electric 即完全用電；聽到 all 同 electric 連住，意思係唔靠傳統燃油。"
+        },
+        {
+          "label": "taking to the skies",
+          "explanationZh": "新聞常用 take to the skies 表示飛上天空，可以當成一個畫面去記。"
+        },
+        {
+          "label": "people and packages",
+          "explanationZh": "people and packages 一對一對咁聽：乘客同貨件，講交通用途。"
+        }
+      ]
+    },
+    {
+      "title": "A Firsthand Look",
+      "time": "00:18",
+      "audioText": "ABC News transportation correspondent Gio Benitez got a bird's eye view aboard the battery-powered aircraft.",
+      "transcript": "ABC News transportation correspondent Gio Benitez got a bird's eye view aboard the battery-powered aircraft.",
+      "translationZh": "ABC News 交通記者 Gio Benitez 乘坐呢架電池驅動嘅飛機，親身由高空角度睇清楚。",
+      "points": [
+        {
+          "label": "transportation correspondent",
+          "explanationZh": "correspondent 係記者；transportation correspondent 即專門報道交通嘅記者。"
+        },
+        {
+          "label": "a bird's eye view",
+          "explanationZh": "字面係鳥瞰，日常都可指高處或整體角度。"
+        },
+        {
+          "label": "battery-powered aircraft",
+          "explanationZh": "powered 前面加 battery，表示由電池提供動力。"
+        }
+      ]
+    },
+    {
+      "title": "Charging and Takeoff",
+      "time": "00:52",
+      "audioText": "The electric plane can charge in about 50 minutes and can be airborne in just 15 seconds.",
+      "transcript": "The electric plane can charge in about 50 minutes and can be airborne in just 15 seconds.",
+      "translationZh": "呢架電動飛機大約 50 分鐘可以充好電，而且只需 15 秒就可以升空。",
+      "points": [
+        {
+          "label": "can charge in about 50 minutes",
+          "explanationZh": "in about 50 minutes 指完成充電所需時間；about 令數字自然啲。"
+        },
+        {
+          "label": "can be airborne",
+          "explanationZh": "airborne 即已經離地、喺空中；be airborne 係常見航空講法。"
+        },
+        {
+          "label": "in just 15 seconds",
+          "explanationZh": "just 強調時間好短，聽落有『只係』嘅感覺。"
+        }
+      ]
+    },
+    {
+      "title": "A Longer Range",
+      "time": "01:20",
+      "audioText": "According to Beta Technologies, the aircraft can travel more than 300 miles on a single charge.",
+      "transcript": "According to Beta Technologies, the aircraft can travel more than 300 miles on a single charge.",
+      "translationZh": "根據 Beta Technologies，呢架飛機一次充電可以飛超過 300 英里。",
+      "points": [
+        {
+          "label": "According to",
+          "explanationZh": "新聞常用 according to 交代資料來源，聽到之後通常會有公司、官員或研究名。"
+        },
+        {
+          "label": "more than 300 miles",
+          "explanationZh": "more than 係超過；數字前後可以稍停，方便聽清楚。"
+        },
+        {
+          "label": "on a single charge",
+          "explanationZh": "single charge 即一次充電；講電動車、手機、電池都好常用。"
+        }
+      ]
+    },
+    {
+      "title": "Final Tests Ahead",
+      "time": "02:48",
+      "audioText": "People will begin seeing the aircraft pop up across the country for final tests this September.",
+      "transcript": "People will begin seeing the aircraft pop up across the country for final tests this September.",
+      "translationZh": "到今年九月，大家會開始喺全國各地見到呢款飛機出現，進行最後測試。",
+      "points": [
+        {
+          "label": "will begin seeing",
+          "explanationZh": "will begin seeing 表示『將會開始見到』，係報道未來安排嘅常見句式。"
+        },
+        {
+          "label": "pop up",
+          "explanationZh": "pop up 係突然／陸續出現，口語感強過 appear。"
+        },
+        {
+          "label": "for final tests",
+          "explanationZh": "for final tests 交代目的：出現係為咗做最後測試。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "A new all-electric plane taking to the skies could change how people and packages fly across the country.",
+    "ABC News transportation correspondent Gio Benitez got a bird's eye view aboard the battery-powered aircraft.",
+    "The electric plane can charge in about 50 minutes and can be airborne in just 15 seconds.",
+    "According to Beta Technologies, the aircraft can travel more than 300 miles on a single charge.",
+    "People will begin seeing the aircraft pop up across the country for final tests this September."
+  ],
+  "vocabulary": [
+    {
+      "word": "electric",
+      "ipa": "/ɪˈlek.trɪk/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "電動嘅；用電嘅",
+      "example": "The company is testing a new electric plane.",
+      "translationZh": "呢間公司正測試一架新嘅電動飛機。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "aircraft",
+      "ipa": "/ˈer.kræft/",
+      "partOfSpeech": "noun",
+      "meaningZh": "飛機；航空器",
+      "example": "The aircraft can travel more than 300 miles.",
+      "translationZh": "呢架飛機可以飛超過 300 英里。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "charge",
+      "ipa": "/tʃɑːrdʒ/",
+      "partOfSpeech": "verb/noun",
+      "meaningZh": "充電；一次充電",
+      "example": "It can fly far on a single charge.",
+      "translationZh": "佢一次充電可以飛好遠。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "airborne",
+      "ipa": "/ˈer.bɔːrn/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "已升空嘅；喺空中嘅",
+      "example": "The plane can be airborne in seconds.",
+      "translationZh": "架飛機幾秒內就可以升空。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "descends",
+      "ipa": "/dɪˈsendz/",
+      "partOfSpeech": "verb",
+      "meaningZh": "下降；降落時降低高度",
+      "example": "As the plane descends, it can recover energy.",
+      "translationZh": "飛機下降時，可以回收能量。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "certification",
+      "ipa": "/ˌsɝː.tə.fəˈkeɪ.ʃən/",
+      "partOfSpeech": "noun",
+      "meaningZh": "認證；批准資格",
+      "example": "The aircraft still needs FAA certification.",
+      "translationZh": "呢架飛機仍然需要 FAA 認證。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "transform",
+      "ipa": "/trænsˈfɔːrm/",
+      "partOfSpeech": "verb",
+      "meaningZh": "徹底改變；轉型",
+      "example": "Electric aircraft could transform regional travel.",
+      "translationZh": "電動飛機可能會改變區域交通。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "taking to the skies",
+      "meaningZh": "升空；開始飛行",
+      "example": "A new all-electric plane is taking to the skies."
+    },
+    {
+      "phrase": "a bird's eye view",
+      "meaningZh": "鳥瞰角度；高空視角",
+      "example": "The reporter got a bird's eye view aboard the aircraft."
+    },
+    {
+      "phrase": "on a single charge",
+      "meaningZh": "一次充電",
+      "example": "The aircraft can travel more than 300 miles on a single charge."
+    },
+    {
+      "phrase": "pop up across the country",
+      "meaningZh": "喺全國各地陸續出現",
+      "example": "People will see the aircraft pop up across the country."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "instructionZh": "由 00:00 跟讀第一句，留意 all-electric plane 同 taking to the skies 兩組詞。"
+    },
+    {
+      "type": "dictation",
+      "instructionZh": "重播 00:52，先寫低 can charge in about 50 minutes，再補返 can be airborne。"
+    },
+    {
+      "type": "substitution",
+      "instructionZh": "用 on a single charge 練替換：This phone can last two days on a single charge."
+    },
+    {
+      "type": "retelling",
+      "instructionZh": "用兩句英文複述：The plane is battery-powered. It could make short flights cheaper and cleaner."
+    }
+  ],
+  "notes": [
+    "今日重點係聽科技交通新聞入面嘅數字同功能描述，例如 50 minutes、15 seconds、300 miles。",
+    "先用每個時間碼盲聽一次，再對照句子；數字聽唔清時，重播前後 5 秒就夠。",
+    "all-electric、battery-powered、single charge 都係講新能源交通好常見嘅 chunk。",
+    "dailyLifePractice 會配合交通主題，練問路、確認接送點同解釋交通延誤。"
+  ],
+  "dailyLifePractice": [
+    {
+      "title": "Confirming a Pickup Spot",
+      "contextZh": "場景：你叫車或者朋友嚟接你，要自然咁確認上車位置。",
+      "audioText": "Just to confirm, are you picking me up at arrivals or by the rideshare signs? I'm by Door 3 right now.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Just to confirm, are you picking me up at arrivals or by the rideshare signs?",
+          "zh": "我想確認一下，你係到達大堂接我，定係 rideshare 指示牌嗰邊？"
+        },
+        {
+          "speaker": "Driver",
+          "en": "By the rideshare signs.",
+          "zh": "喺 rideshare 指示牌嗰邊。"
+        },
+        {
+          "speaker": "You",
+          "en": "Got it. I'm by Door 3 right now.",
+          "zh": "明白。我而家喺 3 號門旁邊。"
+        },
+        {
+          "speaker": "Driver",
+          "en": "Perfect. I'll be there in two minutes.",
+          "zh": "好。我兩分鐘後到。"
+        }
+      ],
+      "nativeNoteZh": "Just to confirm 係好自然嘅確認開場，唔會聽落似質問。by Door 3 比 at Door 3 更口語，意思係喺門附近。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 Door 3 換成 Gate B、the coffee shop 或 baggage claim。",
+          "example": "I'm by baggage claim right now."
+        },
+        {
+          "label": "Short response",
+          "prompt": "對方講位置後，用 Got it 加你而家位置。",
+          "example": "Got it. I'm by the main entrance right now."
+        }
+      ]
+    },
+    {
+      "title": "Asking About Charging",
+      "contextZh": "場景：你借用朋友或辦公室嘅充電器，要問得自然同有禮貌。",
+      "audioText": "Do you mind if I use this charger for a bit? My battery is almost dead. I only need about ten minutes.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Do you mind if I use this charger for a bit?",
+          "zh": "你介唔介意我用一陣呢個充電器？"
+        },
+        {
+          "speaker": "Coworker",
+          "en": "Go for it.",
+          "zh": "用啦，冇問題。"
+        },
+        {
+          "speaker": "You",
+          "en": "Thanks. My battery is almost dead.",
+          "zh": "多謝。我部機差唔多冇電。"
+        },
+        {
+          "speaker": "You",
+          "en": "I only need about ten minutes.",
+          "zh": "我只需要大約十分鐘。"
+        }
+      ],
+      "nativeNoteZh": "for a bit 係『一陣』，比 for a short time 更自然。My battery is almost dead 係美式日常講法，唔係真係死咗，只係快冇電。",
+      "drills": [
+        {
+          "label": "Quick repeat",
+          "prompt": "跟讀 Do you mind if I use this charger for a bit? 三次，練語氣柔和。",
+          "example": "Do you mind if I use this charger for a bit?"
+        },
+        {
+          "label": "Say-it-your-way",
+          "prompt": "用 I only need about... 講你需要幾耐。",
+          "example": "I only need about five minutes."
+        }
+      ]
+    },
+    {
+      "title": "Explaining a Travel Delay",
+      "contextZh": "場景：你因為交通或航班延誤，要簡短通知對方你會遲到。",
+      "audioText": "I'm running a little behind. My flight got delayed, but I'm on my way now. I should be there around six.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "I'm running a little behind.",
+          "zh": "我有少少遲咗。"
+        },
+        {
+          "speaker": "Friend",
+          "en": "No worries. What happened?",
+          "zh": "唔緊要。發生咩事？"
+        },
+        {
+          "speaker": "You",
+          "en": "My flight got delayed, but I'm on my way now.",
+          "zh": "我班機延誤咗，不過我而家已經喺路上。"
+        },
+        {
+          "speaker": "You",
+          "en": "I should be there around six.",
+          "zh": "我應該大約六點到。"
+        }
+      ],
+      "nativeNoteZh": "I'm running a little behind 比 I'm late 柔和，適合提早通知人。I should be there around six 留有彈性，唔會講得太死。",
+      "drills": [
+        {
+          "label": "Polite rephrase",
+          "prompt": "用 I'm running a little behind 開頭，換成 train、bus 或 meeting 延誤。",
+          "example": "I'm running a little behind. My train got delayed."
+        },
+        {
+          "label": "Role-play",
+          "prompt": "你講延誤原因，再用 I should be there around... 結尾。",
+          "example": "Traffic is heavier than I expected. I should be there around three-thirty."
+        }
+      ]
+    }
+  ]
+}

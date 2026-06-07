@@ -1,6 +1,13 @@
 {
-  "current": "./articles/2026-06-06-anti-weaponization-fund.json",
+  "current": "./articles/2026-06-07-electric-plane-flight.json",
   "articles": [
+    {
+      "path": "./articles/2026-06-07-electric-plane-flight.json",
+      "id": "2026-06-07-electric-plane-flight",
+      "date": "2026-06-07",
+      "level": "B1-",
+      "title": "A Flight Aboard an Electric Plane"
+    },
     {
       "path": "./articles/2026-06-06-anti-weaponization-fund.json",
       "id": "2026-06-06-anti-weaponization-fund",
