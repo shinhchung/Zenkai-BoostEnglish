@@ -1,0 +1,334 @@
+{
+  "id": "2026-06-09-world-cup-fans",
+  "date": "2026-06-09",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "Fans Get Ready for the World Cup",
+  "source": {
+    "type": "youtube-news",
+    "title": "How fans are feeling ahead of the World Cup",
+    "channel": "CBS News",
+    "url": "https://www.cbsnews.com/video/how-fans-feeling-ahead-world-cup/?embed=1"
+  },
+  "tags": [
+    "YouTube 英文新聞聽力",
+    "CBS News",
+    "世界盃同城市準備",
+    "字幕對齊聽力",
+    "日常美式口語",
+    "詞數：約39",
+    "練習時間：約7分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "A New Look",
+      "time": "00:00",
+      "audioText": "Seattle's Space Needle sported a new look on Saturday, painted like a soccer ball.",
+      "transcript": "Seattle's Space Needle sported a new look on Saturday, painted like a soccer ball.",
+      "translationZh": "西雅圖太空針塔星期六換咗新造型，被髹到好似一個足球咁。",
+      "points": [
+        {
+          "label": "sported a new look",
+          "explanationZh": "sport a new look 係新聞同生活都會用嘅講法，意思係『換咗新造型』。"
+        },
+        {
+          "label": "painted like a soccer ball",
+          "explanationZh": "painted like... 係『被髹到似...』；聽到 like 後面留意比喻對象。"
+        },
+        {
+          "label": "on Saturday",
+          "explanationZh": "時間放句尾，聽新聞時可以當作補充背景。"
+        }
+      ]
+    },
+    {
+      "title": "Host Cities",
+      "time": "00:12",
+      "audioText": "The city is one of 16 across North America set to host men's World Cup games.",
+      "transcript": "The city is one of 16 across North America set to host men's World Cup games.",
+      "translationZh": "呢個城市係北美 16 個將會主辦男子世界盃賽事嘅城市之一。",
+      "points": [
+        {
+          "label": "one of 16",
+          "explanationZh": "one of 加數字或複數名詞，表示『其中之一』，新聞講名單、城市、公司好常見。"
+        },
+        {
+          "label": "across North America",
+          "explanationZh": "across 係橫跨、遍及；North America 指北美。"
+        },
+        {
+          "label": "set to host",
+          "explanationZh": "set to do something 即將會、已安排好做某事；host 係主辦。"
+        }
+      ]
+    },
+    {
+      "title": "Fans Getting Ready",
+      "time": "00:24",
+      "audioText": "Nicole Valdes reports on how die-hard fans are getting ready.",
+      "transcript": "Nicole Valdes reports on how die-hard fans are getting ready.",
+      "translationZh": "Nicole Valdes 報道忠實球迷點樣準備迎接賽事。",
+      "points": [
+        {
+          "label": "reports on",
+          "explanationZh": "report on something 即報道某個題目；on 後面係主題。"
+        },
+        {
+          "label": "die-hard fans",
+          "explanationZh": "die-hard fans 指非常忠實、好投入嘅粉絲，語氣自然。"
+        },
+        {
+          "label": "are getting ready",
+          "explanationZh": "get ready 係準備；are getting ready 表示而家正準備緊。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "Seattle's Space Needle sported a new look on Saturday, painted like a soccer ball.",
+    "The city is one of 16 across North America set to host men's World Cup games.",
+    "Nicole Valdes reports on how die-hard fans are getting ready."
+  ],
+  "vocabulary": [
+    {
+      "word": "sported",
+      "ipa": "/ˈspɔːr.t̬ɪd/",
+      "partOfSpeech": "verb",
+      "meaningZh": "展示；穿戴；以某種造型出現",
+      "example": "The tower sported a new look for the event.",
+      "translationZh": "呢座塔為咗活動換咗新造型。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "painted",
+      "ipa": "/ˈpeɪn.tɪd/",
+      "partOfSpeech": "adjective/verb",
+      "meaningZh": "被髹上顏色嘅；油漆咗",
+      "example": "The building was painted like a soccer ball.",
+      "translationZh": "嗰座建築被髹到好似足球咁。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "host",
+      "ipa": "/hoʊst/",
+      "partOfSpeech": "verb/noun",
+      "meaningZh": "主辦；主持；主人",
+      "example": "The city will host several World Cup games.",
+      "translationZh": "呢個城市會主辦幾場世界盃賽事。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "ahead",
+      "ipa": "/əˈhed/",
+      "partOfSpeech": "adverb",
+      "meaningZh": "喺前面；即將到來之前",
+      "example": "Fans are excited ahead of the tournament.",
+      "translationZh": "比賽即將到來，球迷都好興奮。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "die-hard",
+      "ipa": "/ˈdaɪ.hɑːrd/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "非常忠實嘅；死忠嘅",
+      "example": "Die-hard fans waited outside the stadium.",
+      "translationZh": "死忠球迷喺球場外面等。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "ready",
+      "ipa": "/ˈred.i/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "準備好嘅",
+      "example": "The fans are getting ready for the big game.",
+      "translationZh": "球迷正準備迎接呢場大賽。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "sport a new look",
+      "meaningZh": "換上新造型；以新面貌出現",
+      "example": "The Space Needle sported a new look."
+    },
+    {
+      "phrase": "one of 16",
+      "meaningZh": "16 個之中其中一個",
+      "example": "Seattle is one of 16 host cities."
+    },
+    {
+      "phrase": "set to host",
+      "meaningZh": "已安排／即將主辦",
+      "example": "The city is set to host World Cup games."
+    },
+    {
+      "phrase": "die-hard fans",
+      "meaningZh": "非常忠實嘅粉絲／球迷",
+      "example": "Die-hard fans are getting ready."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "instructionZh": "由 00:00 跟讀第一句，留意 sported a new look 呢個自然講法。"
+    },
+    {
+      "type": "dictation",
+      "instructionZh": "重播 00:12，先寫低 one of 16，再補 across North America。"
+    },
+    {
+      "type": "substitution",
+      "instructionZh": "用 set to host 練替換：The city is set to host a big concert."
+    },
+    {
+      "type": "retelling",
+      "instructionZh": "用兩句英文複述：Seattle is getting ready for the World Cup. Fans are excited for the games."
+    }
+  ],
+  "notes": [
+    "今日重點係聽體育同城市準備新聞入面嘅短句，句子短，適合做盲聽同跟讀。",
+    "先用時間碼聽三句，不要急住睇稿；第二次先對照 transcript。",
+    "one of 16、set to host、getting ready 都係新聞同日常都常用嘅 chunk。",
+    "dailyLifePractice 會配合活動同出行主題，練約人、問路同解釋小延誤。"
+  ],
+  "dailyLifePractice": [
+    {
+      "title": "Meeting Before a Game",
+      "contextZh": "場景：你同朋友約好睇比賽，要自然確認集合時間同地點。",
+      "audioText": "Are we still meeting at six? I can meet you by the main entrance. Text me when you get close.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Are we still meeting at six?",
+          "zh": "我哋仲係六點集合嗎？"
+        },
+        {
+          "speaker": "Friend",
+          "en": "Yes, that still works for me.",
+          "zh": "係，對我嚟講仲可以。"
+        },
+        {
+          "speaker": "You",
+          "en": "I can meet you by the main entrance.",
+          "zh": "我可以喺正門附近等你。"
+        },
+        {
+          "speaker": "Friend",
+          "en": "Perfect. I'll text you when I get close.",
+          "zh": "好。我差唔多到就短訊你。"
+        }
+      ],
+      "nativeNoteZh": "Are we still...? 係好自然嘅確認問法，唔會太正式。by the main entrance 指喺正門附近，比 inside the entrance 更有彈性。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 six 換成 seven-thirty、noon 或 after work。",
+          "example": "Are we still meeting after work?"
+        },
+        {
+          "label": "Quick repeat",
+          "prompt": "跟讀 Text me when you get close 三次。",
+          "example": "Text me when you get close."
+        }
+      ]
+    },
+    {
+      "title": "Asking for Directions",
+      "contextZh": "場景：你去大型活動，搵唔到入口，要簡短問職員。",
+      "audioText": "Excuse me, is this the line for Gate B? I'm trying to find the entrance for section 112. Thanks, I appreciate it.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Excuse me, is this the line for Gate B?",
+          "zh": "唔好意思，呢條係去 B 閘嘅隊嗎？"
+        },
+        {
+          "speaker": "Staff",
+          "en": "Gate B is around the corner.",
+          "zh": "B 閘喺轉角嗰邊。"
+        },
+        {
+          "speaker": "You",
+          "en": "Got it. I'm trying to find the entrance for section 112.",
+          "zh": "明白。我想搵 112 區嘅入口。"
+        },
+        {
+          "speaker": "Staff",
+          "en": "You're close. Just keep going straight.",
+          "zh": "你好近喇。一直行就得。"
+        },
+        {
+          "speaker": "You",
+          "en": "Thanks, I appreciate it.",
+          "zh": "多謝，真係唔該晒。"
+        }
+      ],
+      "nativeNoteZh": "Is this the line for...? 喺美國排隊場景好常用。I appreciate it 比單講 thanks 稍為更暖、更有禮貌。",
+      "drills": [
+        {
+          "label": "Role-play",
+          "prompt": "用 Is this the line for...? 問另一個地點。",
+          "example": "Is this the line for the shuttle?"
+        },
+        {
+          "label": "Short response",
+          "prompt": "聽到方向後，用 Got it 加一句你要去邊。",
+          "example": "Got it. I'm trying to find section 205."
+        }
+      ]
+    },
+    {
+      "title": "Explaining a Small Delay",
+      "contextZh": "場景：你去活動路上遇到人多或交通慢，要輕鬆通知朋友會遲少少。",
+      "audioText": "I'm running a little behind. The train is packed, but I'm almost there. Save me a spot if you can.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "I'm running a little behind.",
+          "zh": "我有少少遲咗。"
+        },
+        {
+          "speaker": "Friend",
+          "en": "No worries. Are you close?",
+          "zh": "唔緊要。你近未？"
+        },
+        {
+          "speaker": "You",
+          "en": "The train is packed, but I'm almost there.",
+          "zh": "架車好迫，不過我差唔多到。"
+        },
+        {
+          "speaker": "You",
+          "en": "Save me a spot if you can.",
+          "zh": "如果可以，幫我留個位。"
+        }
+      ],
+      "nativeNoteZh": "I'm running a little behind 比 I'm late 柔和，適合預先通知。packed 係口語，講車廂、餐廳、場館好多人都可以用。",
+      "drills": [
+        {
+          "label": "Polite rephrase",
+          "prompt": "用 I'm running a little behind 開頭，換一個原因。",
+          "example": "I'm running a little behind. Traffic is heavier than I expected."
+        },
+        {
+          "label": "Say-it-your-way",
+          "prompt": "用 Save me... if you can 講一個簡短請求。",
+          "example": "Save me a seat if you can."
+        }
+      ]
+    }
+  ]
+}
