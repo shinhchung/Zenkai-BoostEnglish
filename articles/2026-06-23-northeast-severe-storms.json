@@ -1,0 +1,367 @@
+{
+  "id": "2026-06-23-northeast-severe-storms",
+  "date": "2026-06-23",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "Severe Storms Move Into the Northeast",
+  "source": {
+    "type": "youtube-news",
+    "title": "Severe storms in the Northeast after deadly tornado outbreak in the Midwest",
+    "channel": "ABC News",
+    "url": "https://www.youtube.com/watch?v=2hk-VLUt_fs"
+  },
+  "tags": [
+    "YouTube 英文新聞聽力",
+    "ABC News / World News Tonight",
+    "天氣同安全提醒",
+    "字幕對齊聽力",
+    "日常美式口語",
+    "詞數：約48",
+    "練習時間：約8分鐘",
+    "daily-life speaking：約5分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "Breaking Weather News",
+      "time": "00:00",
+      "audioText": "Good evening. We begin tonight here with breaking news.",
+      "transcript": "Good evening. We begin tonight here with breaking news.",
+      "translationZh": "晚上好。今晚我哋由突發新聞開始。",
+      "points": [
+        {
+          "label": "Good evening",
+          "explanationZh": "晚間新聞常見開場；evening 嘅 v 音要輕輕咬下唇。"
+        },
+        {
+          "label": "We begin tonight",
+          "explanationZh": "begin tonight 即今晚由呢件事開始；聽到 begin 就知主持帶入主題。"
+        },
+        {
+          "label": "with breaking news",
+          "explanationZh": "breaking news 係突發新聞；with 後面講今集開場焦點。"
+        }
+      ]
+    },
+    {
+      "title": "Storm Alerts",
+      "time": "00:05",
+      "audioText": "Severe storms in the Northeast are putting more than 60 million under alerts.",
+      "transcript": "Severe storms in the Northeast are putting more than 60 million under alerts.",
+      "translationZh": "美國東北部嘅強烈風暴令超過六千萬人處於警報之下。",
+      "points": [
+        {
+          "label": "Severe storms",
+          "explanationZh": "severe 係嚴重、強烈；同 storms 放埋一齊即強烈風暴。"
+        },
+        {
+          "label": "in the Northeast",
+          "explanationZh": "Northeast 指美國東北部；新聞常用地區名做快速定位。"
+        },
+        {
+          "label": "more than 60 million under alerts",
+          "explanationZh": "more than 60 million 即超過六千萬；under alerts 即受警報影響。"
+        }
+      ]
+    },
+    {
+      "title": "Possible Hazards",
+      "time": "00:15",
+      "audioText": "The storms bring the possibility of dangerous thunderstorms, large hail and damaging winds.",
+      "transcript": "The storms bring the possibility of dangerous thunderstorms, large hail and damaging winds.",
+      "translationZh": "呢啲風暴可能帶來危險雷暴、大冰雹同破壞性強風。",
+      "points": [
+        {
+          "label": "bring the possibility of",
+          "explanationZh": "意思係『帶來……嘅可能』；新聞講風險時好常見。"
+        },
+        {
+          "label": "dangerous thunderstorms",
+          "explanationZh": "thunderstorms 係雷暴；dangerous 放前面強調有危險。"
+        },
+        {
+          "label": "large hail and damaging winds",
+          "explanationZh": "hail 係冰雹；damaging winds 係會造成破壞嘅強風。"
+        }
+      ]
+    },
+    {
+      "title": "Midwest Tornadoes",
+      "time": "00:27",
+      "audioText": "More than 50 reported tornadoes tore across the Midwest, killing three.",
+      "transcript": "More than 50 reported tornadoes tore across the Midwest, killing three.",
+      "translationZh": "超過五十宗通報龍捲風吹襲美國中西部，造成三人死亡。",
+      "points": [
+        {
+          "label": "More than 50 reported tornadoes",
+          "explanationZh": "reported tornadoes 即已通報或記錄嘅龍捲風；先抓數字 more than 50。"
+        },
+        {
+          "label": "tore across the Midwest",
+          "explanationZh": "tore across 係快速猛烈掃過；Midwest 指美國中西部。"
+        },
+        {
+          "label": "killing three",
+          "explanationZh": "句尾用 -ing 補充結果；呢度係造成三人死亡。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "Good evening. We begin tonight here with breaking news.",
+    "Severe storms in the Northeast are putting more than 60 million under alerts.",
+    "The storms bring the possibility of dangerous thunderstorms, large hail and damaging winds.",
+    "More than 50 reported tornadoes tore across the Midwest, killing three."
+  ],
+  "vocabulary": [
+    {
+      "word": "severe",
+      "ipa": "/səˈvɪr/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "嚴重嘅；強烈嘅",
+      "example": "Severe storms are expected tonight.",
+      "translationZh": "今晚預計會有強烈風暴。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "alert",
+      "ipa": "/əˈlɝːt/",
+      "partOfSpeech": "noun",
+      "meaningZh": "警報；提示",
+      "example": "We got a weather alert on our phones.",
+      "translationZh": "我哋電話收到天氣警報。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "possibility",
+      "ipa": "/ˌpɑː.səˈbɪl.ə.t̬i/",
+      "partOfSpeech": "noun",
+      "meaningZh": "可能性",
+      "example": "There is a possibility of rain later.",
+      "translationZh": "遲啲有可能落雨。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "thunderstorm",
+      "ipa": "/ˈθʌn.dɚˌstɔːrm/",
+      "partOfSpeech": "noun",
+      "meaningZh": "雷暴",
+      "example": "The thunderstorm moved through quickly.",
+      "translationZh": "雷暴好快就經過咗。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "hail",
+      "ipa": "/heɪl/",
+      "partOfSpeech": "noun",
+      "meaningZh": "冰雹",
+      "example": "Large hail can damage cars.",
+      "translationZh": "大冰雹可以整爛車。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "damaging",
+      "ipa": "/ˈdæm.ɪ.dʒɪŋ/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "會造成破壞嘅",
+      "example": "Damaging winds knocked down trees.",
+      "translationZh": "破壞性強風吹倒咗樹。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "tornado",
+      "ipa": "/tɔːrˈneɪ.doʊ/",
+      "partOfSpeech": "noun",
+      "meaningZh": "龍捲風",
+      "example": "A tornado warning was issued for the county.",
+      "translationZh": "當局向該縣發出龍捲風警告。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "breaking news",
+      "meaningZh": "突發新聞",
+      "example": "We begin tonight with breaking news."
+    },
+    {
+      "phrase": "under alerts",
+      "meaningZh": "處於警報之下",
+      "example": "More than 60 million people are under alerts."
+    },
+    {
+      "phrase": "the possibility of",
+      "meaningZh": "……嘅可能性",
+      "example": "The forecast shows the possibility of thunderstorms."
+    },
+    {
+      "phrase": "damaging winds",
+      "meaningZh": "破壞性強風",
+      "example": "Damaging winds could hit the area tonight."
+    },
+    {
+      "phrase": "tore across",
+      "meaningZh": "猛烈掃過",
+      "example": "Storms tore across the Midwest."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "instructionZh": "由 00:05 跟讀 Severe storms in the Northeast are putting more than 60 million under alerts. 先分成三段讀。"
+    },
+    {
+      "type": "dictation",
+      "instructionZh": "重播 00:15，先聽寫 dangerous thunderstorms，再補 large hail and damaging winds。"
+    },
+    {
+      "type": "substitution",
+      "instructionZh": "用 under alerts 練替換：The city is under alerts. / Many counties are under alerts."
+    },
+    {
+      "type": "retelling",
+      "instructionZh": "用兩句英文複述：Severe storms are moving into the Northeast. More than 60 million people are under alerts."
+    }
+  ],
+  "notes": [
+    "今日片段係 ABC News / World News Tonight 約 2 分 57 秒嘅天氣新聞，主題係強烈風暴同警報。",
+    "聽力重點係抓天氣風險詞：severe storms、alerts、thunderstorms、hail、damaging winds。",
+    "時間碼 00:00、00:05、00:15、00:27 可以逐句重播；先盲聽數字同地點，再看稿補完整句。",
+    "dailyLifePractice 會轉去較輕鬆嘅日常情境：改約時間、查天氣同解釋延誤。"
+  ],
+  "dailyLifePractice": [
+    {
+      "title": "Checking Plans Because of Weather",
+      "contextZh": "場景：天氣唔穩定，你想同朋友確認今晚仲出唔出去。",
+      "audioText": "Hey, are we still on for tonight? The weather looks pretty rough. I'm okay with rescheduling if that works better.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Hey, are we still on for tonight?",
+          "zh": "喂，我哋今晚仲照原定嗎？"
+        },
+        {
+          "speaker": "Friend",
+          "en": "I'm not sure. The weather looks pretty rough.",
+          "zh": "我唔太肯定。天氣睇落幾差。"
+        },
+        {
+          "speaker": "You",
+          "en": "I'm okay with rescheduling if that works better.",
+          "zh": "如果改期方便啲，我都可以。"
+        },
+        {
+          "speaker": "Friend",
+          "en": "Let's decide in an hour.",
+          "zh": "我哋一個鐘後再決定啦。"
+        }
+      ],
+      "nativeNoteZh": "Are we still on for tonight? 係好自然嘅美式問法，意思係『今晚仲照舊嗎？』pretty rough 講天氣時係口語，表示幾差、幾麻煩。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 tonight 換成 tomorrow morning、this weekend 或 lunch。",
+          "example": "Are we still on for lunch?"
+        },
+        {
+          "label": "Polite rephrase",
+          "prompt": "用 I'm okay with... 表示你可以改時間。",
+          "example": "I'm okay with moving it to tomorrow."
+        }
+      ]
+    },
+    {
+      "title": "Asking About the Forecast",
+      "contextZh": "場景：你同同事準備出門食午餐，想快快問天氣會唔會影響。",
+      "audioText": "Did you check the forecast? It says storms could roll in later. Maybe we should grab something close by.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Did you check the forecast?",
+          "zh": "你有冇睇天氣預報？"
+        },
+        {
+          "speaker": "Coworker",
+          "en": "Not yet. Is it supposed to rain?",
+          "zh": "未呀。係咪話會落雨？"
+        },
+        {
+          "speaker": "You",
+          "en": "It says storms could roll in later.",
+          "zh": "佢話遲啲可能有風暴過嚟。"
+        },
+        {
+          "speaker": "You",
+          "en": "Maybe we should grab something close by.",
+          "zh": "或者我哋喺附近買啲嘢食算啦。"
+        }
+      ],
+      "nativeNoteZh": "roll in 用嚟講天氣好自然，表示天氣系統慢慢過嚟。grab something close by 係口語講『喺附近搵啲嘢食』。",
+      "drills": [
+        {
+          "label": "Quick repeat",
+          "prompt": "跟讀 Did you check the forecast? 三次，語氣自然上揚。",
+          "example": "Did you check the forecast?"
+        },
+        {
+          "label": "Say-it-your-way",
+          "prompt": "用 Maybe we should... 提議一個簡單改動。",
+          "example": "Maybe we should take the train instead."
+        }
+      ]
+    },
+    {
+      "title": "Explaining a Weather Delay",
+      "contextZh": "場景：你因為大雨或交通慢，想簡短通知對方會遲少少。",
+      "audioText": "Quick heads-up: the rain is slowing everything down. I might be about ten minutes late. I'll let you know when I'm close.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Quick heads-up: the rain is slowing everything down.",
+          "zh": "提提你：大雨令所有嘢都慢咗。"
+        },
+        {
+          "speaker": "Friend",
+          "en": "No worries. Take your time.",
+          "zh": "唔緊要，慢慢嚟。"
+        },
+        {
+          "speaker": "You",
+          "en": "I might be about ten minutes late.",
+          "zh": "我可能會遲大約十分鐘。"
+        },
+        {
+          "speaker": "You",
+          "en": "I'll let you know when I'm close.",
+          "zh": "我差唔多到就話你知。"
+        }
+      ],
+      "nativeNoteZh": "Quick heads-up 係自然又有禮貌嘅『先通知你一聲』。slowing everything down 好口語，適合講天氣、交通或排隊。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 ten minutes 換成 five minutes、a few minutes 或 fifteen minutes。",
+          "example": "I might be about five minutes late."
+        },
+        {
+          "label": "Short response practice",
+          "prompt": "對方話 Take your time，你用一句英文回應。",
+          "example": "Thanks, I appreciate it."
+        }
+      ]
+    }
+  ]
+}
