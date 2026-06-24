@@ -1,0 +1,367 @@
+{
+  "id": "2026-06-24-faa-ai-runway-safety",
+  "date": "2026-06-24",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "FAA Turns to AI for Runway Safety",
+  "source": {
+    "type": "youtube-news",
+    "title": "How the FAA is using AI for runway issues",
+    "channel": "Good Morning America",
+    "url": "https://www.youtube.com/watch?v=f6nW8vdTKy0"
+  },
+  "tags": [
+    "YouTube 英文新聞聽力",
+    "ABC News / Good Morning America",
+    "科技同航空安全",
+    "字幕對齊聽力",
+    "日常美式口語",
+    "詞數：約45",
+    "練習時間：約8分鐘",
+    "daily-life speaking：約5分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "AI Tool Rollout",
+      "time": "00:05",
+      "audioText": "The FAA says it will roll out a new AI-powered tool designed to predict problems before they cause delays.",
+      "transcript": "The FAA says it will roll out a new AI-powered tool designed to predict problems before they cause delays.",
+      "translationZh": "FAA 話會推出一個由 AI 驅動嘅新工具，用嚟喺問題造成延誤之前作出預測。",
+      "points": [
+        {
+          "label": "The FAA says",
+          "explanationZh": "The FAA 係美國聯邦航空管理局；says 後面通常接官方公布內容。"
+        },
+        {
+          "label": "roll out",
+          "explanationZh": "roll out 即推出、開始使用；科技同政策新聞好常見。"
+        },
+        {
+          "label": "before they cause delays",
+          "explanationZh": "before 提前講時間關係；delays 係航班或流程延誤。"
+        }
+      ]
+    },
+    {
+      "title": "Efficiency Goal",
+      "time": "00:15",
+      "audioText": "Officials say the technology could make flying more efficient and reduce cancellations.",
+      "transcript": "Officials say the technology could make flying more efficient and reduce cancellations.",
+      "translationZh": "官員話呢項技術可能令飛行更有效率，並減少航班取消。",
+      "points": [
+        {
+          "label": "Officials say",
+          "explanationZh": "officials 指官員或相關部門人士；新聞常用嚟交代消息來源。"
+        },
+        {
+          "label": "could make flying more efficient",
+          "explanationZh": "could 表示可能性；more efficient 即更有效率。"
+        },
+        {
+          "label": "reduce cancellations",
+          "explanationZh": "reduce 係減少；cancellations 係取消，航空新聞入面通常指航班取消。"
+        }
+      ]
+    },
+    {
+      "title": "Human Error",
+      "time": "00:42",
+      "audioText": "Those really are almost always because of human error.",
+      "transcript": "Those really are almost always because of human error.",
+      "translationZh": "嗰啲情況其實幾乎一直都係因為人為錯誤造成。",
+      "points": [
+        {
+          "label": "Those really are",
+          "explanationZh": "Those 指前面提到嘅問題或事故；really 加強語氣。"
+        },
+        {
+          "label": "almost always",
+          "explanationZh": "almost always 即幾乎總是；聽到 almost 要留意唔係百分百。"
+        },
+        {
+          "label": "because of human error",
+          "explanationZh": "because of 後面接名詞短語；human error 即人為錯誤。"
+        }
+      ]
+    },
+    {
+      "title": "Possible Prevention",
+      "time": "00:49",
+      "audioText": "So it's possible that this new AI could help prevent those altogether.",
+      "transcript": "So it's possible that this new AI could help prevent those altogether.",
+      "translationZh": "所以呢個新 AI 有可能幫手完全避免嗰啲情況。",
+      "points": [
+        {
+          "label": "So it's possible that",
+          "explanationZh": "So 用嚟承接前文；it's possible that 表示『有可能……』。"
+        },
+        {
+          "label": "could help prevent",
+          "explanationZh": "could help prevent 即可能有助防止；語氣比 will prevent 保守。"
+        },
+        {
+          "label": "those altogether",
+          "explanationZh": "altogether 係完全、整體上；句尾補充防止嘅程度。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "The FAA says it will roll out a new AI-powered tool designed to predict problems before they cause delays.",
+    "Officials say the technology could make flying more efficient and reduce cancellations.",
+    "Those really are almost always because of human error.",
+    "So it's possible that this new AI could help prevent those altogether."
+  ],
+  "vocabulary": [
+    {
+      "word": "roll out",
+      "ipa": "/roʊl aʊt/",
+      "partOfSpeech": "phrasal verb",
+      "meaningZh": "推出；開始使用",
+      "example": "The company will roll out the new app next month.",
+      "translationZh": "公司下個月會推出新 app。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "AI-powered",
+      "ipa": "/ˌeɪˈaɪ ˈpaʊərd/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "由人工智能驅動嘅",
+      "example": "The airport is testing an AI-powered system.",
+      "translationZh": "機場正測試一套 AI 驅動嘅系統。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "predict",
+      "ipa": "/prɪˈdɪkt/",
+      "partOfSpeech": "verb",
+      "meaningZh": "預測",
+      "example": "The tool can predict delays.",
+      "translationZh": "呢個工具可以預測延誤。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "delay",
+      "ipa": "/dɪˈleɪ/",
+      "partOfSpeech": "noun",
+      "meaningZh": "延誤；延遲",
+      "example": "There was a short delay at the gate.",
+      "translationZh": "登機閘口有短暫延誤。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "efficient",
+      "ipa": "/ɪˈfɪʃ.ənt/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "有效率嘅",
+      "example": "Online check-in makes travel more efficient.",
+      "translationZh": "網上辦理登機令旅程更有效率。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "cancellation",
+      "ipa": "/ˌkæn.səlˈeɪ.ʃən/",
+      "partOfSpeech": "noun",
+      "meaningZh": "取消",
+      "example": "The storm caused several cancellations.",
+      "translationZh": "風暴導致幾班機取消。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "prevent",
+      "ipa": "/prɪˈvent/",
+      "partOfSpeech": "verb",
+      "meaningZh": "防止；避免",
+      "example": "Good planning can prevent problems.",
+      "translationZh": "好好計劃可以避免問題。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "designed to predict problems",
+      "meaningZh": "設計用嚟預測問題",
+      "example": "The tool is designed to predict problems early."
+    },
+    {
+      "phrase": "before they cause delays",
+      "meaningZh": "喺佢哋造成延誤之前",
+      "example": "Staff want to fix issues before they cause delays."
+    },
+    {
+      "phrase": "make flying more efficient",
+      "meaningZh": "令飛行更有效率",
+      "example": "Better scheduling can make flying more efficient."
+    },
+    {
+      "phrase": "because of human error",
+      "meaningZh": "因為人為錯誤",
+      "example": "The mistake happened because of human error."
+    },
+    {
+      "phrase": "help prevent those altogether",
+      "meaningZh": "幫手完全避免嗰啲情況",
+      "example": "New alerts may help prevent those altogether."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "instructionZh": "由 00:05 跟讀 The FAA says it will roll out...，先分成 The FAA says / it will roll out / a new AI-powered tool。"
+    },
+    {
+      "type": "dictation",
+      "instructionZh": "重播 00:15，先聽寫 could make flying more efficient，再補 reduce cancellations。"
+    },
+    {
+      "type": "substitution",
+      "instructionZh": "用 designed to... 練替換：designed to save time / designed to reduce delays / designed to spot problems。"
+    },
+    {
+      "type": "retelling",
+      "instructionZh": "用兩句英文複述：The FAA is rolling out an AI-powered tool. It could help reduce flight delays."
+    }
+  ],
+  "notes": [
+    "今日片段係 Good Morning America / ABC News 約 1 分 22 秒嘅科技同航空新聞，主題係 FAA 用 AI 減少跑道問題同航班延誤。",
+    "聽力重點係科技新聞常見動詞：roll out、predict、reduce、prevent。",
+    "時間碼 00:05、00:15、00:42、00:49 可以逐句重播；先盲聽關鍵動詞，再看稿拆 chunk。",
+    "dailyLifePractice 會延伸到機場問延誤、改行程同工作上簡短解釋科技工具。"
+  ],
+  "dailyLifePractice": [
+    {
+      "title": "Asking About a Flight Delay",
+      "contextZh": "場景：你喺機場見到航班延誤，想禮貌問職員最新情況。",
+      "audioText": "Hi, do you have any update on the delay? Is the gate still the same? Thanks, I'll keep an eye on the board.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Hi, do you have any update on the delay?",
+          "zh": "你好，請問延誤有冇最新消息？"
+        },
+        {
+          "speaker": "Staff",
+          "en": "We're still waiting for an update from operations.",
+          "zh": "我哋仲等緊營運部門嘅最新消息。"
+        },
+        {
+          "speaker": "You",
+          "en": "Is the gate still the same?",
+          "zh": "登機閘口仲係同一個嗎？"
+        },
+        {
+          "speaker": "You",
+          "en": "Thanks, I'll keep an eye on the board.",
+          "zh": "唔該，我會留意顯示屏。"
+        }
+      ],
+      "nativeNoteZh": "Do you have any update on...? 好自然又有禮貌，適合問航班、預約、維修進度。keep an eye on the board 即『留意顯示屏』，係機場好實用嘅講法。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 the delay 換成 my connection、boarding 或 the gate change。",
+          "example": "Do you have any update on boarding?"
+        },
+        {
+          "label": "Quick repeat",
+          "prompt": "跟讀 Is the gate still the same? 三次，語氣保持友善。",
+          "example": "Is the gate still the same?"
+        }
+      ]
+    },
+    {
+      "title": "Changing Plans Smoothly",
+      "contextZh": "場景：航班或交通有延誤，你想同朋友快速改見面安排。",
+      "audioText": "Quick heads-up: my flight is delayed. I may get in a little later than planned. Could we meet closer to seven?",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Quick heads-up: my flight is delayed.",
+          "zh": "提提你：我班機延誤咗。"
+        },
+        {
+          "speaker": "Friend",
+          "en": "No problem. How late are we talking?",
+          "zh": "冇問題。大概遲幾耐？"
+        },
+        {
+          "speaker": "You",
+          "en": "I may get in a little later than planned.",
+          "zh": "我可能會比原定遲少少到。"
+        },
+        {
+          "speaker": "You",
+          "en": "Could we meet closer to seven?",
+          "zh": "我哋可唔可以接近七點先見？"
+        }
+      ],
+      "nativeNoteZh": "Quick heads-up 係美式口語入面好常用，意思係『先通知你一聲』。closer to seven 唔係一定七點正，而係接近七點，語氣柔和。",
+      "drills": [
+        {
+          "label": "Polite rephrase",
+          "prompt": "用 Could we meet closer to...? 改一個時間。",
+          "example": "Could we meet closer to eight?"
+        },
+        {
+          "label": "Short response practice",
+          "prompt": "對方問 How late are we talking? 用一句英文答。",
+          "example": "Probably about twenty minutes."
+        }
+      ]
+    },
+    {
+      "title": "Explaining a New Tool at Work",
+      "contextZh": "場景：公司開始用新工具，你要用簡短自然英文同同事解釋用途。",
+      "audioText": "We're rolling out a new tool this week. It's designed to catch small issues earlier. Hopefully, it saves everyone some time.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "We're rolling out a new tool this week.",
+          "zh": "我哋今個星期會推出一個新工具。"
+        },
+        {
+          "speaker": "Coworker",
+          "en": "What is it supposed to do?",
+          "zh": "佢主要用嚟做咩？"
+        },
+        {
+          "speaker": "You",
+          "en": "It's designed to catch small issues earlier.",
+          "zh": "佢設計用嚟更早發現細問題。"
+        },
+        {
+          "speaker": "You",
+          "en": "Hopefully, it saves everyone some time.",
+          "zh": "希望可以幫大家慳返啲時間。"
+        }
+      ],
+      "nativeNoteZh": "What is it supposed to do? 係好自然嘅澄清問題，比 What does it do? 多少少『預期用途』嘅意思。Hopefully 放句首，語氣輕鬆唔誇張。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 catch small issues earlier 換成 reduce mistakes、speed up check-in 或 organize requests。",
+          "example": "It's designed to reduce mistakes."
+        },
+        {
+          "label": "Say-it-your-way",
+          "prompt": "用 Hopefully, it... 講一個你希望新工具做到嘅效果。",
+          "example": "Hopefully, it makes the process easier."
+        }
+      ]
+    }
+  ]
+}
