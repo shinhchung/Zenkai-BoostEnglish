@@ -1,0 +1,362 @@
+{
+  "id": "2026-06-25-la-school-screen-time",
+  "date": "2026-06-25",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "Los Angeles Schools Limit Screen Time",
+  "source": {
+    "type": "youtube-news",
+    "title": "Los Angeles schools to enforce screen time limits for students",
+    "channel": "ABC News",
+    "url": "https://www.youtube.com/shorts/QxVKe5uK4FY"
+  },
+  "tags": [
+    "YouTube 英文新聞聽力",
+    "ABC News / Good Morning America",
+    "教育同螢幕時間",
+    "字幕對齊聽力",
+    "日常美式口語",
+    "詞數：約48",
+    "練習時間：約8分鐘",
+    "daily-life speaking：約5分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "No Screens Before Second Grade",
+      "time": "00:00",
+      "audioText": "Nothing before second grade and this is part of a growing push to limit screens in classrooms amid backlash from parents and teachers.",
+      "transcript": "Nothing before second grade and this is part of a growing push to limit screens in classrooms amid backlash from parents and teachers.",
+      "translationZh": "二年級之前完全唔用螢幕，而呢個做法係一股限制課室螢幕使用嘅趨勢之一，背後有家長同老師嘅反彈。",
+      "points": [
+        {
+          "label": "Nothing before second grade",
+          "explanationZh": "Nothing 呢度係簡短講法，意思係『二年級之前完全冇螢幕時間』。"
+        },
+        {
+          "label": "a growing push",
+          "explanationZh": "push 係推動、倡議；growing 表示呢股趨勢愈來愈大。"
+        },
+        {
+          "label": "amid backlash",
+          "explanationZh": "amid 即『在……之中』；backlash 係反彈或批評。"
+        }
+      ]
+    },
+    {
+      "title": "The District Approves a Ban",
+      "time": "00:08",
+      "audioText": "So the Los Angeles Unified School District, which is the second biggest school district in the country, approved a ban on any screens in the classroom before second grade.",
+      "transcript": "So the Los Angeles Unified School District, which is the second biggest school district in the country, approved a ban on any screens in the classroom before second grade.",
+      "translationZh": "所以全國第二大校區 Los Angeles Unified School District 批准咗一項禁令，禁止二年級之前喺課室使用任何螢幕。",
+      "points": [
+        {
+          "label": "which is the second biggest",
+          "explanationZh": "which 開始補充背景；second biggest 即第二大。"
+        },
+        {
+          "label": "approved a ban",
+          "explanationZh": "approved 係批准；a ban 係禁令，新聞講政策時好常見。"
+        },
+        {
+          "label": "any screens in the classroom",
+          "explanationZh": "any screens 強調任何螢幕；in the classroom 限定係課室入面。"
+        }
+      ]
+    },
+    {
+      "title": "Limits for Younger Students",
+      "time": "00:23",
+      "audioText": "And even then, second and third graders would be limited to 20 minutes a day.",
+      "transcript": "And even then, second and third graders would be limited to 20 minutes a day.",
+      "translationZh": "即使到咗嗰個階段，二年級同三年級學生每日都會限於 20 分鐘。",
+      "points": [
+        {
+          "label": "And even then",
+          "explanationZh": "even then 表示『就算到嗰時』，用嚟強調限制仍然存在。"
+        },
+        {
+          "label": "second and third graders",
+          "explanationZh": "graders 指某年級學生；second and third graders 即二、三年級學生。"
+        },
+        {
+          "label": "limited to 20 minutes a day",
+          "explanationZh": "limited to 即限制為；a day 係每日。"
+        }
+      ]
+    },
+    {
+      "title": "Upper Elementary Limit",
+      "time": "00:29",
+      "audioText": "For fourth and fifth graders, 30 minutes a day.",
+      "transcript": "For fourth and fifth graders, 30 minutes a day.",
+      "translationZh": "四年級同五年級學生就每日 30 分鐘。",
+      "points": [
+        {
+          "label": "For fourth and fifth graders",
+          "explanationZh": "For 開頭用嚟轉去另一組人；fourth and fifth graders 即四、五年級學生。"
+        },
+        {
+          "label": "30 minutes",
+          "explanationZh": "聽數字時先抓 thirty，再聽後面 minutes 確認係時間長度。"
+        },
+        {
+          "label": "a day",
+          "explanationZh": "a day 放句尾，意思係每日；同 per day 一樣常見。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "Nothing before second grade and this is part of a growing push to limit screens in classrooms amid backlash from parents and teachers.",
+    "So the Los Angeles Unified School District, which is the second biggest school district in the country, approved a ban on any screens in the classroom before second grade.",
+    "And even then, second and third graders would be limited to 20 minutes a day.",
+    "For fourth and fifth graders, 30 minutes a day."
+  ],
+  "vocabulary": [
+    {
+      "word": "screen",
+      "ipa": "/skriːn/",
+      "partOfSpeech": "noun",
+      "meaningZh": "螢幕；電子屏幕",
+      "example": "Students use screens for homework and lessons.",
+      "translationZh": "學生會用螢幕做功課同上課。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "classroom",
+      "ipa": "/ˈklæs.ruːm/",
+      "partOfSpeech": "noun",
+      "meaningZh": "課室",
+      "example": "The new rule applies inside the classroom.",
+      "translationZh": "新規定適用於課室入面。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "backlash",
+      "ipa": "/ˈbæk.læʃ/",
+      "partOfSpeech": "noun",
+      "meaningZh": "反彈；強烈批評",
+      "example": "The policy came after backlash from parents.",
+      "translationZh": "呢項政策係喺家長反彈之後出現。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "district",
+      "ipa": "/ˈdɪs.trɪkt/",
+      "partOfSpeech": "noun",
+      "meaningZh": "地區；校區",
+      "example": "The district approved new school rules.",
+      "translationZh": "校區批准咗新校規。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "approve",
+      "ipa": "/əˈpruːv/",
+      "partOfSpeech": "verb",
+      "meaningZh": "批准；通過",
+      "example": "The board approved the plan on Tuesday.",
+      "translationZh": "委員會星期二通過咗計劃。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "ban",
+      "ipa": "/bæn/",
+      "partOfSpeech": "noun",
+      "meaningZh": "禁令；禁止",
+      "example": "The school announced a phone ban.",
+      "translationZh": "學校宣布咗手機禁令。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "limit",
+      "ipa": "/ˈlɪm.ɪt/",
+      "partOfSpeech": "verb",
+      "meaningZh": "限制",
+      "example": "The rule limits screen time for younger students.",
+      "translationZh": "呢條規則限制低年級學生嘅螢幕時間。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "a growing push to limit screens",
+      "meaningZh": "一股愈來愈大、要求限制螢幕使用嘅推動",
+      "example": "There is a growing push to limit screens in schools."
+    },
+    {
+      "phrase": "amid backlash from parents and teachers",
+      "meaningZh": "在家長同老師反彈之下",
+      "example": "The change came amid backlash from parents and teachers."
+    },
+    {
+      "phrase": "approved a ban on any screens",
+      "meaningZh": "批准禁止任何螢幕使用",
+      "example": "The district approved a ban on any screens before second grade."
+    },
+    {
+      "phrase": "limited to 20 minutes a day",
+      "meaningZh": "每日限制為 20 分鐘",
+      "example": "Second graders would be limited to 20 minutes a day."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "instructionZh": "由 00:00 跟讀 Nothing before second grade...，先分成 Nothing before second grade / and this is part of / a growing push。"
+    },
+    {
+      "type": "dictation",
+      "instructionZh": "重播 00:08，先聽寫 which is the second biggest school district，再補 approved a ban on any screens。"
+    },
+    {
+      "type": "substitution",
+      "instructionZh": "用 limited to... 練替換：limited to 10 minutes a day / limited to one hour a week / limited to school devices。"
+    },
+    {
+      "type": "retelling",
+      "instructionZh": "用兩句英文複述：Los Angeles schools are limiting screen time. Younger students will have the strictest limits."
+    }
+  ],
+  "notes": [
+    "今日片段係 ABC News / Good Morning America 約 1 分 20 秒嘅教育新聞，主題係洛杉磯校區限制學生螢幕時間。",
+    "聽力重點係政策新聞常見表達：approved a ban、limited to、a growing push、amid backlash。",
+    "時間碼 00:00、00:08、00:23、00:29 可以逐句重播；先盲聽數字同年級，再看稿拆 chunk。",
+    "dailyLifePractice 會延伸到學校 quick update、禮貌借用裝置同解釋家庭安排，練自然美式日常口語。"
+  ],
+  "dailyLifePractice": [
+    {
+      "title": "School Quick Update",
+      "contextZh": "場景：你收到學校新規定，想同另一位家長簡短交換資訊。",
+      "audioText": "Did you see the new screen-time policy? It starts later this year. I'm glad they're giving families some notice.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Did you see the new screen-time policy?",
+          "zh": "你有冇見到新嘅螢幕時間政策？"
+        },
+        {
+          "speaker": "Parent",
+          "en": "Yeah, I just read the email.",
+          "zh": "有呀，我啱啱睇咗封電郵。"
+        },
+        {
+          "speaker": "You",
+          "en": "It starts later this year.",
+          "zh": "佢今年遲啲開始。"
+        },
+        {
+          "speaker": "You",
+          "en": "I'm glad they're giving families some notice.",
+          "zh": "佢哋有早啲通知家庭，我覺得幾好。"
+        }
+      ],
+      "nativeNoteZh": "Did you see...? 係自然開場，適合講電郵、公告、新聞。giving families some notice 即提前通知，語氣中性又禮貌。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 screen-time policy 換成 lunch schedule、field trip update 或 homework policy。",
+          "example": "Did you see the new homework policy?"
+        },
+        {
+          "label": "Quick repeat",
+          "prompt": "跟讀 I'm glad they're giving families some notice. 三次，語氣保持自然。",
+          "example": "I'm glad they're giving families some notice."
+        }
+      ]
+    },
+    {
+      "title": "Borrowing a Device Politely",
+      "contextZh": "場景：你臨時需要用電腦填表，想喺前台禮貌問可唔可以借用。",
+      "audioText": "Hi, is there a computer I could use for a few minutes? I just need to fill out this form. I can be quick.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Hi, is there a computer I could use for a few minutes?",
+          "zh": "你好，請問有冇電腦可以俾我用幾分鐘？"
+        },
+        {
+          "speaker": "Staff",
+          "en": "Sure, the one by the desk is available.",
+          "zh": "可以，書枱旁邊嗰部可以用。"
+        },
+        {
+          "speaker": "You",
+          "en": "I just need to fill out this form.",
+          "zh": "我只係需要填呢份表。"
+        },
+        {
+          "speaker": "You",
+          "en": "I can be quick.",
+          "zh": "我可以好快搞掂。"
+        }
+      ],
+      "nativeNoteZh": "I could use... 比 I want to use... 更有禮貌。I can be quick 係美式口語，表示唔會阻人太耐。",
+      "drills": [
+        {
+          "label": "Polite rephrase",
+          "prompt": "用 Is there a... I could use? 問可唔可以借一樣物件。",
+          "example": "Is there a charger I could use?"
+        },
+        {
+          "label": "Short response practice",
+          "prompt": "對方話 Sure，你用一句英文表示感謝同會快手。",
+          "example": "Thanks, I can be quick."
+        }
+      ]
+    },
+    {
+      "title": "Explaining a Small Delay",
+      "contextZh": "場景：你因為要處理小朋友學校通知，約會可能遲少少。",
+      "audioText": "Quick heads-up: I need to handle a school email first. I might be about ten minutes late. Thanks for being flexible.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Quick heads-up: I need to handle a school email first.",
+          "zh": "提提你：我需要先處理一封學校電郵。"
+        },
+        {
+          "speaker": "Friend",
+          "en": "No problem. Take your time.",
+          "zh": "冇問題，慢慢嚟。"
+        },
+        {
+          "speaker": "You",
+          "en": "I might be about ten minutes late.",
+          "zh": "我可能會遲大約十分鐘。"
+        },
+        {
+          "speaker": "You",
+          "en": "Thanks for being flexible.",
+          "zh": "多謝你咁彈性配合。"
+        }
+      ],
+      "nativeNoteZh": "Quick heads-up 係好自然嘅『先通知你一聲』。Thanks for being flexible 比單講 sorry 更正面，適合輕微改時間。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 a school email 換成 a work call、a quick errand 或 a message from the office。",
+          "example": "I need to handle a work call first."
+        },
+        {
+          "label": "Say-it-your-way",
+          "prompt": "用 Thanks for being flexible. 回應對方願意等你。",
+          "example": "Thanks for being flexible. I really appreciate it."
+        }
+      ]
+    }
+  ]
+}
