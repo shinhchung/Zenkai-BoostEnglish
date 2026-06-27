@@ -1,0 +1,393 @@
+{
+  "id": "2026-06-27-low-flying-boeing-777",
+  "date": "2026-06-27",
+  "level": "B1-",
+  "nextLevel": "B1（中級）",
+  "title": "FAA Reviews Low-Flying Boeing 777",
+  "source": {
+    "type": "youtube-news",
+    "title": "FAA investigating Boeing 777 that was dangerously low to the ground in Texas",
+    "channel": "ABC News",
+    "url": "https://www.youtube.com/watch?v=y507KTAQQy0"
+  },
+  "tags": [
+    "YouTube 英文新聞聽力",
+    "ABC News / aviation safety",
+    "交通同安全提醒",
+    "字幕對齊聽力",
+    "日常美式口語",
+    "詞數：約72",
+    "練習時間：約8分鐘",
+    "daily-life speaking：約5分鐘"
+  ],
+  "methodSteps": [
+    "盲聽",
+    "看稿",
+    "拆解",
+    "重聽",
+    "跟讀"
+  ],
+  "segments": [
+    {
+      "title": "Video Prompts Review",
+      "time": "00:15",
+      "audioText": "Tonight, this social media video showing a Boeing 777 plane flying dangerously low to the ground, prompting an FAA investigation.",
+      "transcript": "Tonight, this social media video showing a Boeing 777 plane flying dangerously low to the ground, prompting an FAA investigation.",
+      "translationZh": "今晚，呢段社交媒體影片顯示一架波音 777 飛得離地面危險咁低，令 FAA 展開調查。",
+      "points": [
+        {
+          "label": "this social media video",
+          "explanationZh": "新聞報道常用 this... video 帶出畫面來源；social media video 即網上流傳片段。"
+        },
+        {
+          "label": "flying dangerously low",
+          "explanationZh": "dangerously low 係危險咁低；聽嗰陣留意副詞 dangerously 修飾 low。"
+        },
+        {
+          "label": "prompting an FAA investigation",
+          "explanationZh": "prompting 即『引發、促使』；後面接調查或行動，新聞好常見。"
+        }
+      ]
+    },
+    {
+      "title": "Watch the Wing",
+      "time": "00:23",
+      "audioText": "Pay close attention to the right wing of the plane, nearly hitting the ground as it buzzes over a private airport in Horseshoe Bay, Texas.",
+      "transcript": "Pay close attention to the right wing of the plane, nearly hitting the ground as it buzzes over a private airport in Horseshoe Bay, Texas.",
+      "translationZh": "留心睇飛機右邊機翼，佢飛越德州 Horseshoe Bay 一個私人機場時，幾乎掂到地面。",
+      "points": [
+        {
+          "label": "Pay close attention to",
+          "explanationZh": "即『特別留意』；報道員引導觀眾睇畫面細節時常用。"
+        },
+        {
+          "label": "nearly hitting the ground",
+          "explanationZh": "nearly 即差啲；hitting the ground 係掂到地面。"
+        },
+        {
+          "label": "as it buzzes over",
+          "explanationZh": "buzzes over 有低飛掠過嘅感覺；as 連住同時間發生嘅動作。"
+        }
+      ]
+    },
+    {
+      "title": "Flight Data",
+      "time": "00:33",
+      "audioText": "Flightradar24 data showing the plane was less than 25 feet off the ground.",
+      "transcript": "Flightradar24 data showing the plane was less than 25 feet off the ground.",
+      "translationZh": "Flightradar24 數據顯示，架飛機離地少過 25 呎。",
+      "points": [
+        {
+          "label": "data showing",
+          "explanationZh": "新聞會用 data showing... 快速講『數據顯示』，句子可以好精簡。"
+        },
+        {
+          "label": "less than 25 feet",
+          "explanationZh": "less than 即少過；聽數字時先抓 25，再聽 feet。"
+        },
+        {
+          "label": "off the ground",
+          "explanationZh": "off the ground 即離地；航空同交通報道常用。"
+        }
+      ]
+    },
+    {
+      "title": "Company Response",
+      "time": "00:50",
+      "audioText": "The company saying the plane was conducting a low pass flight in a manner that does not reflect operational standards.",
+      "transcript": "The company saying the plane was conducting a low pass flight in a manner that does not reflect operational standards.",
+      "translationZh": "公司表示，架飛機當時進行低空掠過飛行，但方式並不反映營運標準。",
+      "points": [
+        {
+          "label": "conducting a low pass flight",
+          "explanationZh": "conducting 即進行；low pass flight 係低空掠過飛行。"
+        },
+        {
+          "label": "in a manner that",
+          "explanationZh": "manner 即方式；in a manner that... 用嚟解釋做法係點。"
+        },
+        {
+          "label": "does not reflect operational standards",
+          "explanationZh": "does not reflect 即唔代表；operational standards 係營運標準。"
+        }
+      ]
+    },
+    {
+      "title": "Expert Warning",
+      "time": "01:02",
+      "audioText": "And David, aviation experts warn this pilot's maneuver was essentially a form of showing off, saying the plane's wingtip was just feet away from a potential catastrophe.",
+      "transcript": "And David, aviation experts warn this pilot's maneuver was essentially a form of showing off, saying the plane's wingtip was just feet away from a potential catastrophe.",
+      "translationZh": "David，航空專家警告，呢位機師嘅動作本質上似係炫技，飛機翼尖只係離潛在災難幾呎之差。",
+      "points": [
+        {
+          "label": "aviation experts warn",
+          "explanationZh": "experts warn 係專家警告；聽到 warn 就知道後面通常係風險。"
+        },
+        {
+          "label": "a form of showing off",
+          "explanationZh": "showing off 即炫耀、賣弄；a form of 表示『一種……』。"
+        },
+        {
+          "label": "just feet away",
+          "explanationZh": "just feet away 強調距離非常近；feet 前面冇數字都表示只差幾呎。"
+        },
+        {
+          "label": "a potential catastrophe",
+          "explanationZh": "potential 即潛在；catastrophe 係災難，語氣好嚴重。"
+        }
+      ]
+    }
+  ],
+  "sentences": [
+    "Tonight, this social media video showing a Boeing 777 plane flying dangerously low to the ground, prompting an FAA investigation.",
+    "Pay close attention to the right wing of the plane, nearly hitting the ground as it buzzes over a private airport in Horseshoe Bay, Texas.",
+    "Flightradar24 data showing the plane was less than 25 feet off the ground.",
+    "The company saying the plane was conducting a low pass flight in a manner that does not reflect operational standards.",
+    "And David, aviation experts warn this pilot's maneuver was essentially a form of showing off, saying the plane's wingtip was just feet away from a potential catastrophe."
+  ],
+  "vocabulary": [
+    {
+      "word": "investigation",
+      "ipa": "/ɪnˌves.təˈɡeɪ.ʃən/",
+      "partOfSpeech": "noun",
+      "meaningZh": "調查",
+      "example": "The video prompted an investigation.",
+      "translationZh": "呢段影片引發咗一項調查。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "wing",
+      "ipa": "/wɪŋ/",
+      "partOfSpeech": "noun",
+      "meaningZh": "機翼；翼",
+      "example": "The right wing was close to the ground.",
+      "translationZh": "右邊機翼好接近地面。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "nearly",
+      "ipa": "/ˈnɪr.li/",
+      "partOfSpeech": "adverb",
+      "meaningZh": "差啲；幾乎",
+      "example": "The plane nearly hit the ground.",
+      "translationZh": "架飛機差啲掂到地面。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "conduct",
+      "ipa": "/kənˈdʌkt/",
+      "partOfSpeech": "verb",
+      "meaningZh": "進行；執行",
+      "example": "The crew conducted a safety check.",
+      "translationZh": "機組人員進行咗安全檢查。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "operational",
+      "ipa": "/ˌɑː.pəˈreɪ.ʃən.əl/",
+      "partOfSpeech": "adjective",
+      "meaningZh": "營運上嘅；操作上嘅",
+      "example": "The company reviewed its operational standards.",
+      "translationZh": "公司檢視咗營運標準。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "maneuver",
+      "ipa": "/məˈnuː.vɚ/",
+      "partOfSpeech": "noun",
+      "meaningZh": "動作；操作；機動動作",
+      "example": "Experts called the maneuver risky.",
+      "translationZh": "專家話呢個動作有風險。",
+      "mastery": 2,
+      "nextReview": "明天"
+    },
+    {
+      "word": "catastrophe",
+      "ipa": "/kəˈtæs.trə.fi/",
+      "partOfSpeech": "noun",
+      "meaningZh": "災難；嚴重事故",
+      "example": "The warning described a potential catastrophe.",
+      "translationZh": "警告形容可能會有嚴重事故。",
+      "mastery": 2,
+      "nextReview": "明天"
+    }
+  ],
+  "phrases": [
+    {
+      "phrase": "prompting an FAA investigation",
+      "meaningZh": "引發 FAA 調查",
+      "example": "The incident is prompting an FAA investigation."
+    },
+    {
+      "phrase": "pay close attention to",
+      "meaningZh": "特別留意",
+      "example": "Pay close attention to the safety instructions."
+    },
+    {
+      "phrase": "less than 25 feet off the ground",
+      "meaningZh": "離地少過 25 呎",
+      "example": "The aircraft was less than 25 feet off the ground."
+    },
+    {
+      "phrase": "does not reflect operational standards",
+      "meaningZh": "並不代表營運標準",
+      "example": "That mistake does not reflect our operational standards."
+    },
+    {
+      "phrase": "just feet away from",
+      "meaningZh": "只係離……幾呎之差",
+      "example": "The car was just feet away from the curb."
+    }
+  ],
+  "speakingPractice": [
+    {
+      "type": "shadowing",
+      "instructionZh": "由 00:15 跟讀 Tonight, this social media video...，先拆成 this social media video / showing a Boeing 777 plane / flying dangerously low。"
+    },
+    {
+      "type": "dictation",
+      "instructionZh": "重播 00:23，先聽寫 Pay close attention to the right wing，再補 nearly hitting the ground。"
+    },
+    {
+      "type": "substitution",
+      "instructionZh": "用 data showing... 練替換：data showing the train was late / data showing prices were lower / data showing traffic was heavy。"
+    },
+    {
+      "type": "retelling",
+      "instructionZh": "用兩句英文複述：ABC reported on a Boeing 777 flying dangerously low. The FAA is now investigating the incident."
+    }
+  ],
+  "notes": [
+    "今日片段係 ABC News 約 1 分 14 秒嘅航空安全新聞，主題係一架波音 777 低飛片段引發 FAA 調查。",
+    "聽力重點係報道員點樣配合畫面講解：this video showing...、pay close attention to...、data showing...。",
+    "時間碼 00:15、00:23、00:33、00:50、01:02 可以逐句重播；先聽關鍵名詞，再跟讀整句節奏。",
+    "dailyLifePractice 會延伸到旅行延誤、向職員確認資訊、以及工作上提醒安全檢查。"
+  ],
+  "dailyLifePractice": [
+    {
+      "title": "Checking a Travel Update",
+      "contextZh": "場景：你喺機場或車站見到資訊有變，想禮貌問職員最新情況。",
+      "audioText": "Hi, do you have any update on this departure? Is the time still the same? Thanks, I'll keep an eye on the board.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Hi, do you have any update on this departure?",
+          "zh": "你好，請問呢班出發有冇最新消息？"
+        },
+        {
+          "speaker": "Agent",
+          "en": "We're waiting for one more update.",
+          "zh": "我哋仲等緊多一個最新消息。"
+        },
+        {
+          "speaker": "You",
+          "en": "Is the time still the same?",
+          "zh": "時間仲係一樣嗎？"
+        },
+        {
+          "speaker": "You",
+          "en": "Thanks, I'll keep an eye on the board.",
+          "zh": "唔該，我會留意顯示屏。"
+        }
+      ],
+      "nativeNoteZh": "Do you have any update on...? 好自然又有禮貌，適合問航班、火車、預約、維修進度。keep an eye on the board 即留意顯示屏，喺機場同車站都啱用。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 this departure 換成 my flight、boarding 或 the delay。",
+          "example": "Do you have any update on boarding?"
+        },
+        {
+          "label": "Quick repeat",
+          "prompt": "跟讀 Is the time still the same? 三次，語氣保持友善。",
+          "example": "Is the time still the same?"
+        }
+      ]
+    },
+    {
+      "title": "Explaining a Delay",
+      "contextZh": "場景：你因為交通安排有變，想快速通知朋友可能會遲少少。",
+      "audioText": "Quick heads-up: my ride is running late. I might get there about ten minutes later than planned. Thanks for being flexible.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Quick heads-up: my ride is running late.",
+          "zh": "提提你：我架車有啲遲。"
+        },
+        {
+          "speaker": "Friend",
+          "en": "No worries. Thanks for letting me know.",
+          "zh": "唔緊要，多謝你話我知。"
+        },
+        {
+          "speaker": "You",
+          "en": "I might get there about ten minutes later than planned.",
+          "zh": "我可能會比原定遲大約十分鐘到。"
+        },
+        {
+          "speaker": "You",
+          "en": "Thanks for being flexible.",
+          "zh": "多謝你咁彈性配合。"
+        }
+      ],
+      "nativeNoteZh": "Quick heads-up 係好自然嘅『先通知你一聲』。Thanks for being flexible 比淨係講 sorry 更正面，適合輕微改時間。",
+      "drills": [
+        {
+          "label": "Polite rephrase",
+          "prompt": "用 I might get there about... later than planned 講一個遲到時間。",
+          "example": "I might get there about fifteen minutes later than planned."
+        },
+        {
+          "label": "Short response practice",
+          "prompt": "對方話 No worries，你用一句英文表示感謝。",
+          "example": "Thanks for being flexible."
+        }
+      ]
+    },
+    {
+      "title": "Quick Safety Check",
+      "contextZh": "場景：工作或活動開始前，你想用簡短自然英文提醒大家檢查設備。",
+      "audioText": "Just a quick reminder: please double-check the equipment before you start. If anything looks off, let me know right away.",
+      "lines": [
+        {
+          "speaker": "You",
+          "en": "Just a quick reminder: please double-check the equipment before you start.",
+          "zh": "提一提：開始之前請再檢查一次設備。"
+        },
+        {
+          "speaker": "Coworker",
+          "en": "Got it. I'll take a look now.",
+          "zh": "收到，我而家睇一睇。"
+        },
+        {
+          "speaker": "You",
+          "en": "If anything looks off, let me know right away.",
+          "zh": "如果有任何嘢唔妥，即刻話我知。"
+        },
+        {
+          "speaker": "Coworker",
+          "en": "Will do.",
+          "zh": "會，冇問題。"
+        }
+      ],
+      "nativeNoteZh": "looks off 係美式口語，意思係睇落唔太對路。Will do 係簡短自然嘅回覆，表示『我會照做』。",
+      "drills": [
+        {
+          "label": "Substitution",
+          "prompt": "將 the equipment 換成 the schedule、the address 或 the form。",
+          "example": "Please double-check the address before you start."
+        },
+        {
+          "label": "Say-it-your-way",
+          "prompt": "用 If anything looks off... 講一個安全提醒。",
+          "example": "If anything looks off, call me before you continue."
+        }
+      ]
+    }
+  ]
+}
